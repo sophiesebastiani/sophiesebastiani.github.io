@@ -1,1 +1,50 @@
-hello again
+body {
+    font-family: arial;
+}
+
+.head{
+    color: cornflowerblue;
+    text-align: center;
+    font-size: 4rem;
+}
+#head{
+    color: antique white;
+    text-align: center;
+    background: black;
+    font-size: 4rem;
+}
+.headline{
+    text-decoration: underline;
+    display: block;
+    margin: 10px;
+}
+.option{
+    border: 2px solid black;
+    display: inline;
+    color:deepskyblue;
+    margin: 10px;
+}
+.pic{
+    display: block;
+    width: 50%;
+    margin: auto;
+    
+}
+.pic:hover{
+    border: 2px solid blue;
+}
+
+.cap{
+    color:hotpink;
+    text-align: center;
+}
+
+em {
+    color:red;
+}
+
+p {
+    display: inline-block;
+    background: antiquewhite;
+    margin: 10%;
+}
