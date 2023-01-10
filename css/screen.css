@@ -1,5 +1,6 @@
 body {
     font-family: arial;
+    text-align: center;
 }
 
 .head{
@@ -17,6 +18,7 @@ body {
     text-decoration: underline;
     display: block;
     margin: 10px;
+    text-align: center;
 }
 .option{
     border: 2px solid black;
