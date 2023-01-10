@@ -29,7 +29,7 @@ body {
 .pic{
     display: block;
     max-width: 100%;
-	height: auto
+height: auto
     margin: auto;
     border: 1px solid black
     
@@ -39,8 +39,7 @@ body {
 }
 
 .cap{
-    color:hotpink;
-    text-align: center;
+    color: solid black;
 }
 
 em {
