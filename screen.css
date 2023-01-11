@@ -7,14 +7,14 @@ body {
     color: solid black;
     text-align: center;
     font-size: 4rem;
-    margin-top: 15%;
+    margin-top: 20%;
 }
 #head{
     color: antique white;
     text-align: center;
     background: black;
     font-size: 4rem;
-    margin-top: 100px;
+    margin-top: 15px;
 }
 .headline{
     text-decoration: underline;
