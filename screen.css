@@ -7,7 +7,7 @@ body {
     color: solid black;
     text-align: center;
     font-size: 4rem;
-    margin-top: 100px;
+    margin-top: 500px;
 }
 #head{
     color: antique white;
@@ -25,7 +25,6 @@ body {
     border: 2px solid black;
     display: inline;
     color:deepskyblue;
-    margin: 10px;
 }
 .pic{
     display: block;
