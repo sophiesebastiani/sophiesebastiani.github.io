@@ -7,19 +7,19 @@ body {
     color: cornflowerblue;
     text-align: center;
     font-size: 4rem;
-    margin: 20x
+    margin-top: 100x
 }
 #head{
     color: antique white;
     text-align: center;
     background: black;
     font-size: 4rem;
-    margin: 20x
+    margin-top: 20x
 }
 .headline{
     text-decoration: underline;
     display: block;
-    margin: 10px;
+    margin: 25px;
 }
 .option{
     border: 2px solid black;
