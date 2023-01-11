@@ -1,5 +1,5 @@
 body {
-    font-family: arial;
+    font-family: helvetica;
     text-align: center;
 }
 
@@ -19,7 +19,7 @@ body {
 .headline{
     text-decoration: underline;
     display: block;
-    margin: 25px;
+    margin-top: 25px;
 }
 .option{
     border: 2px solid black;
