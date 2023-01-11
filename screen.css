@@ -7,14 +7,14 @@ body {
     color: solid black;
     text-align: center;
     font-size: 4rem;
-    margin-top: 100x
+    margin-top: 100x;
 }
 #head{
     color: antique white;
     text-align: center;
     background: black;
     font-size: 4rem;
-    margin-top: 20x
+    margin-top: 20x;
 }
 .headline{
     text-decoration: underline;
@@ -30,13 +30,13 @@ body {
 .pic{
     display: block;
     max-width: 100%;
-height: auto
+height: auto;
     margin: auto;
     border: 1px solid black
     
 }
 .pic:hover{
-    border: 2px solid blue;
+    border: 1px solid blue;
 }
 
 .cap{
