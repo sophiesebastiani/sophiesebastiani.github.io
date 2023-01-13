@@ -1,5 +1,5 @@
 body {
-    font-family: helvetica;
+    font-family: "Andale Mono", monospace;
     text-align: center;
 }
 
@@ -14,12 +14,10 @@ body {
     text-align: center;
     background: black;
     font-size: 4rem;
-    margin-top: 15px;
 }
 .headline{
     text-decoration: underline;
     display: block;
-    margin-top: 25px;
 }
 .option{
     border: 2px solid black;
