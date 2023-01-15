@@ -19,8 +19,9 @@ body {
     text-decoration: underline;
     text-align: left;
     margin-left: 10%;
-    font-size: 4rem;
+    font-size: 2rem;
     display: block;
+    background: antiquewhite;
 }
 .option{
     border: 2px solid black;
@@ -28,15 +29,16 @@ body {
     color:deepskyblue;
 }
 .pic{
-    display: block;
+    display: inline-block;
     max-width: 100%;
-height: auto;
-    margin: auto;
+    height: auto;
+    margin-top: 1.5%;
+    margin-left: 10%;
     border: 1px solid black
     
 }
 .pic:hover{
-    border: 1px solid blue;
+    border: 1px white;
 }
 
 .cap{
@@ -48,7 +50,7 @@ em {
 }
 
 p {
+    text-align: right;
     display: inline-block;
-    background: antiquewhite;
-    margin: 10%;
+    margin-left: 10%;
 }
