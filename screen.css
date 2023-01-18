@@ -4,7 +4,7 @@ body {
 }
 
 .head{
-    color: solid black;
+    color: rgb(109, 140, 104);
     text-align: center;
     font-size: 4rem;
     margin-top: 20%;
@@ -24,9 +24,9 @@ body {
     background: lavenderblush;
 }
 .option{
-    border: 2px solid black;
+    border: 1px solid rgb(109, 140, 104);
     display: inline;
-    color:deepskyblue;
+    color:rgb(109, 140, 104);
     background: lavenderblush;
 }
 .pic{
@@ -52,6 +52,5 @@ em {
 
 p {
     text-align: left;
-    display: inline-block;
-    margin-left: 5%;
+    display: block;
 }
