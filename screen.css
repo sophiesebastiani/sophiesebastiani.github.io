@@ -18,22 +18,23 @@ body {
 .headline{
     text-decoration: underline;
     text-align: left;
-    margin-left: 10%;
+    margin-left: 5%;
     font-size: 2rem;
     display: block;
-    background: antiquewhite;
+    background: lavenderblush;
 }
 .option{
     border: 2px solid black;
     display: inline;
     color:deepskyblue;
+    background: lavenderblush;
 }
 .pic{
     display: inline-block;
-    max-width: 100%;
+    max-width: 55%;
     height: auto;
-    margin-top: 1.5%;
-    margin-left: 10%;
+    /* margin-top: 1.5%;
+    margin-left: 10%; */
     border: 1px solid black
     
 }
@@ -50,7 +51,7 @@ em {
 }
 
 p {
-    text-align: right;
+    text-align: left;
     display: inline-block;
-    margin-left: 10%;
+    margin-left: 5%;
 }
