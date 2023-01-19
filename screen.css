@@ -31,7 +31,8 @@ body {
 }
 .pic{
     display: inline-block;
-    max-width: 55%;
+    text-align: center;
+    max-width: 80%;
     height: auto;
     /* margin-top: 1.5%;
     margin-left: 10%; */
