@@ -4,10 +4,11 @@ body {
 }
 
 .head{
-    color: rgb(109, 140, 104);
+    color: solid black;
     text-align: center;
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-top: 20%;
+    /* background: rgba(255, 240, 245, 0.411); */
 }
 #head{
     color: antique white;
