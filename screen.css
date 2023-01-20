@@ -1,13 +1,13 @@
 body {
-    font-family: "Andale Mono", monospace;
+    font-family: "Gills Sans", sans-serif;
     text-align: center;
 }
 
 .head{
-    color: solid black;
+    color: antiquewhite;
     text-align: center;
     font-size: 3.5rem;
-    margin-top: 20%;
+    margin-top: 25%;
     /* background: rgba(255, 240, 245, 0.411); */
 }
 #head{
@@ -26,9 +26,10 @@ body {
 }
 .option{
     border: 1px solid black;
-    display: inline;
-    color:rgb(109, 140, 104);
+    display: inline-block;
+    color:rgb(56, 56, 56);
     background: lavenderblush;
+    font-size: 2rem;
 }
 .pic{
     display: inline-block;
