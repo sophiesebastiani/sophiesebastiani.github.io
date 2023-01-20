@@ -1,16 +1,22 @@
 body {
-    font-family: "Arial", sans-serif;
+    font-family:'Gill Sans', sans-serif;
+    /* font-family: "Andale Mono", monospace; */
     text-align: center;
 }
 
 .head{
-    color: antiquewhite;
+    /* color: rgb(227, 215, 218); */
+    color: rgb(228, 219, 206);
+    font-family:'Gill Sans', sans-serif;
     text-align: center;
-    font-size: 50px;
-    font-weight: 600;
+    font-size: 55px;
+    font-weight: bold;
+    /* border: 3px rgb(231, 220, 206); */
+    display: block;
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(156, 156, 156); */
     margin-top: 26.5%;
     margin-bottom: 1%;
-    /* background: rgba(255, 240, 245, 0.411); */
 }
 #head{
     color: antique white;
@@ -24,7 +30,7 @@ body {
     margin-left: 5%;
     font-size: 2rem;
     display: block;
-    background: lavenderblush;
+    background: antiquewhite;
 }
 .option{
     border: 1px solid black;
