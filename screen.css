@@ -7,7 +7,7 @@ body {
 .head{
     padding: 6px 8px 6px 16px;
     /* color: rgb(227, 215, 218); */
-    color: rgb(46, 100, 153);
+    color: rgb(0, 0, 0);
     font-family:'Gill Sans', sans-serif;
     text-align: left;
     font-size: 60px;
@@ -86,6 +86,7 @@ height: 100%; /* Full-height: remove this if you want "auto" height */
 }
 
 .sidenav a {
+    font-weight: 400;
     margin-left: 2%;
     padding: 6px 8px 14px 16px;
     text-decoration: underline;
