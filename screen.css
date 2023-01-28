@@ -7,8 +7,8 @@ body {
 .head{
     padding: 6px 8px 6px 16px;
     /* color: rgb(227, 215, 218); */
-    color: rgb(0, 0, 0);
-    font-family:'Gill Sans', sans-serif;
+    color: rgb(52, 4, 4);
+    font-family:'Helvetica', sans-serif;
     text-align: left;
     font-size: 60px;
     font-weight: bold;
@@ -60,9 +60,10 @@ body {
 }
 
 em {
-    color:rgb(46, 100, 153);
+    color:rgb(68, 24, 24);
+    /* color:rgb(46, 100, 153); */
     text-align: left;
-    font-size: 23px;
+    font-size: 20px;
 }
 
 p {
@@ -72,7 +73,7 @@ p {
 
 .sidenav{
 height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 480px; /* Set the width of the sidebar */
+  width: 450px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -82,7 +83,8 @@ height: 100%; /* Full-height: remove this if you want "auto" height */
     /* -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(156, 156, 156); */
 
-    background-color: rgba(255, 240, 245, 0.531);
+    background-color: rgba(250, 235, 215, 0.405);
+    /* rgba(255, 240, 245, 0.531) */
 }
 
 .sidenav a {
@@ -90,7 +92,7 @@ height: 100%; /* Full-height: remove this if you want "auto" height */
     margin-left: 2%;
     padding: 6px 8px 14px 16px;
     text-decoration: underline;
-    font-size: 30px;
+    font-size: 25px;
     display: block;
     text-align: left;
   }
