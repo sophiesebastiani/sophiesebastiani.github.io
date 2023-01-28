@@ -5,18 +5,20 @@ body {
 }
 
 .head{
+    padding: 6px 8px 6px 16px;
     /* color: rgb(227, 215, 218); */
-    color: rgb(228, 219, 206);
+    color: rgb(46, 100, 153);
     font-family:'Gill Sans', sans-serif;
-    text-align: center;
-    font-size: 55px;
+    text-align: left;
+    font-size: 60px;
     font-weight: bold;
     /* border: 3px rgb(231, 220, 206); */
     display: block;
     /* -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(156, 156, 156); */
-    margin-top: 26.5%;
-    margin-bottom: 1%;
+    margin-left: 2%;
+    margin-top: 5%;
+    margin-bottom: 0%;
 }
 #head{
     color: antique white;
@@ -58,10 +60,37 @@ body {
 }
 
 em {
-    color:red;
+    color:rgb(46, 100, 153);
+    text-align: left;
+    font-size: 23px;
 }
 
 p {
     text-align: left;
     display: block;
 }
+
+.sidenav{
+height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 480px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(156, 156, 156); */
+
+    background-color: rgba(255, 240, 245, 0.531);
+}
+
+.sidenav a {
+    margin-left: 2%;
+    padding: 6px 8px 6px 16px;
+    text-decoration: underline;
+    font-size: 30px;
+    display: block;
+    text-align: left;
+    margin-top: 2%;
+  }
