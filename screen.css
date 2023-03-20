@@ -1,39 +1,105 @@
 body {
     font-family:'Gill Sans', sans-serif;
     /* font-family: "Andale Mono", monospace; */
-    text-align: center;
 }
 
+.img {
+    max-width: 100%;
+}
+
+.img-circle {
+    max-width: 100%;
+}
 .head{
-    padding: 6px 8px 6px 16px;
+    /* padding: 6px 8px 6px 16px; */
     /* color: rgb(227, 215, 218); */
     color: rgb(52, 4, 4);
     font-family:'Helvetica', sans-serif;
     text-align: left;
-    font-size: 60px;
-    font-weight: bold;
+    font-size: 25px;
+    font-weight: normal;
     /* border: 3px rgb(231, 220, 206); */
-    display: block;
+    display: inline-block;
     /* -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(156, 156, 156); */
-    margin-left: 2%;
-    margin-top: 5%;
-    margin-bottom: 0%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1.5%;
+    margin-top: 2.5%;
+    padding-bottom: 1.5%;
+    overflow: hidden;
+    background-color: rgba(214, 200, 205, 0.823);
 }
-#head{
-    color: antique white;
-    text-align: center;
-    background: black;
-    font-size: 4rem;
-}
+
+
 .headline{
     /* text-decoration: underline; */
+    color: rgb(52, 4, 4);
     text-align: left;
-    margin-left: 5%;
-    font-size: 2rem;
+    /* padding:5px; */
+    /* margin-right: 75%; */
+    font-size: 25px;
+    font-weight: bold;
     display: block;
-    background: antiquewhite;
+    font-family:'Helvetica', sans-serif;
 }
+
+.headline a {
+    color: rgb(52, 4, 4);
+    text-align: left;
+    padding:5px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: normal;
+    display: block;
+    font-family:'Helvetica', sans-serif;
+}
+
+.headline a:hover {
+    color: rgba(253, 247, 237);
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    /* background-color: rgba(56, 110, 144, 0.418); */
+    background-color: rgba(253, 247, 237);
+    text-decoration: none;
+    position: fixed;
+    width: 100%;
+    padding: 5px;
+    margin-top: 0%;
+    /* background-color: #dddddd; */
+  }
+  
+  li {
+    display: inline;
+    border-right: 1.5px solid rgb(181, 84, 77);
+
+  }
+
+  li a {
+    color: rgb(205, 182, 182);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family:'Helvetica', sans-serif;
+    font-size: 20px;
+    font-weight:normal;
+    text-align: right;
+    /* padding: 10px; */
+  }
+
+  li a:hover:not(.active) {
+    color: rgb(181, 84, 77);
+    /* color:rgb(161, 196, 109); */
+  }
+  
+  .active {
+    /* background-color:rgba(235, 246, 255, 0.22); */
+    color:rgb(52, 4, 4);
+
+  }
+  
 .option{
     border: 1px solid black;
     display: inline-block;
@@ -42,17 +108,17 @@ body {
     font-size: 2rem;
 }
 .pic{
-    display: inline-block;
+    display: inline;
     text-align: center;
-    max-width: 80%;
+    max-width: 70%;
+    padding: 10px;
     height: auto;
     /* margin-top: 1.5%;
     margin-left: 10%; */
-    border: 1px solid black
     
 }
 .pic:hover{
-    border: 1px white;
+    border: 1px solid rgb(52, 4, 4);
 }
 
 .cap{
@@ -60,32 +126,21 @@ body {
 }
 
 em {
-    color:rgb(68, 24, 24);
+    color:rgb(81, 68, 68);
     /* color:rgb(46, 100, 153); */
-    text-align: left;
-    font-size: 20px;
 }
 
 p {
+    color:rgb(81, 68, 68);
+    /* color:rgb(46, 100, 153); */
     text-align: left;
-    display: block;
+    margin-left: 20px;
+    font-size: 14px;
+    font-family: 'Helvetica', sans-serif;
+    line-height: 1.75;
+    /* background-color: rgba(231, 229, 133, 0.434); */
 }
 
-.sidenav{
-height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 450px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
-    /* -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(156, 156, 156); */
-
-    background-color: rgba(250, 235, 215, 0.405);
-    /* rgba(255, 240, 245, 0.531) */
-}
 
 .sidenav a {
     font-weight: 400;
@@ -95,4 +150,56 @@ height: 100%; /* Full-height: remove this if you want "auto" height */
     font-size: 25px;
     display: block;
     text-align: left;
+  }
+
+.container {
+    padding: 20px;
+
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 70px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(255, 255, 255); /* Fallback color */
+    background-color: rgba(255, 255, 255, 0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 70%;
+    max-height: 700px;
+  }
+
+  /* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: rgb(39, 7, 7);
+    font-size: 35px;
+    font-weight:lighter;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #604c4c;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
   }
