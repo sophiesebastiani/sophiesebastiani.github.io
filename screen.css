@@ -142,16 +142,6 @@ p {
 }
 
 
-.sidenav a {
-    font-weight: 400;
-    margin-left: 2%;
-    padding: 6px 8px 14px 16px;
-    text-decoration: underline;
-    font-size: 25px;
-    display: block;
-    text-align: left;
-  }
-
 .container {
     padding: 20px;
 
