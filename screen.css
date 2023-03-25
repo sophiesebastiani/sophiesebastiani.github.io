@@ -93,6 +93,12 @@ ul {
     color: rgb(181, 84, 77);
     /* color:rgb(161, 196, 109); */
   }
+
+  li a.split {
+    float: right;
+    /* background-color: #04AA6D;
+    color: white; */
+  }
   
   .active {
     /* background-color:rgba(235, 246, 255, 0.22); */
