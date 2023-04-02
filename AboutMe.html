@@ -15,15 +15,42 @@
             background-color: rgba(253, 247, 237, 0.857);
         }
     </style>
-    <ul style="text-align: left; margin-top: 0; padding-left: 29px;">
+    <ul style="text-align: left; margin-top: 10px; padding-left: 29px;">
         <li><a href="index.html">Home</a></li>
         <li><a class="active" href="AboutMe.html">About Me</a></li>
         <li><a href="Photo.html">Photo</a></li>
         <li><a href="Video.html">Video</a></li>
         <!-- <li><a href="SAIProject.html">SAI Intern Project</a></li>
         <li><a href="https://ss83351.wixsite.com/arth249final">Japanese Art & Arch. Final</a></li> -->
-        <li><a href="videoGames.html">Video Games</a></li>
-        <li><a href="Resume.html">Resume</a></li>
+        <div class="dropdown">
+            <li onclick="myFunction()" class="dropbtn" style="padding-left:15px; padding-right: 15px; padding-top: 1.5px; padding-bottom:1.5px">Design</li>
+                <div id="myDropdown" class="dropdown-content">
+                <a href="videoGames.html">Video Games</a>
+                <a href="Impressions.html">Impressions: Japanese Art & Archictecture</a>
+              </div>
+              <script>
+                /* When the user clicks on the button, 
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+                }
+                
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                  if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                      }
+                    }
+                  }
+                }
+                </script>
+            </div>
+        <li><a href="Resume.html">CV</a></li>
     </ul>
 <main>
     <div class="container-fluid">
@@ -33,7 +60,7 @@
 <br>
             <p style="font-size: 15px;"><em style="font-size:18px">Who is left behind as industry (and the political forces supporting it) only continue to accumulate wealth and power?</em><br>
 <br>
-In my video work and in my photography, collage is something I enjoy experimenting with. Creating context, a visual narrative, through the spatial or sequential organization of static and moving images is so fun; I enjoy crafting a scene or series of clips that are densely-packed with information or feature small details that force the viewer to really pay attention, really look at the work.<br>
+
 <br>
 I think playing with the digital medium (especially in post through digital software like photoshop) and with the camera itself, is something I prefer over the more manual process of analog film development (though I do enjoy that for the ritual of it). In my work, however, I want to create a very clear, sharply detailed image but providing a perspective that is entirely surreal. I want to get as close as possible to the lens of documentation because that is the language of online culture and manipulate the image at the same time. <br>
 <br>

@@ -19,13 +19,13 @@ body {
     font-size: 25px;
     font-weight: normal;
     /* border: 3px rgb(231, 220, 206); */
-    display: inline-block;
+    display: block;
     /* -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(156, 156, 156); */
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 1.5%;
-    margin-top: 2.5%;
+    padding-top: 5%;
+    /* margin-top: 0%; */
     padding-bottom: 1.5%;
     overflow: hidden;
     background-color: rgba(214, 200, 205, 0.823);
@@ -63,7 +63,6 @@ ul {
     list-style-type: none;
     overflow: hidden;
     /* background-color: rgba(56, 110, 144, 0.418); */
-    background-color: rgba(253, 247, 237);
     text-decoration: none;
     position: fixed;
     width: 100%;
@@ -73,8 +72,9 @@ ul {
   }
   
   li {
+    background-color: rgb(253, 247, 237);
     display: inline;
-    border-right: 1.5px solid rgb(181, 84, 77);
+    border: 1.5px solid rgb(181, 84, 77);
 
   }
 
@@ -83,7 +83,7 @@ ul {
     padding: 14px 16px;
     text-decoration: none;
     font-family:'Helvetica', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     font-weight:normal;
     text-align: right;
     /* padding: 10px; */
@@ -114,17 +114,17 @@ ul {
     font-size: 2rem;
 }
 .pic{
-    display: inline;
-    text-align: center;
-    max-width: 70%;
-    padding: 10px;
+    display: flex;
+    max-width: 100%;
+    margin: 10px;
     height: auto;
+    border: 1px solid rgb(31, 2, 2);
     /* margin-top: 1.5%;
     margin-left: 10%; */
     
 }
 .pic:hover{
-    border: 1px solid rgb(52, 4, 4);
+    transform: scale(1.5);
 }
 
 .cap{
@@ -171,7 +171,7 @@ p {
   .modal-content {
     margin: auto;
     display: block;
-    max-width: 70%;
+    max-width: 75%;
     max-height: 700px;
   }
 
@@ -193,9 +193,105 @@ p {
     cursor: pointer;
   }
   
+  .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
   /* 100% Image Width on Smaller Screens */
   @media only screen and (max-width: 700px){
     .modal-content {
       width: 100%;
     }
+    .pic {
+      max-width: 100%
+    }
+    .archive {
+      width: 100%
+    }
   }
+
+  div.gallery {
+    /* margin: 5px; */
+    padding: 10px;
+    /* padding-bottom: 25px; */
+    width: 200px;
+
+  }
+
+.archive {
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    align-content: space-around;
+}
+
+  Dropdown Button
+.dropbtn {
+  overflow: hidden;
+  display: inline;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  display: inline;
+  color: rgb(205, 182, 182);
+  /* padding: 16px; */
+  text-decoration: none;
+  font-family:'Helvetica', sans-serif;
+  font-size: 15px;
+  font-weight:normal;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position:relative;
+  /* background-color: rgba(205, 182, 182, 0.489); */
+  min-width: 160px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1; */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(181, 84, 77);
+  background-color: rgb(205, 182, 182);
+  font-family:'Helvetica', sans-serif;
+  /* border: 1px solid rgb(253, 247, 237); */
+  text-decoration: none;
+  display: fixed;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  color: rgba(253, 247, 237, 0.857);
+}
+
+/* Show the dropdown menu on hover
+.dropdown:hover .dropdown-content {
+  display: inline-block;
+} */
+
+.show {
+  display:inline-block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  color:rgb(181, 84, 77);
+}

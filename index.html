@@ -19,17 +19,44 @@
         background-size: cover;
         }
     </style>
-        <ul>
+        <ul style="margin-top:6px">
             <li><a class="active" href="index.html">Home</a></li>
             <li><a href="AboutMe.html">About Me</a></li>
             <li><a href="Photo.html">Photo</a></li>
             <li><a href="Video.html">Video</a></li>
             <!-- <li><a href="SAIProject.html">SAI Intern Project</a></li>
             <li><a href="https://ss83351.wixsite.com/arth249final">Japanese Art & Arch. Final</a></li> -->
-            <li><a href="videoGames.html">Video Games</a></li>
-            <li><a href="Resume.html">Resume</a></li>
+            <div class="dropdown">
+            <li onclick="myFunction()" class="dropbtn" style="padding-left:15px; padding-right: 15px; padding-top: 1.5px; padding-bottom:1.5px">Design</li>
+                <div id="myDropdown" class="dropdown-content">
+                <a href="videoGames.html">Video Games</a>
+                <a href="Impressions.html">Impressions: Japanese Art & Archictecture</a>
+              </div>
+              <script>
+                /* When the user clicks on the button, 
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+                }
+                
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                  if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                      }
+                    }
+                  }
+                }
+                </script>
+            </div>
+            <li><a href="Resume.html">CV</a></li>
         </ul>
-        <br>
+
         <h1 class="head"> Sophie Sebastiani <small style="font-size: medium;">is a senior at Wellesley College majoring in Economics and Media Arts & Sciences. She works primarily with photo, video, and other digital media to explore technological and economic development while challenging the model of free market capitalism and the exponential growth it promises.</small></h1>
         <!-- </div>  -->  
 <main>
@@ -80,7 +107,7 @@
                     <div class="col-sm" style="background-color:rgba(214, 200, 205, 0.5);; padding: 25px; border-right: 1px solid rgb(52, 4, 4); border-left: 1px solid rgb(52, 4, 4); border-bottom: 1px solid rgb(52, 4, 4);">
                         <h1 class="headline"><a href="videoGames.html">Orwellian Industries: The Simulator</a><h1>
                             <p><mark style="background-color: rgba(253, 247, 237, 0.857)">Unity 2D Game; <em>Slack of at work with Orwellian Industries: The Simulator!</em></mark></p>
-                             <img class="img-responsive" style="border:1px solid rgb(52, 4, 4); margin-left: 3%;" src="gifOrwellianSmaller.gif">
+                             <img style="border:1px solid rgb(52, 4, 4); margin-left: 3%;" src="gifOrwellianSmaller.gif">
                         </img>
                            </div>
                 <div class="row" style="padding-top:30px">
