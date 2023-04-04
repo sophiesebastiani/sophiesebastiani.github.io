@@ -38,7 +38,7 @@ body {
     text-align: left;
     /* padding:5px; */
     /* margin-right: 75%; */
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     display: block;
     font-family:'Helvetica', sans-serif;
@@ -294,4 +294,35 @@ p {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
   color:rgb(181, 84, 77);
+}
+
+.outer {
+  position: relative;
+  bottom: 0;
+  margin-top: 3%;
+  /* height: 50px; */
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+  color: rgb(253, 247, 237);
+  font-family:'Helvetica', sans-serif;
+  text-align: right;
+  font-size: 15px;
+  padding: 10px;
+  font-weight: normal;
+  /* border: 3px rgb(231, 220, 206); */
+  display: block;
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(156, 156, 156); */
+  /* padding-left: 10%;
+  padding-right: 10%; */
+  background-color: rgba(214, 200, 205, 0.73);
+  /* margin-top: 0%; */
+  padding-right: 5%;
+  padding-bottom: 1%; 
+  /* border: 1px solid rgb(255, 235, 235); */
 }
