@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
     <link rel="stylesheet" href="screen.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <meta name=author content="Sophie Sebastiani">
     <title>Sophie Sebastiani</title>
@@ -19,45 +20,65 @@
         background-size: cover;
         }
     </style>
-        <ul style="margin-top:6px">
+<!-- <button class="accordion">lala</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script> -->
+        <h1 class="head"> Sophie Sebastiani <small style="font-size: medium;">is a senior at Wellesley College majoring in Economics and Media Arts & Sciences. She works primarily with photo, video, and other digital media to explore technological and economic development while challenging the model of free market capitalism and the exponential growth it promises. </small>
+          </h1>
+          <div style="margin-left: 1.5%; margin-top: 1.5%;">
             <li><a class="active" href="index.html">Home 🏡</a></li>
-            <li><a href="AboutMe.html">About Me</a></li>
-            <li><a href="Photo.html">Photo</a></li>
-            <li><a href="Video.html">Video</a></li>
-            <!-- <li><a href="SAIProject.html">SAI Intern Project</a></li>
-            <li><a href="https://ss83351.wixsite.com/arth249final">Japanese Art & Arch. Final</a></li> -->
-            <div class="dropdown">
-            <li onclick="myFunction()" class="dropbtn" style="padding-left:15px; padding-right: 15px; padding-top: 1.5px; padding-bottom:1.5px">Design</li>
-                <div id="myDropdown" class="dropdown-content">
-                <a href="videoGames.html">Video Games</a>
-                <a href="Impressions.html">Impressions: Japanese Art & Archictecture</a>
-              </div>
-              <script>
-                /* When the user clicks on the button, 
-                toggle between hiding and showing the dropdown content */
-                function myFunction() {
-                  document.getElementById("myDropdown").classList.toggle("show");
-                }
-                
-                // Close the dropdown if the user clicks outside of it
-                window.onclick = function(event) {
-                  if (!event.target.matches('.dropbtn')) {
-                    var dropdowns = document.getElementsByClassName("dropdown-content");
-                    var i;
-                    for (i = 0; i < dropdowns.length; i++) {
-                      var openDropdown = dropdowns[i];
-                      if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
+              <li><a href="AboutMe.html">About Me</a></li>
+              <div class="dropdown">
+                <li onclick="myFunction()" class="dropbtn" style="padding-left:15px; padding-right: 15px; padding-top: 1px; padding-bottom:1px; font-size: 15px;">Design</li>
+                    <div id="myDropdown" class="dropdown-content">
+                    <a href="videoGames.html">Video Games</a>
+                    <a href="Impressions.html">Impressions: Japanese Art & Archictecture</a>
+                  </div>
+                  <script>
+                    /* When the user clicks on the button, 
+                    toggle between hiding and showing the dropdown content */
+                    function myFunction() {
+                      document.getElementById("myDropdown").classList.toggle("show");
+                    }
+                    
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function(event) {
+                      if (!event.target.matches('.dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                          var openDropdown = dropdowns[i];
+                          if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                          }
+                        }
                       }
                     }
-                  }
-                }
-                </script>
-            </div>
-            <li><a href="Resume.html">CV</a></li>
-        </ul>
-
-        <h1 class="head"> Sophie Sebastiani <small style="font-size: medium;">is a senior at Wellesley College majoring in Economics and Media Arts & Sciences. She works primarily with photo, video, and other digital media to explore technological and economic development while challenging the model of free market capitalism and the exponential growth it promises.</small></h1>
+                    </script>
+                </div>
+              <li><a href="Photo.html">Photo</a></li>
+              <li><a href="Video.html">Video</a></li>
+              <!-- <li><a href="SAIProject.html">SAI Intern Project</a></li>
+              <li><a href="https://ss83351.wixsite.com/arth249final">Japanese Art & Arch. Final</a></li> -->
+              <li><a href="Resume.html">CV</a></li>
+        </div>
         <!-- </div>  -->  
 <main>
     <body>
@@ -67,7 +88,7 @@
                     <div class="col-sm" style="padding: 40px; padding-top: 20px; background-color:rgba(240, 255, 243, 0.522); border:1px solid rgb(52, 4, 4)">
                         <h1 class="headline"><a href="https://www.prcboston.org/2023-student-show/#">PRC Boston 2023 Student Show</a><h1>
                             <p><mark style="background-color: rgba(253, 247, 237, 0.857)"></a>My photograph, <em>500 Feet Away</em> (2023), is featured in the Photographic Resource Center 2023 Student Show on view April 3 - 21. Click the image below to view a larger version!</mark></p>
-                            <img width="480" height="300" class="img-responsive" id="prcImage" style="border:1px solid rgb(52, 4, 4); margin-left: 3%; border: 1px solid rgb(52, 4, 4)" src="prcImage.png" alt="<p>500 Feet Away (2023), A construction worker stares down county road 48 toward the fallen roadkill, Bambi; the Walmart Supercenter to his back, the newly constructed Aldi his north eastern star.</p>">
+                            <img max-width="100%" width="450" height="300" class="img-responsive" id="prcImage" style="border:1px solid rgb(52, 4, 4); margin-left: 3%; border: 1px solid rgb(52, 4, 4)" src="prcImage.png" alt="<p>500 Feet Away (2023), A construction worker stares down county road 48 toward the fallen roadkill, Bambi; the Walmart Supercenter to his back, the newly constructed Aldi his north eastern star.</p>">
                             <section>
                                 <div id="myModal" class="modal">
                                     <span class="close">&times;</span>
@@ -101,13 +122,13 @@
                     <div class="col-sm" style="background-color:rgba(253, 247, 237, 0.5); padding: 25px; border-right: 1px solid rgb(52, 4, 4); border-top: 1px solid rgb(52, 4, 4); border-bottom:1px solid rgb(52, 4, 4)">
                             <h1 class="headline"><a href="Mapshots.html">Mapshots</a></h1>
                             <p><mark style="background-color: rgba(253, 247, 237, 0.857)">Mobile prototype made in Figma focused on creating collective memory through visual media and text-based posts for past, present, and future Wellesley College students.</mark></p>
-                                 <img class="img-responsive" style="border:1px solid rgb(52, 4, 4); margin-left: 3%; border: 1px solid rgb(52, 4, 4)" src="wireframeSmaller.gif">
+                                 <img max-width="100%" width="480" height="300" style="border:1px solid rgb(52, 4, 4); margin-left: 3%; border: 1px solid rgb(52, 4, 4)" src="wireframeSmaller.gif">
                             </img>
                     </div>
                     <div class="col-sm" style="background-color:rgba(214, 200, 205, 0.5);; padding: 25px; border-right: 1px solid rgb(52, 4, 4); border-left: 1px solid rgb(52, 4, 4); border-bottom: 1px solid rgb(52, 4, 4);">
                         <h1 class="headline"><a href="videoGames.html">Orwellian Industries: The Simulator</a><h1>
                             <p><mark style="background-color: rgba(253, 247, 237, 0.857)">Unity 2D Game; <em>Slack off at work with Orwellian Industries: The Simulator!</em></mark></p>
-                             <img style="border:1px solid rgb(52, 4, 4); margin-left: 3%;" src="gifOrwellianSmaller.gif">
+                             <img max-width="100%" width="480" height="300" style="border:1px solid rgb(52, 4, 4); margin-left: 3%;" src="gifOrwellianSmaller.gif">
                         </img>
                            </div>
                 <div class="row" style="padding-top:30px">
@@ -119,6 +140,6 @@
 
 </main>
 <div class="outer">
-  <div class="footer">🌀🪱💫 site coded with love by Sophie Sebastiani in 2023 💫🪱🌀</div></div>
+  <div class="footer">🌀🪱💫 site coded by Sophie Sebastiani in 2023 💫🪱🌀</div></div>
 </body>
 </html>
