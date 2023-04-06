@@ -11,9 +11,9 @@
 <body>
     <ul style="text-align: left; margin-top: 10px; padding-left: 29px;">
         <li><a href="index.html">Home 🏡</a></li>
-        <li><a href="AboutMe.html">About Me</a></li>
+        <!-- <li><a href="AboutMe.html">About Me</a></li> -->
         <div class="dropdown">
-          <li onclick="myFunction()" class="dropbtn" style="padding-left:15px; padding-right: 15px; padding-top: 1.5px; padding-bottom:1.5px">Design</li>
+          <li onclick="myFunction()" class="dropbtn" style="padding-left:15px; padding-right: 15px;">Design</li>
               <div id="myDropdown" class="dropdown-content">
               <a href="videoGames.html">Video Games</a>
               <a href="Impressions.html">Impressions: Japanese Art & Archictecture</a>
@@ -44,34 +44,6 @@
         <li><a href="Video.html">Video</a></li>
         <!-- <li><a href="SAIProject.html">SAI Intern Project</a></li>
         <li><a href="https://ss83351.wixsite.com/arth249final">Japanese Art & Arch. Final</a></li> -->
-        <div class="dropdown">
-            <li onclick="myFunction()" class="dropbtn" style="padding-left:15px; padding-right: 15px; padding-top: 1.5px; padding-bottom:1.5px">Design</li>
-                <div id="myDropdown" class="dropdown-content">
-                <a href="videoGames.html">Video Games</a>
-                <a href="Impressions.html">Impressions: Japanese Art & Archictecture</a>
-              </div>
-              <script>
-                /* When the user clicks on the button, 
-                toggle between hiding and showing the dropdown content */
-                function myFunction() {
-                  document.getElementById("myDropdown").classList.toggle("show");
-                }
-                
-                // Close the dropdown if the user clicks outside of it
-                window.onclick = function(event) {
-                  if (!event.target.matches('.dropbtn')) {
-                    var dropdowns = document.getElementsByClassName("dropdown-content");
-                    var i;
-                    for (i = 0; i < dropdowns.length; i++) {
-                      var openDropdown = dropdowns[i];
-                      if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                      }
-                    }
-                  }
-                }
-                </script>
-            </div>
         <li><a href="Resume.html">CV</a></li>
     </ul>
 <main>

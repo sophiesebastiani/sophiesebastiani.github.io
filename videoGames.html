@@ -11,9 +11,9 @@
 <body>
         <ul style="text-align: left; margin-top: 10px; padding-left: 29px;">
             <li><a href="index.html">Home 🏡</a></li>
-            <li><a href="AboutMe.html">About Me</a></li>
+            <!-- <li><a href="AboutMe.html">About Me</a></li> -->
             <div class="dropdown">
-                <li onload="myFunction()" class="dropbtn" style="padding-left:15px; padding-right: 15px; padding-top: 1.5px; padding-bottom:1.5px">Design</li>
+                <li onload="myFunction()" class="dropbtn" style="padding-left:15px; padding-right: 15px;">Design</li>
                     <div id="myDropdown" class="dropdown-content" style="display:inline-block">
                     <a style="color:rgb(253, 247, 237)" href="videoGames.html">Video Games</a>
                     <a href="Impressions.html">Impressions: Japanese Art & Archictecture</a>
@@ -27,20 +27,20 @@
         </ul>
     <main>
         <section style="padding-top: 50px; padding:50px;">
+            <br>
+            <video id="orwell" style="border: 1px solid black; max-width:100%; width:800px; height=auto;" controls>
+                <source src="recordOrwellianIndustries.mp4" allow="accelerometer; fullscreen" title="Orwellian Industries: The Simulator">
+                <script>var sound = document.getElementsById("orwell")[0].volume = -0.5;</script> 
+                <!-- doesn't work need function???? -->
+            </video>
             <!-- <h1 class="headline">Project Terra <small style="font-size:medium; color: rgba(181, 84, 77, 0.909)">Spring 2023</small></h1>
              -->
-
-            <h1 class="headline">Orwellian Industries: The Simulator <small style="font-size:medium; color: rgba(181, 84, 77, 0.909)">Spring 2022</small></h1>
+            <h1 class="headline" style="background-color:aliceblue">Orwellian Industries: The Simulator <small style="font-size:medium; color: rgba(181, 84, 77, 0.909)">Spring 2022</small></h1>
             <p> <span style="font-size:17px; color: rgb(52, 4, 4);">This is the day in the life of Orwellian Industries Employee #293915. You're a chill dude who just wants to play a chill game on your five-minute daily break but the a.i. manager keeps getting on your dang nerves!>:( Ignore the system messages as fast as you can so you can get back to avoiding virtual falling office supplies and slurping down delicious Monsters (mmm)! </span>
                 <br><br>
                 <em><mark style="color:rgb(81, 68, 68); background-color: rgb(253, 247, 237)">Made in Unity 2D with Jelen Alysia.</mark></em> I thought it would be interesting to create a meta-layer first between the player and the simulated player and then again with the simulated reality of the Employee character (drawing inspiration from the Stanley Parable game) and the reality of a user *likely* playing this on a computer similar to the laptop in the game. I created this background layer, and all of the ui elements (such as the Orwellian Industries title screen, system messages, game instructions, etc.) in Photoshop, as well as the 2D character that moves back and forth across the screen in Office Simulator. 
                  <br>
                 <br> <em><mark style="color:rgb(81, 68, 68); background-color: rgb(253, 247, 237)"><a href="http://cs.wellesley.edu/~ss8/Final/">Play the game here!</a></mark></em> For best results play on a 1920 x 1080 display. For mac users, parts of the ui aren't scaled correctly sorry!:(</p>
-                <video width="960" height="540" id="orwell" style="border: 1px solid black; margin-left: 1.5%" controls>
-                    <source src="recordOrwellianIndustries.mp4" allow="accelerometer; fullscreen" title="Orwellian Industries: The Simulator">
-                    <script>var sound = document.getElementsById("orwell")[0].volume = -0.5;</script> 
-                    <!-- doesn't work need function???? -->
-                </video>
 </main>   
 <div class="outer">
     <div class="footer">🌀🪱💫 site coded by Sophie Sebastiani in 2023 💫🪱🌀</div></div>
