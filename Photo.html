@@ -59,8 +59,37 @@
             <p>My photo collage <em>(pictured below)</em> was selected by a jury of Wellesley College Art Department Faculty as one of three Wellesley students to have their work displayed in the Panopticon Gallery in Boston, hosted by the Photographic Resource Center for their annual <a href=https://www.prcboston.org/2023-student-show/#>2023 Student Show.</a>
                 Check out the other photos I shot during winter break on my Canon 30D and iphone in the gallery below.
                 </p>
-            <img id="prcImage" style="max-width: 100%; width: 800px; height: auto; 1px solid rgb(52, 4, 4); margin-left: 1%; border: 1px solid rgb(52, 4, 4);" src="prcImage.png" alt="500 Feet Away (2023), A construction worker stares down county road 48 toward the fallen roadkill, Bambi; the Walmart Supercenter to his back, the newly constructed Aldi his north eastern star.">
-            </img><br>
+            <img id="prcImage" style="max-width: 100%; width: 800px; height: auto; margin-left: auto; margin-right: auto; border: 1px solid rgb(52, 4, 4);" src="prcImage.png" alt="<p>500 Feet Away (2023), A construction worker stares down county road 48 toward the fallen roadkill, Bambi; the Walmart Supercenter to his back, the newly constructed Aldi his north eastern star.</p>">
+                    <section>
+                        <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+                        <script>
+                            // Get the modal
+                            var modal = document.getElementById("myModal");
+                            
+                            // Get the image and insert it inside the modal - use its "alt" text as a caption
+                            var img = document.getElementById("prcImage");
+                            var modalImg = document.getElementById("img01");
+                            var captionText = document.getElementById("caption");
+                            img.onclick = function(){
+                            modal.style.display = "block";
+                            modalImg.src = this.src;
+                            captionText.innerHTML = this.alt;
+                            }
+                            
+                            // Get the <span> element that closes the modal
+                            var span = document.getElementsByClassName("close")[0];
+                            
+                            // When the user clicks on <span> (x), close the modal
+                            span.onclick = function() { 
+                            modal.style.display = "none";
+                            }
+                            </script>
+                        </section>    
+        </img><br>
             <div class="archive">
                 <div class="gallery">
                     <img class="pic" id="crane" src="IMG_0875.png" alt="Image" >
@@ -352,8 +381,8 @@
                     </div>
         </div>
             <br><br>
-            <h1 class="headline" style="background-color:rgb(247, 242, 225)">"god save the animals" <small style="font-size:medium; color: rgba(181, 84, 77, 0.909)">Fall 2022</small></h1>
-            <p> <span style="font-size:17px; color: rgb(52, 4, 4);">Somehow, you knew that everything was a bit odd, and a bit unreal, and often fake, but because there was no other picture of the world, and you were so within this system you accepted it as normal and just went on.”</span><span style="font-size:15px; margin-left: 5px;">  - <a href="https://www.youtube.com/watch?v=MIHC4NNScEI">HyperNormalisation explained by Adam Curtis</a></span></p>
+            <h1 class="headline" style="background-color:rgba(220, 241, 84, 0.793)">"god save the animals" <small style="font-size:medium; color: rgba(181, 84, 77, 0.909)">Fall 2022</small></h1>
+            <p> <span style="font-size:17px; color: rgb(52, 4, 4);">"Somehow, you knew that everything was a bit odd, and a bit unreal, and often fake, but because there was no other picture of the world, and you were so within this system you accepted it as normal and just went on.”</span><span style="font-size:15px; margin-left: 5px;">  - <a href="https://www.youtube.com/watch?v=MIHC4NNScEI">HyperNormalisation explained by Adam Curtis</a></span></p>
             <p><mark style="color:rgb(81, 68, 68); background-color: rgb(253, 247, 237)">Final project for my Photo II class.</mark>
                 I have recently become interested in the concept of hyperreality; how technology is narrowing the gap between reality and simulation in a way that results in a very surreal and generally unstable perception of the world around us. 
                 At the same time, the structural inequalities in our society that maintain the social hierarchy of global capitalism have fractured the realities of many Americans by further widening the gap between the very wealthy and the poor, shrinking the middle class and decimating the <em>american dream</em>. 
@@ -781,10 +810,10 @@
                 </div>
 </div>
 <br>
-<h1 class="headline" style="background-color:rgb(231, 242, 230)">the kitchen sink ˖｡⁺˚<small style="font-size:medium; color: rgba(181, 84, 77, 0.909)">analog & digital from 2018 - 2023</small></h1>
+<h1 class="headline" style="background-color:rgba(224, 142, 169, 0.688)">the kitchen sink ˖｡⁺˚<small style="font-size:medium; color: rgba(181, 84, 77, 0.909)">analog & digital from 2018 - 2023</small></h1>
 <div class="archive">
-    <div class="gallery" style="width:500px; padding: 5px; max-width: 100%;">
-        <img id="econ2" src="economy2.JPG" alt="Image" style="width:500px; border: 5px solid rgba(136, 171, 213, 0.565)">
+    <div class="gallery" style="width:500px; padding: 5px; padding-top: 0%; max-width: 100%;">
+        <img id="econ2" src="economy2.JPG" alt="Image" style="width:500px; border: 2px solid rgba(136, 171, 213, 0.565)">
         <section>
                     <div id="myModal" class="modal">
                         <span class="close">&times;</span>
@@ -847,8 +876,8 @@
                                 </script>
                 </section>
                     </div>
-                <div class="gallery" style="width:200px; padding: 5%; max-width: 100%;">
-                        <img id="swirl" src="swirl.png" alt="Image" style="width:500px; border: 5px solid rgb(247, 221, 225)">
+                <div class="gallery" style="width:200px; padding: 2.5%; max-width: 100%;">
+                        <img id="swirl" src="swirl.png" alt="Image" style="width:500px; border: 2px solid rgb(84, 137, 186)">
                         <section>
                                     <div id="myModal" class="modal">
                                         <span class="close">&times;</span>
@@ -879,6 +908,8 @@
                                         </script>
                         </section>
                             </div>
+</div>
+<div class="archive">
 <div class="gallery">
     <img class="pic" id="E2" src="Elicia2.jpg" alt="Image" >
                         <section>
