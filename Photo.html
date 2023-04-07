@@ -55,7 +55,7 @@
     </ul>
 <main>
     <section style="padding: 50px">
-            <h1 class="headline" style="background-color:rgb(197, 208, 217)">"500 Feet Away" <small style="font-size:medium; color: rgba(181, 84, 77, 0.909)">Winter 2022 / Spring 2023</small></h1>
+            <h1 class="headline" style="background-color:rgb(197, 208, 217)">"500 Feet Away" <small style="font-size:medium; color: rgba(181, 84, 77, 0.909)">Winter 2022 - Spring 2023</small></h1>
             <p>My photo collage <em>(pictured below)</em> was selected by a jury of Wellesley College Art Department Faculty as one of three Wellesley students to have their work displayed in the Panopticon Gallery in Boston, hosted by the Photographic Resource Center for their annual <a href=https://www.prcboston.org/2023-student-show/#>2023 Student Show.</a>
                 Check out the other photos I shot during winter break on my Canon 30D and iphone in the gallery below.
                 </p>
@@ -526,6 +526,38 @@
                 </script>
             </section>
                 </div>
+    <div class="gallery" style="width:400px">
+        <img class="pic" id="deercrime" src="deercrime.jpg" alt="Image">
+                <section>
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                    <script>
+                        // Get the modal
+                        var modal = document.getElementById("myModal");
+                        
+                        // Get the image and insert it inside the modal - use its "alt" text as a caption
+                        var img = document.getElementById("deercrime");
+                        var modalImg = document.getElementById("img01");
+                        // var captionText = document.getElementById("caption");
+                        img.onclick = function(){
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                        captionText.innerHTML = this.alt;
+                        }
+                        
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close")[0];
+                        
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function() { 
+                        modal.style.display = "none";
+                        }
+                        </script>
+                    </section></img>
+    </div>
     <div class="gallery">
                 <img class="pic" id="briver" src="briver.jpg" alt="Image" >
                 <section>
@@ -620,38 +652,8 @@
                         </script>
                         </section>
                             </div>
-    <div class="gallery">
-        <img class="pic" id="deercrime" src="deercrime.jpg" alt="Image">
-                <section>
-                    <div id="myModal" class="modal">
-                        <span class="close">&times;</span>
-                        <img class="modal-content" id="img01">
-                        <div id="caption"></div>
-                    </div>
-                    <script>
-                        // Get the modal
-                        var modal = document.getElementById("myModal");
-                        
-                        // Get the image and insert it inside the modal - use its "alt" text as a caption
-                        var img = document.getElementById("deercrime");
-                        var modalImg = document.getElementById("img01");
-                        // var captionText = document.getElementById("caption");
-                        img.onclick = function(){
-                        modal.style.display = "block";
-                        modalImg.src = this.src;
-                        captionText.innerHTML = this.alt;
-                        }
-                        
-                        // Get the <span> element that closes the modal
-                        var span = document.getElementsByClassName("close")[0];
-                        
-                        // When the user clicks on <span> (x), close the modal
-                        span.onclick = function() { 
-                        modal.style.display = "none";
-                        }
-                        </script>
-                    </section>
-    <img class="pic" id="lighting" src="lighting.jpg" alt="Image">
+    <div class="gallery" style="width:400px">
+        <img class="pic" id="lighting" src="lighting.jpg" alt="Image">
                 <section>
                     <div id="myModal" class="modal">
                         <span class="close">&times;</span>
@@ -810,7 +812,7 @@
                 </div>
 </div>
 <br>
-<h1 class="headline" style="background-color:rgba(224, 142, 169, 0.688)">the kitchen sink ˖｡⁺˚<small style="font-size:medium; color: rgba(181, 84, 77, 0.909)">analog & digital from 2018 - 2023</small></h1>
+<h1 class="headline" style="background-color:rgba(239, 206, 217, 0.688)">the kitchen sink ˖｡⁺˚<small style="font-size:medium; color: rgba(181, 84, 77, 0.909)">analog & digital from 2018 - 2023</small></h1>
 <div class="archive">
     <div class="gallery" style="width:500px; padding: 5px; padding-top: 0%; max-width: 100%;">
         <img id="econ2" src="economy2.JPG" alt="Image" style="width:500px; border: 2px solid rgba(136, 171, 213, 0.565)">
