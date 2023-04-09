@@ -13,11 +13,32 @@
             <li><a href="index.html">Home 🏡</a></li>
             <!-- <li><a href="AboutMe.html">About Me</a></li> -->
             <div class="dropdown">
-                <li onload="myFunction()" class="dropbtn" style="padding-left:15px; padding-right: 15px;">Design</li>
-                    <div id="myDropdown" class="dropdown-content" style="display:inline-block">
+                <li onclick="myFunction()" class="dropbtn" style="padding-left:15px; padding-right: 15px; color:rgb(52, 4, 4)">Design</li>
+                    <div id="myDropdown" class="dropdown-content">
                     <a style="color:rgb(253, 247, 237)" href="videoGames.html">Video Games</a>
                     <a href="Impressions.html">Impressions: Japanese Art & Archictecture</a>
                   </div>
+                  <script>
+                    /* When the user clicks on the button, 
+                    toggle between hiding and showing the dropdown content */
+                    function myFunction() {
+                      document.getElementById("myDropdown").classList.toggle("show");
+                    }
+                    
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function(event) {
+                      if (!event.target.matches('.dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                          var openDropdown = dropdowns[i];
+                          if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                          }
+                        }
+                      }
+                    }
+                    </script>
                 </div>
             <li><a href="Photo.html">Photo</a></li>
             <li><a href="Video.html">Video</a></li>
@@ -27,7 +48,7 @@
         </ul>
     <main>
         <section style="padding-top: 50px; padding:50px;">
-            <!-- <h1 class="headline">Project Terra <small style="font-size:medium; color: rgba(181, 84, 77, 0.909)">Spring 2023</small></h1>
+            <h1 class="headline">Project Terra <small style="font-size:medium; color: rgba(181, 84, 77, 0.909)">Spring 2023</small></h1>
             <div class="archive">
                 <div class="gallery" style="width:400px;padding:15px">
                     <img class="pic" id="3d1" src="3dGame1.png" alt="Image" >
@@ -157,8 +178,9 @@
                                     </script>
                     </section>
                         </div>
-            </div> -->
-            <h1 class="headline" style="background-color:rgba(255, 218, 34, 0.61)">Orwellian Industries: The Simulator <small style="font-size:medium; color: rgba(181, 84, 77, 0.909)">Spring 2022</small></h1>
+            </div>
+            <h1 class="headline" style="background-color:rgba(70, 134, 27, 0.61)">Orwellian Industries: The Simulator <small style="font-size:medium; color: rgba(181, 84, 77, 0.909)">Spring 2022</small></h1>
+            <p>WARNING: I'm working on fixing this soon but the sound is exceedingly loud on this so turn down the volume your individual computer before you hit play please!</p>
             <video id="orwell" style="border: 1px solid black; max-width:100%; margin-left: 1.5%; width:800px; height:auto;" controls>
                 <source src="recordOrwellianIndustries.mp4" allow="accelerometer; fullscreen" title="Orwellian Industries: The Simulator">
                 <script>var sound = document.getElementsById("orwell")[0].volume = -0.5;</script> 

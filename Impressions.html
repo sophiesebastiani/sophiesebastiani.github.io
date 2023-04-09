@@ -14,11 +14,32 @@
         <li><a href="index.html">Home 🏡</a></li>
         <!-- <li><a href="AboutMe.html">About Me</a></li> -->
         <div class="dropdown">
-            <li onload="myFunction()" class="dropbtn" style="padding-left:15px; padding-right: 15px;">Design</li>
-                <div id="myDropdown" class="dropdown-content" style="display:inline-block">
+            <li onclick="myFunction()" class="dropbtn" style="padding-left:15px; padding-right: 15px;">Design</li>
+                <div id="myDropdown" class="dropdown-content">
                 <a href="videoGames.html">Video Games</a>
                 <a style="color: rgb(253, 247, 237)" href="Impressions.html">Impressions: Japanese Art & Archictecture</a>
               </div>
+              <script>
+                /* When the user clicks on the button, 
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+                }
+                
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                  if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                      }
+                    }
+                  }
+                }
+                </script>
             </div>
         <li><a href="Photo.html">Photo</a></li>
         <li><a href="Video.html">Video</a></li>
@@ -31,8 +52,8 @@
         <h1 class="headline" style="background-color:rgba(67, 121, 208, 0.54)">Impressions: the impact of nature and architecture on the individual <small style="font-size:medium; color: rgba(181, 84, 77, 0.909)">Spring 2020</small></h1>
         <p><em><mark style="color:rgb(81, 68, 68); background-color: rgb(253, 247, 237)">Final project + <a href="https://docs.google.com/document/d/1jR8M7EEdMTdUoHF186nCVsfgAWEoEjnQ/edit?usp=sharing&ouid=103206116209846339059&rtpof=true&sd=true">Paper (Read Here)</a> for my Japanese Art & Archictecture class.</em></mark>
             Capturing Wellesley College's natural and constructed landscape through photography and looping videos, focusing specificially on the interaction between the two and the human presence within them. 
-            I was inspired by Helmut Brinker’s seven principles of equal value and Watanabe Yoshio’s 1953 collection of photographs capturing the shrines at Ise.
-            For the content of this project, I focused on the modernist architecture of Jewett and Pendleton West and the various gardens and water sources on Wellesley’s campus. Simplicity (<em>kanso</em>) and asymmetry (<em>fukinsei</em>)--arguably the most easily discerned of Brinker’s principles- can be found in many of my images of Wellesley buildings and in one particular photo of hands reaching toward the sky, pictured below. The more lofty principles, including unworldliness (<em>datsuzoku</em>), spiritual depth (<em>yūgen</em>), and inner serenity (<em>seijaku</em>), are also present in the flowing movement of my short videos and within my photographs, especially when viewed in comparison with one another.
+            For the content of this project, I was inspired by Helmut Brinker’s seven principles of equal value and Watanabe Yoshio’s 1953 collection of photographs capturing the shrines at Ise.
+            My photos capture the modernist architecture of Jewett and Pendleton West and the various gardens and water sources on Wellesley’s campus. Simplicity (<em>kanso</em>) and asymmetry (<em>fukinsei</em>)--arguably the most easily discerned of Brinker’s principles- can be found in many of my images of Wellesley buildings and in one particular photo of hands reaching toward the sky, pictured below. The more lofty principles, including unworldliness (<em>datsuzoku</em>), spiritual depth (<em>yūgen</em>), and inner serenity (<em>seijaku</em>), are also present in the flowing movement of my short videos and within my photographs, especially when viewed in comparison with one another.
 
             </p>
         <iframe src="https://ss83351.wixsite.com/arth249final" style="border: 1px solid rgb(52, 4, 4); margin-left: 1.5%"
