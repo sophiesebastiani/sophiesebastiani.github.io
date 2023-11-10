@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="screen.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name=author content="Sophie Sebastiani">
     <title>Sophie Sebastiani</title>
     <link rel="icon" type="image/x-icon" href="Screen Shot 2022-11-26 at 1.11.25 PM.png">
@@ -19,10 +20,10 @@
           background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover; */
-        background-color: azure;
+        background-color: rgba(249, 248, 246, 0.857);
         }
     </style>
-<button class="accordion"><span style="font-size:23px; font-family:'Geneva', sans-serif;">About Sophie  <mark style="background-color:rgba(253, 247, 237, 0.675); color:rgb(199, 47, 47); font-size: 22px;" id="arrow"> → <span style="font-size:15px">⁺ ˖ ｡ ⁺˚ </span> </mark> </span>
+<button class="accordion"><span style="font-size:25px; font-family:'Geneva', sans-serif;">About Sophie <span style="font-size:20px; font-weight:bold;">↴ </span> </span>
 </button>
 <div class="panel">
   <div class="container-fluid">
@@ -44,7 +45,7 @@
     <p style="text-align:left; margin-left: 5%">🦋 Email: <a href="mailto: ss8@wellesley.edu">ss8@wellesley.edu</a></p>
     <p style="text-align:left; margin-left: 5%">🪲 <a href=https://www.linkedin.com/in/sophiesebastiani333>Linkedin</a> </p>
     <p style="text-align:left; margin-left: 5%">🪰 <a href=https://vimeo.com/user194713210>Vimeo</a> 
-    <p style="text-align:left; margin-left: 5%">🐞 <a href=https://www.instagram.com/sophiesebastiani>Instagram</a>
+    <p style="text-align:left; margin-left: 5%; background-color:rgba(214, 215, 135, 0.576)">🐞 <a href=SebastianiSophieResume.pdf>Resume</a>
     </p>   
   </div>
 </div>
@@ -72,113 +73,96 @@
   }
   </script>
 <div style="margin-left: 1.5%; margin-top: 1.5%;">
-            <li><a class="active" href="index.html">Home 🏡</a></li>
-              <!-- <li><a href="AboutMe.html">About Me</a></li> -->
-              <div class="dropdown">
-                <li onclick="myFunction()" class="dropbtn" style="padding-left:15px; padding-right: 15px;">Design</li>
-                    <div id="myDropdown" class="dropdown-content">
-                    <a href="videoGames.html">Video Games</a>
-                    <a href="Impressions.html">Impressions</a>
-                    <a href="Mapshots.html">Mapshots</a>
-                  </div>
-                  <script>
-                    /* When the user clicks on the button, 
-                    toggle between hiding and showing the dropdown content */
-                    function myFunction() {
-                      document.getElementById("myDropdown").classList.toggle("show");
-                    }
-                    
-                    // Close the dropdown if the user clicks outside of it
-                    window.onclick = function(event) {
-                      if (!event.target.matches('.dropbtn')) {
-                        var dropdowns = document.getElementsByClassName("dropdown-content");
-                        var i;
-                        for (i = 0; i < dropdowns.length; i++) {
-                          var openDropdown = dropdowns[i];
-                          if (openDropdown.classList.contains('show')) {
-                            openDropdown.classList.remove('show');
-                          }
-                        }
-                      }
-                    }
-                    </script>
-                </div>
-              <li><a href="Photo.html">Photo</a></li>
-              <li><a href="Video.html">Video</a></li>
-              <!-- <li><a href="SAIProject.html">SAI Intern Project</a></li>
-              <li><a href="https://ss83351.wixsite.com/arth249final">Japanese Art & Arch. Final</a></li> -->
-              <li><a href="Resume.html">CV</a></li>
+    <li style="background-color:#ffb779;"><a class="active" href="index.html">Home 🏡</a></li>
+    <li style="background-color: #fcf1de;"><a href="Video.html">Video</a></li>
+    <li style="background-color: #abbfa0;"><a  href="Photo.html">Photo</a></li>
+    <li style="background-color: #f0cbd7;"><a  href="videoGames.html">Video Games</a></li>
+      <li style="background-color: #b8d7f8"><a  href="Mapshots.html">Mapshots</a></li>
+      <li style="background-color: #b9b1a9"><a href="Impressions.html">Impressions</a></li>
+      <!-- <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a></li> -->
         </div>
+        <!-- <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += "responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+          </script> -->
         <!-- </div>  -->  
 <main>
     <body>
       <!-- <img src='recession3.png' style="margin-top: 1.5%;  height: auto; display: block; margin-left: auto; margin-right: auto; width:900px; border: 1pt solid rgb(52, 4, 4)">
         <p style="text-align: right; margin-top: 0.5%;"> <mark style="background-color: rgba(110, 167, 99, 0.789); color:rgb(250, 248, 239)">🦠 🧠 a desktop collage made from digital scraps and my sketchbook 🛌 💭</mark></p>
           </img> -->
-                      <section style="padding:25px;padding-bottom:0.5%;margin-left: auto; margin-right: auto;width:1000px; max-width:100%;">
-                        <iframe width=960 height=540 style="border: 1px solid rgb(81, 68, 68);" src="https://player.vimeo.com/video/827746067?h=9ab686b9b4" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="Where's Your Soul? The Failure of Urban Renewal"></iframe>
+                      <section style="padding:25px;padding-bottom:1%;margin-left: auto; margin-right: auto;width:1000px; max-width:100%;">
+                        <img width="960" height="600" id="prcImage" style="max-width:100%; height: auto;" src="prcImage.png" alt="<p>500 Feet Away (2023), A construction worker stares down county road 48 toward the fallen roadkill, Bambi; the Walmart Supercenter to his back, the newly constructed Aldi his north eastern star.</p>">
+                                  <section>
+                                    <div id="myModal" class="modal">
+                                        <span class="close">&times;</span>
+                                        <img class="modal-content" id="img01">
+                                        <div id="caption"></div>
+                                    </div>
+                                    <script>
+                                        // Get the modal
+                                        var modal = document.getElementById("myModal");
+                                        
+                                        // Get the image and insert it inside the modal - use its "alt" text as a caption
+                                        var img = document.getElementById("prcImage");
+                                        var modalImg = document.getElementById("img01");
+                                        var captionText = document.getElementById("caption");
+                                        img.onclick = function(){
+                                        modal.style.display = "block";
+                                        modalImg.src = this.src;
+                                        captionText.innerHTML = this.alt;
+                                        }
+                                        
+                                        // Get the <span> element that closes the modal
+                                        var span = document.getElementsByClassName("close")[0];
+                                        
+                                        // When the user clicks on <span> (x), close the modal
+                                        span.onclick = function() { 
+                                        modal.style.display = "none";
+                                        }
+                                        </script>
+                                    </section>
                       </section>
-                      <p style="text-align: right;"> <em><mark style="color:rgb(255, 242, 242); background-color: rgb(210, 182, 134); padding:2.5px;">Spring '23 semester project for Advanced Video Production at Wellesley College on the regulation of 3d printing and artificial intelligence.</em></mark></p>
-                      <div class="container" style="padding-top:0%">
+                      <p style="text-align: right;"> <mark style="color:rgba(52, 4, 4, 0.738); background-color: rgba(240, 218, 181, 0.666); padding:3px; border-radius: 6px;">500 Feet Away (2023) featured in the Photographic Resource Center <a href="https://www.prcboston.org/2023-student-show/#">2023 Student Show</a> hosted by the Panopticon Gallery in Boston. </mark></p>
+                      <div class="container" style="padding-top:0.5%;">
                         <div class="row">
-                      <h1 class="headline" style="padding-bottom: 10px; padding-left: 0%; padding-top:10px; font-size:25px; font-weight: bold; background-color: transparent;"><mark style="color:rgb(255, 249, 238); background-color:rgb(213, 55, 55)">More work:</mark></h1>
-                      <div class="col-sm" style="padding: 25px; padding-top: 20px; background-color:rgba(163, 186, 168, 0.522); border:1px solid rgb(52, 4, 4)">
-                        <h1 class="headline"><a href="https://www.prcboston.org/2023-student-show/#">PRC Boston 2023 Student Show</a><h1>
-                            <p><mark style="background-color: rgba(253, 247, 237, 0.857)"></a>My photograph, <em>500 Feet Away</em> (2023), was featured in the Photographic Resource Center 2023 Student Show hosted by the Panopticon Gallery in Boston. 
-                              <mark style="background-color: rgb(213, 55, 55); color: rgba(255, 249, 238, 0.852)">Click the image below to view a larger version!</mark></mark></p>
-                            <img width="450" height="300" id="prcImage" style="border:1px solid rgb(52, 4, 4); max-width:100%" src="prcImage.png" alt="<p>500 Feet Away (2023), A construction worker stares down county road 48 toward the fallen roadkill, Bambi; the Walmart Supercenter to his back, the newly constructed Aldi his north eastern star.</p>">
-                            <section>
-                                <div id="myModal" class="modal">
-                                    <span class="close">&times;</span>
-                                    <img class="modal-content" id="img01">
-                                    <div id="caption"></div>
-                                </div>
-                                <script>
-                                    // Get the modal
-                                    var modal = document.getElementById("myModal");
-                                    
-                                    // Get the image and insert it inside the modal - use its "alt" text as a caption
-                                    var img = document.getElementById("prcImage");
-                                    var modalImg = document.getElementById("img01");
-                                    var captionText = document.getElementById("caption");
-                                    img.onclick = function(){
-                                    modal.style.display = "block";
-                                    modalImg.src = this.src;
-                                    captionText.innerHTML = this.alt;
-                                    }
-                                    
-                                    // Get the <span> element that closes the modal
-                                    var span = document.getElementsByClassName("close")[0];
-                                    
-                                    // When the user clicks on <span> (x), close the modal
-                                    span.onclick = function() { 
-                                    modal.style.display = "none";
-                                    }
-                                    </script>
-                                </section>
-                                <p>Adobe Photoshop</p>
+                      <!-- <h1 class="headline" style="padding-bottom: 10px; padding-left: 0%; padding-top:10px; font-size:25px; font-weight: bold; background-color: transparent;"><mark style="color:rgb(255, 249, 238); background-color:rgb(213, 55, 55)">More work:</mark></h1> -->
+                      <div class="col-sm" style="padding: 25px; background-color:rgba(197, 212, 225, 0.522); border:1px solid rgb(52, 4, 4); border-radius: 4px;">
+                        <h1 class="headline"><a href="Video.html">The Myth of the Self-Regulatory Machine</a><h1> 
+                            <p><mark style="background-color: rgba(253, 247, 237, 0.857)"> Spring '23 semester project for Advanced Video Production at Wellesley College on the regulation of 3d printing and artificial intelligence.
+                              </mark></p>
+                              <iframe width="500" height="290" style="border: 1px solid rgb(81, 68, 68); max-width: 100%;" src="https://player.vimeo.com/video/827746067?h=9ab686b9b4" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="The Myth of the Self-Regulatory Machine"></iframe>
+                                <p>Adobe Premiere</p>
                     </div>
-                    <div class="col-sm" style="background-color:rgba(184, 176, 162, 0.5); padding: 25px; border-right: 1px solid rgb(52, 4, 4); border-top: 1px solid rgb(52, 4, 4); border-bottom:1px solid rgb(52, 4, 4)">
+                    <div class="col-sm" style="background-color:rgba(249, 239, 227, 0.5); padding: 25px; border-radius: 4px; border-right: 1px solid rgb(52, 4, 4); border-top: 1px solid rgb(52, 4, 4); border-bottom:1px solid rgb(52, 4, 4)">
                             <h1 class="headline"><a href="Mapshots.html">Mapshots</a></h1>
-                            <p><mark style="background-color: rgba(253, 247, 237, 0.857)">Mobile prototype made in Figma focused on creating spatial memory through visual media and text-based posts for past, present, and future Wellesley College students.</mark></p>
-                            <a href="Mapshots.html"><img width="480" height="300" style="max-width:100%; border: 1px solid rgb(52, 4, 4)" src="highfidelityLanding.gif">
+                            <p><mark style="background-color: rgba(239, 231, 216, 0.857)">Mobile prototype made in Figma focused on creating spatial memory through visual media and text-based posts for past, present, and future Wellesley College students.</mark></p>
+                            <a href="Mapshots.html"><img width="480" height="280" style="max-width:100%; height:auto; border: 1px solid rgb(52, 4, 4)" src="highfidelityLanding.gif">
                             </img></a>
                             <p>Figma; mobile ui/ux design; usability testing</p>
                     </div>
                 </div>
                     <div class="row">
-                    <div class="col-sm" style="background-color:rgba(214, 200, 205, 0.5); padding: 25px; border-right: 1px solid rgb(52, 4, 4); border-left: 1px solid rgb(52, 4, 4); border-bottom: 1px solid rgb(52, 4, 4);">
+                    <div class="col-sm" style="background-color:rgba(235, 216, 209, 0.5); padding: 25px; border-radius: 4px; border-right: 1px solid rgb(52, 4, 4); border-left: 1px solid rgb(52, 4, 4); border-bottom: 1px solid rgb(52, 4, 4);">
                         <h1 class="headline"><a href="videoGames.html">Orwellian Industries: The Simulator</a><h1>
                             <p><mark style="background-color: rgba(253, 247, 237, 0.857)">Unity 2D Game; <em>Slack off at work with Orwellian Industries: The Simulator!</em></mark></p>
-                            <a href="videoGames.html"><img width="480" height="300" style="border:1px solid rgb(52, 4, 4); max-width:100%" src="gifOrwellianSmaller.gif">
+                            <a href="videoGames.html"><img width="480" height="280" style="border:1px solid rgb(52, 4, 4); max-width:100%; height:auto;" src="gifOrwellianSmaller.gif">
                         </img></a>
                         <p>Unity 2D; C#; ui design; original asset creation in Adobe Photoshop</p>
                            </div>
-                        <div class="col-sm" style="background-color:rgba(176, 212, 150, 0.5); padding: 25px; border-right: 1px solid rgb(52, 4, 4); border-bottom:1px solid rgb(52, 4, 4)">
+                        <div class="col-sm" style="background-color:rgba(220, 233, 178, 0.5); padding: 25px; border-radius: 4px; border-right: 1px solid rgb(52, 4, 4); border-bottom:1px solid rgb(52, 4, 4)">
                             <h1 class="headline"><a href="https://docs.google.com/document/d/1cXHKAG1vdJUOrmqsiJoIO7Qlg1JHOGCM/edit?usp=sharing&ouid=103206116209846339059&rtpof=true&sd=true">The Utopian Possibility of Web3: Creating Community through the Blockchain</a></h1>
                             <p><mark style="background-color: rgba(253, 247, 237, 0.857)">Final paper for Literary Theory</mark></p>
                             <a href="https://docs.google.com/document/d/1cXHKAG1vdJUOrmqsiJoIO7Qlg1JHOGCM/edit?usp=sharing&ouid=103206116209846339059&rtpof=true&sd=true">
-                              <img width="550" height="250" style="max-width:100%; border: 1px solid rgb(52, 4, 4)" src="web3.png">
+                              <img width="550" height="250" style="max-width:100%; height:auto; border: 1px solid rgb(52, 4, 4)" src="web3.png">
                             </img></a>
                             <p>crypto; decentralization; blockchain</p>
                           </div>

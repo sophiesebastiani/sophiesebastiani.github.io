@@ -10,47 +10,23 @@
     <link rel="icon" type="image/x-icon" href="Screen Shot 2022-11-26 at 1.11.25 PM.png">
 </head>
 <body>
-        <ul style="text-align: left; margin-top: 10px; padding-left: 29px;">
-            <li><a href="index.html">Home 🏡</a></li>
-            <!-- <li><a href="AboutMe.html">About Me</a></li> -->
-            <div class="dropdown">
-                <li onclick="myFunction()" class="dropbtn" style="padding-left:15px; padding-right: 15px; color:rgb(52, 4, 4)">Design</li>
-                    <div id="myDropdown" class="dropdown-content">
-                    <a style="color:rgb(253, 247, 237)" href="videoGames.html">Video Games</a>
-                    <a href="Impressions.html">Impressions</a>
-                    <a href="Mapshots.html">Mapshots</a>
-                  </div>
-                  <script>
-                    /* When the user clicks on the button, 
-                    toggle between hiding and showing the dropdown content */
-                    function myFunction() {
-                      document.getElementById("myDropdown").classList.toggle("show");
-                    }
-                    
-                    // Close the dropdown if the user clicks outside of it
-                    window.onclick = function(event) {
-                      if (!event.target.matches('.dropbtn')) {
-                        var dropdowns = document.getElementsByClassName("dropdown-content");
-                        var i;
-                        for (i = 0; i < dropdowns.length; i++) {
-                          var openDropdown = dropdowns[i];
-                          if (openDropdown.classList.contains('show')) {
-                            openDropdown.classList.remove('show');
-                          }
-                        }
-                      }
-                    }
-                    </script>
-                </div>
-            <li><a href="Photo.html">Photo</a></li>
-            <li><a href="Video.html">Video</a></li>
-            <!-- <li><a href="SAIProject.html">SAI Intern Project</a></li>
-            <li><a href="https://ss83351.wixsite.com/arth249final">Japanese Art & Arch. Final</a></li> -->
-            <li><a href="Resume.html">CV</a></li>
-        </ul>
+    <style>
+        body {
+            background-color: rgba(249, 248, 246, 0.857);
+        }
+    </style>
+    <ul style="text-align: left; padding-left: 29px; margin-top: 10px">
+        <li style="background-color:#ffb779;"><a href="index.html">Home 🏡</a></li>
+        <li style="background-color: #fcf1de;"><a href="Video.html">Video</a></li>
+        <li style="background-color: #abbfa0;"><a  href="Photo.html">Photo</a></li>
+        <li style="background-color: #f0cbd7;"><a  class="active" href="videoGames.html">Video Games</a></li>
+          <li style="background-color: #b8d7f8"><a  href="Mapshots.html">Mapshots</a></li>
+          <li style="background-color: #b9b1a9"><a href="Impressions.html">Impressions</a></li>
+    </ul>
     <main>
         <section style="padding-top: 50px; padding:50px;">
-            <h1 class="headline" style="padding-bottom: 5px; font-size:25px; font-weight: bold; background-color: transparent;"><mark style="color:rgb(255, 249, 238); background-color:rgb(213, 55, 55);">Video Games:</mark></h1>
+            <br>
+            <!-- <h1 class="headline" style="padding-bottom: 5px; font-size:25px; font-weight: bold; background-color: transparent;"><mark style="color:rgb(255, 249, 238); background-color:rgb(213, 55, 55);">Video Games:</mark></h1> -->
             <section style="background-color: rgba(249, 255, 187, 0.507); border:1px solid rgb(52, 4, 4);">
             <h1 class="headline" style="background-color:rgb(224, 239, 252); padding:20px; margin-top: 0%;">A Day Like Any Other <small style="font-size:medium; color: rgba(181, 84, 77, 0.909)">Spring 2023</small></h1>
             <p style="padding:15px"><em><mark style="color:rgb(81, 68, 68); background-color: rgb(253, 247, 237)">Unity 3D game made with Jeeyeon Barnes in Digital Worlds for Gaming.</mark></em>
