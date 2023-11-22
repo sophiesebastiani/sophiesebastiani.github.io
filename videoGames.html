@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
     <link rel="stylesheet" href="screen.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name=author content="Sophie Sebastiani">
     <title>Video Games</title>
     <link rel="icon" type="image/x-icon" href="Screen Shot 2022-11-26 at 1.11.25 PM.png">
@@ -25,289 +28,166 @@
     </ul>
     <main>
         <section style="padding-top: 50px; padding:50px;">
-            <br>
+    <div class="container" style="padding-top:0.5%;">
+        <div class="row">
             <!-- <h1 class="headline" style="padding-bottom: 5px; font-size:25px; font-weight: bold; background-color: transparent;"><mark style="color:rgb(255, 249, 238); background-color:rgb(213, 55, 55);">Video Games:</mark></h1> -->
-            <section style="background-color: rgba(249, 255, 187, 0.507); border:1px solid rgb(52, 4, 4);">
-            <h1 class="headline" style="background-color:rgb(224, 239, 252); padding:20px; margin-top: 0%;">A Day Like Any Other <small style="font-size:medium; color: rgba(181, 84, 77, 0.909)">Spring 2023</small></h1>
-            <p style="padding:15px"><em><mark style="color:rgb(81, 68, 68); background-color: rgb(253, 247, 237)">Unity 3D game made with Jeeyeon Barnes in Digital Worlds for Gaming.</mark></em>
-              <em>"On a day like any other, you recieve a letter." </em> We were inspired by the Truman Show and the Stanley Parable to conceive of a world encapsulated within a perfectly identical suburb in which our main character lives, content with his mundane life with no connection to the real world until the illusion is broken.
-                In creating the game's point of view, the fixed angles of the cameras create a feeling of surveillance that combined with the uncanny perfection of the outside world is already strange. This demo serves as the first part of a *theoretically* much larger game, which begins after the main camera switches from the fixed perspectives to a third-person follow cam, signifying that the main character has finally taken control of his life and is ready for the reality-breaking journey ahead of him.</p>
-               <iframe width="560" height="315" style="margin-left:2.5%; margin-bottom: 2.5%; margin-top: 0%;" src="https://www.youtube.com/embed/F4JzxaeYaSM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </section><br>
-            <h1 class="headline" style="background-color:rgb(218, 229, 196); padding: 5px;">Project Terra <small style="font-size:medium; color: rgba(181, 84, 77, 0.909)">Spring 2023</small></h1>
-            <p><em><mark style="color:rgb(81, 68, 68); background-color: rgb(253, 247, 237)">Unity 3D game made with Janavi Padala in Digital Worlds for Gaming.</mark></em>
-                Project Terra is a game where you land in a what seems to be a quarry inside a mysterious world, with only the company of your loyal robot companion 2-T0R. Once you climb out, you decide to navigate to the only landmark in sight, an imposing building in the middle of a dessert which holds a terrifying secret.
-                My focus on the project was shaping the landscape and architecture of this world through 3D modeling, asset integration and lighting within the Unity 3D game engine. 
-            </p>
-            <div class="archive">
-                <div class="gallery" style="width:300px;">
-                    <img class="pic" id="3d0" src="3dGame0.png" alt="Image" >
-                    <section>
-                                <div id="myModal" class="modal">
-                                    <span class="close">&times;</span>
-                                    <img class="modal-content" id="img01">
-                                    <div id="caption"></div>
-                                </div>
-                                <script>
-                                    // Get the modal
-                                    var modal = document.getElementById("myModal");
-                                    
-                                    // Get the image and insert it inside the modal - use its "alt" text as a caption
-                                    var img = document.getElementById("3d0");
-                                    var modalImg = document.getElementById("img01");
-                                    // var captionText = document.getElementById("caption");
-                                    img.onclick = function(){
-                                    modal.style.display = "block";
-                                    modalImg.src = this.src;
-                                    captionText.innerHTML = this.alt;
-                                    }
-                                    
-                                    // Get the <span> element that closes the modal
-                                    var span = document.getElementsByClassName("close")[0];
-                                    
-                                    // When the user clicks on <span> (x), close the modal
-                                    span.onclick = function() { 
-                                    modal.style.display = "none";
-                                    }
-                                    </script>
-                    </section>
-                        </div>
-                <div class="gallery" style="width:300px;">
-                    <img class="pic" id="3d1" src="3dGame1.png" alt="Image" >
-                    <section>
-                                <div id="myModal" class="modal">
-                                    <span class="close">&times;</span>
-                                    <img class="modal-content" id="img01">
-                                    <div id="caption"></div>
-                                </div>
-                                <script>
-                                    // Get the modal
-                                    var modal = document.getElementById("myModal");
-                                    
-                                    // Get the image and insert it inside the modal - use its "alt" text as a caption
-                                    var img = document.getElementById("3d1");
-                                    var modalImg = document.getElementById("img01");
-                                    // var captionText = document.getElementById("caption");
-                                    img.onclick = function(){
-                                    modal.style.display = "block";
-                                    modalImg.src = this.src;
-                                    captionText.innerHTML = this.alt;
-                                    }
-                                    
-                                    // Get the <span> element that closes the modal
-                                    var span = document.getElementsByClassName("close")[0];
-                                    
-                                    // When the user clicks on <span> (x), close the modal
-                                    span.onclick = function() { 
-                                    modal.style.display = "none";
-                                    }
-                                    </script>
-                    </section>
-                        </div>
-                        <div class="gallery" style="width:300px;">
-                            <img class="pic" id="3d2" src="3dGame2.png" alt="Image" >
-                            <section>
-                                        <div id="myModal" class="modal">
-                                            <span class="close">&times;</span>
-                                            <img class="modal-content" id="img01">
-                                            <div id="caption"></div>
-                                        </div>
-                                        <script>
-                                            // Get the modal
-                                            var modal = document.getElementById("myModal");
-                                            
-                                            // Get the image and insert it inside the modal - use its "alt" text as a caption
-                                            var img = document.getElementById("3d2");
-                                            var modalImg = document.getElementById("img01");
-                                            // var captionText = document.getElementById("caption");
-                                            img.onclick = function(){
-                                            modal.style.display = "block";
-                                            modalImg.src = this.src;
-                                            captionText.innerHTML = this.alt;
-                                            }
-                                            
-                                            // Get the <span> element that closes the modal
-                                            var span = document.getElementsByClassName("close")[0];
-                                            
-                                            // When the user clicks on <span> (x), close the modal
-                                            span.onclick = function() { 
-                                            modal.style.display = "none";
-                                            }
-                                            </script>
-                            </section>
-                                </div>
-                <div class="gallery" style="width:300px;">
-                            <img class="pic" id="3d3" src="3dGame3.png" alt="Image" >
-                            <section>
-                                        <div id="myModal" class="modal">
-                                            <span class="close">&times;</span>
-                                            <img class="modal-content" id="img01">
-                                            <div id="caption"></div>
-                                        </div>
-                                        <script>
-                                            // Get the modal
-                                            var modal = document.getElementById("myModal");
-                                            
-                                            // Get the image and insert it inside the modal - use its "alt" text as a caption
-                                            var img = document.getElementById("3d3");
-                                            var modalImg = document.getElementById("img01");
-                                            // var captionText = document.getElementById("caption");
-                                            img.onclick = function(){
-                                            modal.style.display = "block";
-                                            modalImg.src = this.src;
-                                            captionText.innerHTML = this.alt;
-                                            }
-                                            
-                                            // Get the <span> element that closes the modal
-                                            var span = document.getElementsByClassName("close")[0];
-                                            
-                                            // When the user clicks on <span> (x), close the modal
-                                            span.onclick = function() { 
-                                            modal.style.display = "none";
-                                            }
-                                            </script>
-                            </section>
-                                </div>
-                <div class="gallery" style="width:250px;">
-                    <img class="pic" id="3d4" src="3dGame4.png" alt="Image" >
-                    <section>
-                                <div id="myModal" class="modal">
-                                    <span class="close">&times;</span>
-                                    <img class="modal-content" id="img01">
-                                    <div id="caption"></div>
-                                </div>
-                                <script>
-                                    // Get the modal
-                                    var modal = document.getElementById("myModal");
-                                    
-                                    // Get the image and insert it inside the modal - use its "alt" text as a caption
-                                    var img = document.getElementById("3d4");
-                                    var modalImg = document.getElementById("img01");
-                                    // var captionText = document.getElementById("caption");
-                                    img.onclick = function(){
-                                    modal.style.display = "block";
-                                    modalImg.src = this.src;
-                                    captionText.innerHTML = this.alt;
-                                    }
-                                    
-                                    // Get the <span> element that closes the modal
-                                    var span = document.getElementsByClassName("close")[0];
-                                    
-                                    // When the user clicks on <span> (x), close the modal
-                                    span.onclick = function() { 
-                                    modal.style.display = "none";
-                                    }
-                                    </script>
-                    </section>
-                        </div>
-                        <div class="gallery" style="width:300px;">
-                            <img class="pic" id="3d5" src="3dGame5.png" alt="Image" >
-                            <section>
-                                        <div id="myModal" class="modal">
-                                            <span class="close">&times;</span>
-                                            <img class="modal-content" id="img01">
-                                            <div id="caption"></div>
-                                        </div>
-                                        <script>
-                                            // Get the modal
-                                            var modal = document.getElementById("myModal");
-                                            
-                                            // Get the image and insert it inside the modal - use its "alt" text as a caption
-                                            var img = document.getElementById("3d5");
-                                            var modalImg = document.getElementById("img01");
-                                            // var captionText = document.getElementById("caption");
-                                            img.onclick = function(){
-                                            modal.style.display = "block";
-                                            modalImg.src = this.src;
-                                            captionText.innerHTML = this.alt;
-                                            }
-                                            
-                                            // Get the <span> element that closes the modal
-                                            var span = document.getElementsByClassName("close")[0];
-                                            
-                                            // When the user clicks on <span> (x), close the modal
-                                            span.onclick = function() { 
-                                            modal.style.display = "none";
-                                            }
-                                            </script>
-                            </section>
-                                </div>
-           <div class="gallery" style="width:300px;">
-                            <img class="pic" id="3d6" src="3dGame6.png" alt="Image" >
-                            <section>
-                                        <div id="myModal" class="modal">
-                                            <span class="close">&times;</span>
-                                            <img class="modal-content" id="img01">
-                                            <div id="caption"></div>
-                                        </div>
-                                        <script>
-                                            // Get the modal
-                                            var modal = document.getElementById("myModal");
-                                            
-                                            // Get the image and insert it inside the modal - use its "alt" text as a caption
-                                            var img = document.getElementById("3d6");
-                                            var modalImg = document.getElementById("img01");
-                                            // var captionText = document.getElementById("caption");
-                                            img.onclick = function(){
-                                            modal.style.display = "block";
-                                            modalImg.src = this.src;
-                                            captionText.innerHTML = this.alt;
-                                            }
-                                            
-                                            // Get the <span> element that closes the modal
-                                            var span = document.getElementsByClassName("close")[0];
-                                            
-                                            // When the user clicks on <span> (x), close the modal
-                                            span.onclick = function() { 
-                                            modal.style.display = "none";
-                                            }
-                                            </script>
-                            </section>
-                                </div>
-        <div class="gallery" style="width:300px;">
-                            <img class="pic" id="3d7" src="3dGame7.png" alt="Image" >
-                            <section>
-                                        <div id="myModal" class="modal">
-                                            <span class="close">&times;</span>
-                                            <img class="modal-content" id="img01">
-                                            <div id="caption"></div>
-                                        </div>
-                                        <script>
-                                            // Get the modal
-                                            var modal = document.getElementById("myModal");
-                                            
-                                            // Get the image and insert it inside the modal - use its "alt" text as a caption
-                                            var img = document.getElementById("3d7");
-                                            var modalImg = document.getElementById("img01");
-                                            // var captionText = document.getElementById("caption");
-                                            img.onclick = function(){
-                                            modal.style.display = "block";
-                                            modalImg.src = this.src;
-                                            captionText.innerHTML = this.alt;
-                                            }
-                                            
-                                            // Get the <span> element that closes the modal
-                                            var span = document.getElementsByClassName("close")[0];
-                                            
-                                            // When the user clicks on <span> (x), close the modal
-                                            span.onclick = function() { 
-                                            modal.style.display = "none";
-                                            }
-                                            </script>
-                            </section>
-                                </div>
-            </div><br>
-            <section style="background-color: rgba(239, 220, 232, 0.507); border:1px solid rgb(52, 4, 4);"> 
-            <h1 class="headline" style="background-color:rgb(202, 164, 202); padding: 20px; margin-top: 0%;">Orwellian Industries: The Simulator <small style="font-size:medium; color: rgba(181, 84, 77, 0.909)">Spring 2022</small></h1>
-            <p style="padding:15px"> <span style="font-size:17px; color: rgb(52, 4, 4);">This is the day in the life of Orwellian Industries Employee #293915. You're a chill dude who just wants to play a chill game on your five-minute daily break but the a.i. manager keeps getting on your dang nerves!>:( Ignore the system messages as fast as you can so you can get back to avoiding virtual falling office supplies and slurping down delicious Monsters (mmm)! </span>
-                <br><br>
-                <video id="orwell" style="border: 1px solid black; max-width:100%; margin-left: 1.5%; width:800px; height:auto;" controls>
-                    <source src="orwellianindustriesCompressed.mp4" allow="accelerometer; fullscreen" title="Orwellian Industries: The Simulator">
-                </video><br><br>
-                <em><mark style="color:rgb(81, 68, 68); background-color: rgb(253, 247, 237)">Made in Unity 2D with Jelen Alysia.</mark></em> I thought it would be interesting to create a meta-layer first between the player and the simulated player and then again with the simulated reality of the Employee character (drawing inspiration from the Stanley Parable game) and the reality of a user *likely* playing this on a computer similar to the laptop in the game. I created this background layer, and all of the ui elements (such as the Orwellian Industries title screen, system messages, game instructions, etc.) in Photoshop, as well as the 2D character that moves back and forth across the screen in Office Simulator. 
-                 <br>
-                <br> <em><mark style="color:rgb(81, 68, 68); background-color: rgb(213, 55, 55);"><a href="http://cs.wellesley.edu/~ss8/Final/" style="color: rgb(253, 247, 237)">Play the game here! </a></mark> </em>  For best results play on a 1920 x 1080 display. For mac users, parts of the ui aren't scaled correctly sorry!:(</p>
-            </section>
+            <div class="col-sm" style="padding: 20px; padding-bottom: 2.5px; background-color: rgba(255, 250, 253, 0.709); border:1px solid rgb(52, 4, 4); border-radius: 8px;">
+                <h1 class="headline" style="background-color:rgba(210, 203, 208, 0.732); padding:5px; margin-top: 0%; border-radius: 4px;">A Day Like Any Other <small style="font-size:medium; color: rgba(181, 84, 77, 0.909); font-weight:normal;">Spring 2023</small></h1>
+                    <p style="padding:10px"><em><mark style="background-color: rgba(215, 90, 90, 0.828); color: rgb(236, 222, 196); border-radius: 4px;">Unity 3D game made with Jeeyeon Barnes in Digital Worlds for Gaming.</mark></em>
+                        <br><em style="font-weight:bold;">"On a day like any other, you recieve a letter." </em> We were inspired by the Truman Show and the Stanley Parable to conceive of a world encapsulated within a perfectly identical suburb in which our main character lives, content with his mundane life with no connection to the real world until the illusion is broken.
+                            In creating the game's point of view, the fixed angles of the cameras create a feeling of surveillance that combined with the uncanny perfection of the outside world is already strange. This demo serves as the first part of a *theoretically* much larger game, which begins after the main camera switches from the fixed perspectives to a third-person follow cam, signifying that the main character has finally taken control of his life and is ready for the reality-breaking journey ahead of him.</p>
+                    <iframe width="560" height="315" style="max-width: 100%; margin:auto; margin-bottom: 2.5%; margin-top: 0%;" src="https://www.youtube.com/embed/F4JzxaeYaSM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="col-sm" style="padding: 20px; padding-bottom: 2.5px; background-color: rgba(251, 255, 250, 0.709); border:1px solid rgb(52, 4, 4); border-radius: 8px;">
+                    <h1 class="headline" style="background-color:rgb(218, 229, 196); padding: 5px; border-radius: 4px;">Project Terra <small style="font-size:medium; color: rgba(181, 84, 77, 0.909); font-weight:normal;">Spring 2023</small></h1>
+                        <p style="padding:10px; padding-bottom: 0%;"><em><mark style="color:rgb(81, 68, 68); background-color: rgb(253, 247, 237);background-color: rgba(215, 90, 90, 0.828); color: rgb(236, 222, 196); border-radius: 4px;">Unity 3D game made with Janavi Padala in Digital Worlds for Gaming.</mark></em>
+                                <br><em style="font-weight:bold;">Project Terra</em> is a game where you land in a what seems to be a quarry inside a mysterious world, with only the company of your loyal robot companion 2-T0R. Once you climb out, you decide to navigate to the only landmark in sight, an imposing building in the middle of a dessert which holds a terrifying secret.
+                                My focus on the project was shaping the landscape and architecture of this world through 3D modeling, asset integration and lighting within the Unity 3D game engine. 
+                        </p>
+                        <div class="archive" style="padding-top:0%;">
+                            <div class="gallery" style="width:300px;">
+                                <img class="pic" id="3d0" src="3dGame0.png" alt="Image" >
+                                <section>
+                                            <div id="myModal" class="modal">
+                                                <span class="close">&times;</span>
+                                                <img class="modal-content" id="img01">
+                                                <div id="caption"></div>
+                                            </div>
+                                            <script>
+                                                // Get the modal
+                                                var modal = document.getElementById("myModal");
+                                                
+                                                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                                                var img = document.getElementById("3d0");
+                                                var modalImg = document.getElementById("img01");
+                                                // var captionText = document.getElementById("caption");
+                                                img.onclick = function(){
+                                                modal.style.display = "block";
+                                                modalImg.src = this.src;
+                                                captionText.innerHTML = this.alt;
+                                                }
+                                                
+                                                // Get the <span> element that closes the modal
+                                                var span = document.getElementsByClassName("close")[0];
+                                                
+                                                // When the user clicks on <span> (x), close the modal
+                                                span.onclick = function() { 
+                                                modal.style.display = "none";
+                                                }
+                                                </script>
+                                </section>
+                                    </div>
+                            <div class="gallery" style="width:300px;">
+                                <img class="pic" id="3d1" src="3dGame1.png" alt="Image" >
+                                <section>
+                                            <div id="myModal" class="modal">
+                                                <span class="close">&times;</span>
+                                                <img class="modal-content" id="img01">
+                                                <div id="caption"></div>
+                                            </div>
+                                            <script>
+                                                // Get the modal
+                                                var modal = document.getElementById("myModal");
+                                                
+                                                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                                                var img = document.getElementById("3d1");
+                                                var modalImg = document.getElementById("img01");
+                                                // var captionText = document.getElementById("caption");
+                                                img.onclick = function(){
+                                                modal.style.display = "block";
+                                                modalImg.src = this.src;
+                                                captionText.innerHTML = this.alt;
+                                                }
+                                                
+                                                // Get the <span> element that closes the modal
+                                                var span = document.getElementsByClassName("close")[0];
+                                                
+                                                // When the user clicks on <span> (x), close the modal
+                                                span.onclick = function() { 
+                                                modal.style.display = "none";
+                                                }
+                                                </script>
+                                </section>
+                                    </div>
+                                    <div class="gallery" style="width:300px;">
+                                        <img class="pic" id="3d2" src="3dGame2.png" alt="Image" >
+                                        <section>
+                                                    <div id="myModal" class="modal">
+                                                        <span class="close">&times;</span>
+                                                        <img class="modal-content" id="img01">
+                                                        <div id="caption"></div>
+                                                    </div>
+                                                    <script>
+                                                        // Get the modal
+                                                        var modal = document.getElementById("myModal");
+                                                        
+                                                        // Get the image and insert it inside the modal - use its "alt" text as a caption
+                                                        var img = document.getElementById("3d2");
+                                                        var modalImg = document.getElementById("img01");
+                                                        // var captionText = document.getElementById("caption");
+                                                        img.onclick = function(){
+                                                        modal.style.display = "block";
+                                                        modalImg.src = this.src;
+                                                        captionText.innerHTML = this.alt;
+                                                        }
+                                                        
+                                                        // Get the <span> element that closes the modal
+                                                        var span = document.getElementsByClassName("close")[0];
+                                                        
+                                                        // When the user clicks on <span> (x), close the modal
+                                                        span.onclick = function() { 
+                                                        modal.style.display = "none";
+                                                        }
+                                                        </script>
+                                        </section>
+                                            </div>
+                            <div class="gallery" style="width:300px;">
+                                        <img class="pic" id="3d3" src="3dGame3.png" alt="Image" >
+                                        <section>
+                                                    <div id="myModal" class="modal">
+                                                        <span class="close">&times;</span>
+                                                        <img class="modal-content" id="img01">
+                                                        <div id="caption"></div>
+                                                    </div>
+                                                    <script>
+                                                        // Get the modal
+                                                        var modal = document.getElementById("myModal");
+                                                        
+                                                        // Get the image and insert it inside the modal - use its "alt" text as a caption
+                                                        var img = document.getElementById("3d3");
+                                                        var modalImg = document.getElementById("img01");
+                                                        // var captionText = document.getElementById("caption");
+                                                        img.onclick = function(){
+                                                        modal.style.display = "block";
+                                                        modalImg.src = this.src;
+                                                        captionText.innerHTML = this.alt;
+                                                        }
+                                                        
+                                                        // Get the <span> element that closes the modal
+                                                        var span = document.getElementsByClassName("close")[0];
+                                                        
+                                                        // When the user clicks on <span> (x), close the modal
+                                                        span.onclick = function() { 
+                                                        modal.style.display = "none";
+                                                        }
+                                                        </script>
+                                        </section>
+                                            </div>
+                            </div>
+            </div>
+        </div>
+    </div>
+    <section style="padding:10px;">
+        <section style="background-color: rgba(246, 233, 233, 0.626); border:1px solid rgb(52, 4, 4); border-radius: 8px;"> 
+            <h1 class="headline" style="background-color:rgba(222, 195, 191, 0.947); padding: 15px; margin-top: 0%; border-radius: 8px;">Orwellian Industries: The Simulator <small style="font-size:medium; color: rgba(181, 84, 77, 0.909); font-weight:normal;">Spring 2022</small></h1>
+            <p style="padding:15px"> <span style="font-size:17px; color: rgb(52, 4, 4); margin: auto; background-color: #ffffff;">This is the day in the life of Orwellian Industries Employee #293915. You're a regular dude who just wants to chill and play a relaxing game on your five-minute daily break but the a.i. manager keeps getting on your dang nerves!<span style="color:rgb(193, 80, 80); font-weight: bold;"> >:(</span> Ignore the system messages as fast as you can so you can get back to avoiding virtual falling office supplies and slurping down delicious Monsters (yum)! </span>
+                <br>
+                <iframe style="border:1px solid rgba(123, 104, 104, 0.639); max-width: 100%; margin:10px; border-radius: 4px;" src="https://player.vimeo.com/video/886048371?h=024050856c" width="960" height="540" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                <br>
+                <em><mark style="background-color: rgba(215, 90, 90, 0.828); color: rgb(236, 222, 196); border-radius: 8px;">Made in Unity 2D.</mark></em> I thought it would be interesting to create a meta-layer first between the player and the simulated player and then again with the simulated reality of the Employee character and the reality of a user *likely* playing this on a laptop similar to the one in the game. I created the background layer of an office worker's dirty desk (napkins, chip crumbs, empty cans of coke and Monster of course, etc.) and all of the ui elements (such as the Orwellian Industries title screen, system messages, game instructions, etc.), as well as the 2D character that moves back and forth across the 'Office Simulator' game in Photoshop. 
+        </section>
+    </section>
+    </section>
             </main>   
 <div class="outer">
     <div class="footer">🌀🪱💫 site coded by Sophie Sebastiani in 2023 💫🪱🌀</div></div>
