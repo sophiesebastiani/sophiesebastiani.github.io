@@ -17,21 +17,17 @@
 <body>
     <style>
         body {
-            background-color: rgba(249, 248, 246, 0.857);
-            /* background-image: url('Screen Shot 2020-04-28 at 3.01.42 PM,,.jpg');
+            /* background-color: rgba(249, 248, 246, 0.857); */
+            background-image: url('backgroundindex.png');
           background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size: cover; */
+        background-size: cover;
         }
         * {
   box-sizing: border-box;
 }
 
-img {
-  vertical-align: middle;
-  max-width: 100%;
-  cursor: pointer;
-}
+
 
 /* Position the image container (needed to position the left and right arrows) */
 /* .container {
@@ -39,8 +35,15 @@ img {
 } */
 
 /* Hide the images by default */
-.mySlides {
-  display: none;
+.mySlides1, .mySlides2, .mySlides3 {display: none; }
+
+.mySlides1, .mySlides2, .mySlides3
+    img {
+  text-align:center; 
+  vertical-align: middle;
+margin: 0px auto;
+  cursor: pointer;
+  max-height: 700px;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -48,63 +51,67 @@ img {
   cursor: pointer;
 }
 
+.slideshow-container {
+    vertical-align: middle;
+  max-width: 1000px;
+  position: relative;
+  margin: 0px auto;
+  cursor: pointer;
+  /* z-index: 0; */
+}
+
+
 /* Next & previous buttons */
 .prev,
 .next {
+  transition: 0.6s ease;
   cursor: pointer;
   position: absolute;
-  top: 65%;
+  top: 55%;
   width: auto;
-  padding: 25px;
-  margin-top: -50px;
-  color: rgb(176, 110, 99);
-  background-color: #b8d7f8b1;
-  font-family: 'Geneva', sans-serif;
-  font-size: 35px;
-  border-radius: 0 3px 3px 0;
+  padding: 13px;
+  margin-top: -55px;
+  color:#bac8b2;
+background-color: rgba(90, 79, 79, 0.534);
+  /* color: rgb(176, 110, 99); */
+  /* background-color: #b4cfece1; */
+  font-family: 'Arial', sans-serif;
+  font-size: 22px;
   user-select: none;
   -webkit-user-select: none;
   text-decoration: none;
 }
 
-/* a Next & a previous buttons */
-.secondp,
-.secondn {
-  cursor: pointer;
-  position: absolute;
-  top: 180%;
-  width: auto;
-  padding: 25px;
-  margin-top: -50px;
-  color: rgb(176, 110, 99);
-  background-color: #b8d7f8b1;
-  font-family: 'Geneva', sans-serif;
-  font-size: 35px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-  text-decoration: none;
-}
-@media only screen and (max-width: 1200px) {
+
+@media only screen and (max-width: 800px) {
     .prev,
     .next {
-    top: 65%;
-    padding:15px;
-    font-size: 30px;
+    top: 63%;
+    padding:8px;
+    font-size: 17px;
   }
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  /* border-radius: 8px 0px 0px 8px; */
+  border-radius: 8px;
+}
+
+.prev {
+  left: 0;
+  /* border-radius: 0px 8px 8px 0px; */
+  border-radius: 8px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(90, 79, 79, 0.8);
-  color:#abbfa0;
+  /* background-color: rgba(90, 79, 79, 0.8); */
+  color: rgb(176, 110, 99);
+  background-color: #b4cfecce;
+  /* color:#abbfa0; */
   text-decoration: none;
 }
 
@@ -114,6 +121,7 @@ img {
   color:rgba(52, 4, 4, 0.604);
   font-family: 'Geneva', sans-serif;
   font-size: small;
+  text-align: left;
   /* font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -151,33 +159,29 @@ img {
   opacity: 1;
 }
     </style>
-    <ul style="text-align: left; padding-left: 29px; margin-top: 10px">
-        <li style="background-color:#ffb779; padding: 1px; text-decoration: none;"><a href="index.html">Home 🏡</a></li>
-        <li style="background-color: #fcf1de; padding: 1px; text-decoration: none;"><a href="Video.html">Video</a></li>
-        <li style="background-color: #abbfa0; padding: 1px; text-decoration: none;"><a class="active" href="Photo.html">Photo</a></li>
-        <li style="background-color: #f0cbd7; padding: 1px; text-decoration: none;"><a  href="videoGames.html">Video Games</a></li>
-          <li style="background-color: #b8d7f8; padding: 1px; text-decoration: none;"><a  href="Mapshots.html">Mapshots</a></li>
-          <li style="background-color: #b9b1a9; padding: 1px; text-decoration: none;"><a href="Impressions.html">Impressions</a></li>
+    <ul style="text-align: left; padding-left: 29px; margin-top: 10px; text-decoration: none;">
+      <li style="background-color:#f0a462e8; padding: 2.5px; text-decoration: none;"><a  href="index.html">Home 🏡</a></li>
+      <li style="background-color: #dfbc7f; padding: 2.5px; text-decoration: none;"><a href="Video.html">Video</a></li>
+      <li style="background-color: #afc0a5; padding: 2.5px; text-decoration: none;"><a class="active" href="Photo.html">Photo</a></li>
+      <li style="background-color: #e9b6c6; padding: 2.5px; text-decoration: none;"><a   href="videoGames.html">Video Games</a></li>
+      <li style="background-color: #d2c0ac; padding: 2.5px; text-decoration: none;"><a  href="Mapshots.html">Mapshots</a></li>
+      <li style="background-color: #a0bad5; padding: 2.5px; text-decoration: none;"><a href="Impressions.html">Impressions</a></li>
     </ul>
 <main>
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-
-<!-- <a class="prev secondp" onclick="plusSlides(-1)">❮</a>
-<a class="next secondn" onclick="plusSlides(1)">❯</a> -->
 
     <section style="padding: 70px; padding-top:50px; padding-bottom: 50px;">
         <!-- <h1 class="headline" style="padding-left: 0%; padding-top:0%; padding-bottom:5px;font-size:25px; font-weight: bold; background-color: transparent;"><mark style="color:rgb(255, 249, 238); background-color:rgb(213, 55, 55)">Photo:</mark></h1> -->
 
-                <h1 class="headline" style="background-color:rgb(217, 145, 128); padding: 5px; border-radius: 4px;">500 Feet Away <small style="font-size:medium; color: rgba(253, 247, 237);">Winter 2022 - Spring 2023</small></h1>
-            <p>My photo collage <em>(pictured below)</em> was selected by a jury of Wellesley College Art Department Faculty as one of three students to have their work displayed in the Panopticon Gallery in Boston, hosted by the Photographic Resource Center for their annual <a href=https://www.prcboston.org/2023-student-show/#>2023 Student Show.</a>
+                <h1 class="headline" style="background-color:rgba(212, 163, 148, 0.395); padding: 10px; border-radius: 4px;">500 Feet Away <small style="font-size:medium; color: rgb(181, 84, 77)">Winter 2022 - Spring 2023</small></h1>
+            <p style="background-color:#fff9e7c9; border-radius: 8px; padding: 5px; padding-bottom: 10px;">My photo collage <em>(pictured below)</em> was selected by a jury of Wellesley College Art Department Faculty as one of three students to have their work displayed in the Panopticon Gallery in Boston, hosted by the Photographic Resource Center for their annual <a href=https://www.prcboston.org/2023-student-show/#>2023 Student Show.</a>
                 Check out the other photos I shot during winter break on my Canon 30D and iphone in the gallery below.
                 </p>
             <!-- Container for the image gallery -->
-            <div class="slideshow-container" style="max-width:1000px; margin:auto;">
+    <div class="slideshow-container" style="margin:auto; border-radius: 4px;">
+
     <!-- Full-width images with number text -->
-    <div class="mySlides">
-      <div class="numbertext">1 / 14</div>
+    <div class="mySlides1">
+      <div class="numbertext">1 / 14 〡 2023 PRC Selected Image</div>
       <img style="max-width: 100%" id="prcImage" src="prcImage.jpg">
     </div>
 
@@ -209,8 +213,8 @@ img {
         }
         </script>
   
-    <div class="mySlides">
-      <div class="numbertext">2 / 14</div>
+    <div class="mySlides1">
+      <div class="numbertext">2 / 14 〡 Fairhope, AL - January 2023</div>
         <img src="IMG_0875Compressed.jpg" alt="Fairhope, AL - January 2023" style="width:100%" id="crane">
     </div>
 
@@ -242,7 +246,7 @@ img {
         }
         </script>
   
-    <div class="mySlides">
+    <div class="mySlides1">
       <div class="numbertext">3 / 14</div>
         <img id="cow2" src="cow2.jpg" style="width:100%">
     </div>
@@ -275,8 +279,8 @@ img {
         }
         </script>
   
-    <div class="mySlides">
-      <div class="numbertext">4 / 14</div>
+    <div class="mySlides1">
+      <div class="numbertext">4 / 14 〡 Mobile, AL; off the highway</div>
       <img id="bama" src="bama2.jpg" alt="Mobile, AL; off the highway" style="width:100%">
     </div>
 
@@ -308,15 +312,15 @@ img {
         }
         </script>
   
-    <div class="mySlides">
-      <div class="numbertext">5 / 14</div>
+    <div class="mySlides1">
+      <div class="numbertext">5 / 14 〡 Fairhope, AL; January 2023; new Aldi construction across the street from the Walmart Supercenter (shot on iphone)</div>
         <img id="aldi" src="IMG_0638BW.jpg" style="width:100%" alt="Fairhope, AL; January 2023; new Aldi construction across the street from the Walmart Supercenter (shot on iphone)">
     </div>
 
     <div id="myModal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="img01">
-        <div id="caption"></div>
+        <!-- <div id="caption"></div> -->
     </div>
     <script>
         // Get the modal
@@ -341,8 +345,8 @@ img {
         }
         </script>
 
-<div class="mySlides">
-    <div class="numbertext">6 / 14</div>
+<div class="mySlides1">
+    <div class="numbertext">6 / 14 〡 Fairhope, AL; January, 2023</div>
       <img id="working" src="working4.jpg" alt="Fairhope, AL" style="width:100%">
   </div>
 
@@ -374,7 +378,7 @@ img {
     }
     </script>
   
-    <div class="mySlides">
+    <div class="mySlides1">
       <div class="numbertext">7 / 14</div>
         <img id="condos" src="IMG_0882Compressed.jpg" alt="Fairhope, AL; January 2023; new condominum development" style="width:100%">
     </div>
@@ -407,7 +411,7 @@ img {
         }
         </script>
 
-    <div class="mySlides">
+    <div class="mySlides1">
         <div class="numbertext">8 / 14</div>
         <img id="collageBW" src="collageBW.jpg" style="width:100%">
       </div>
@@ -440,7 +444,7 @@ img {
         }
         </script>
 
-      <div class="mySlides">
+      <div class="mySlides1">
         <div class="numbertext">9 / 14</div>
           <img id="over" src="overlookCompressed.jpg" style="width:100%">
       </div>
@@ -473,7 +477,7 @@ img {
         }
         </script>
 
-      <div class="mySlides">
+      <div class="mySlides1">
         <div class="numbertext">10 / 14</div>
           <img id="graves" src="IMG_1003BW.jpg" style="width:100%">
       </div>
@@ -506,7 +510,7 @@ img {
         }
         </script>
 
-<div class="mySlides">
+<div class="mySlides1">
     <div class="numbertext">11 / 14</div>
       <img id="houses" src="houses.jpeg" style="width:100%">
   </div>
@@ -539,7 +543,7 @@ img {
     }
     </script>
 
-<div class="mySlides">
+<div class="mySlides1">
     <div class="numbertext">12 / 14</div>
       <img id="cow3" src="cow3.jpg" style="width:100%">
   </div>
@@ -572,7 +576,7 @@ img {
     }
     </script>
 
-    <div class="mySlides">
+    <div class="mySlides1">
         <div class="numbertext">13 / 14</div>
           <img     id="danger" src="danger.jpg" style="width:100%">
       </div>
@@ -605,9 +609,9 @@ img {
         }
         </script>
 
-<div class="mySlides">
+<div class="mySlides1">
     <div class="numbertext">14 / 14</div>
-      <img id="suburb" src="suburb.jpg" style="width:100%">
+      <img id="lot" src="lot.jpg" style="width:100%">
   </div>
   
   <div id="myModal" class="modal">
@@ -620,7 +624,7 @@ img {
     var modal = document.getElementById("myModal");
     
     // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("suburb");
+    var img = document.getElementById("lot");
     var modalImg = document.getElementById("img01");
     // var captionText = document.getElementById("caption");
     img.onclick = function(){
@@ -643,12 +647,12 @@ img {
       <p id="caption"></p>
     </div> -->
   
-    <!-- Thumbnail images -->
+    <!-- Thumbnail images
     <div class="row">
-      <div class="column" style="float: left; width: 10%;border: 1px solid rgba(52, 4, 4, 0.524);">
+      <div class="column" style="float: left; width: 10%;border: 0.5px solid rgba(52, 4, 4, 0.524);">
         <img class="demo cursor" src="prcImage.jpg" style="max-width:100%" onclick="currentSlide(1)">
       </div>
-      <div class="column" style="float: left; width: 10%;border: 1px solid rgba(52, 4, 4, 0.524);"> 
+      <div class="column" style="float: left; width: 10%;border: 0.5px solid rgba(52, 4, 4, 0.524);"> 
         <img class="demo cursor" src="IMG_0875Compressed.jpg" style="max-width:100%" onclick="currentSlide(2)">
       </div>
       <div class="column" style="float: left; width: 10%;border: 1px solid rgba(52, 4, 4, 0.524);">
@@ -657,75 +661,46 @@ img {
       <div class="column" style="float: left; width: 10%;border: 1px solid rgba(52, 4, 4, 0.524);">
         <img class="demo cursor" src="bama2.jpg" style="max-width:100%" onclick="currentSlide(4)">
       </div>
-      <div class="column" style="float: left; width: 10%;border: 1px solid rgba(52, 4, 4, 0.524);">
+      <div class="column" style="float: left; width: 10%;border: 0.5px solid rgba(52, 4, 4, 0.524);">
         <img class="demo cursor" src="IMG_0638BW.jpg" style="max-width:100%" onclick="currentSlide(5)">
       </div> 
-      <div class="column" style="float: left; width: 10%;border: 1px solid rgba(52, 4, 4, 0.524);">
+      <div class="column" style="float: left; width: 10%;border: 0.5px solid rgba(52, 4, 4, 0.524);">
         <img class="demo cursor" src="working4.jpg" style="max-width:100%" onclick="currentSlide(6)">
       </div>
-      <div class="column" style="float: left; width: 10%;border: 1px solid rgba(52, 4, 4, 0.524);">
+      <div class="column" style="float: left; width: 10%;border: 0.5px solid rgba(52, 4, 4, 0.524);">
         <img class="demo cursor" src="IMG_0882Compressed.jpg" style="max-width:100%" onclick="currentSlide(7)">
       </div>
-      <div class="column" style="float: left; width: 10%;border: 1px solid rgba(52, 4, 4, 0.524);">
+      <div class="column" style="float: left; width: 10%;border: 0.5px solid rgba(52, 4, 4, 0.524);">
         <img class="demo cursor" src="collageBW.jpg" style="max-width:100%" onclick="currentSlide(8)">
       </div>
-      <div class="column" style="float: left; width: 10%;border: 1px solid rgba(52, 4, 4, 0.524);">
+      <div class="column" style="float: left; width: 10%;border: 0.5px solid rgba(52, 4, 4, 0.524);">
         <img class="demo cursor" src="overlookCompressed.jpg" style="max-width:100%" onclick="currentSlide(9)">
       </div>
-      <div class="column" style="float: left; width: 10%;border: 1px solid rgba(52, 4, 4, 0.524);">
+      <div class="column" style="float: left; width: 10%;border: 0.5px solid rgba(52, 4, 4, 0.524);">
         <img class="demo cursor" src="IMG_1003BW.jpg" style="max-width:100%" onclick="currentSlide(10)">
       </div>
-      <div class="column" style="float: left; width: 10%;border: 1px solid rgba(52, 4, 4, 0.524);">
+      <div class="column" style="float: left; width: 10%;border: 0.5px solid rgba(52, 4, 4, 0.524);">
         <img class="demo cursor" src="houses.jpeg" style="max-width:100%" onclick="currentSlide(11)">
       </div>
       <div class="column" style="float: left; width: 10%;border: 1px solid rgba(52, 4, 4, 0.524);">
         <img class="demo cursor" src="cow3.jpg" style="max-width:100%" onclick="currentSlide(12)">
       </div>
-      <div class="column" style="float: left; width: 10%;border: 1px solid rgba(52, 4, 4, 0.524);">
+      <div class="column" style="float: left; width: 10%;border: 0.5px solid rgba(52, 4, 4, 0.524);">
         <img class="demo cursor" src="danger.jpg" style="max-width:100%" onclick="currentSlide(13)">
       </div>
-      <div class="column" style="float: left; width: 10%;border: 1px solid rgba(52, 4, 4, 0.524);">
-        <img class="demo cursor" src="suburb.jpg" style="max-width:100%" onclick="currentSlide(14)">
-      </div>
+      <div class="column" style="float: left; width: 10%;border: 0.5px solid rgba(52, 4, 4, 0.524);">
+        <img class="demo cursor" src="lot.jpg" style="max-width:100%" onclick="currentSlide(14)">
+      </div> -->
+      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    <!-- </div> -->
     </div>
-
-  <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("demo");
-      let captionText = document.getElementById("caption");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-      captionText.innerHTML = dots[slideIndex-1].alt;
-    }
-    </script>
 </section>
-    </section>
 
-<section style="padding:70px; padding-top:0%;">
-            <h1 class="headline" style="background-color:rgba(220, 241, 84, 0.793); padding:5px; border-radius: 4px;">Heading Across a Great Divide <small style="font-size:medium; color: rgba(181, 84, 77, 0.909);">Fall 2022</small></h1>
-            <p> <span style="font-size:17px; color: rgb(52, 4, 4);">"Somehow, you knew that everything was a bit odd, and a bit unreal, and often fake, but because there was no other picture of the world, and you were so within this system you accepted it as normal and just went on.”</span><span style="font-size:15px; margin-left: 5px;">  - <a href="https://www.youtube.com/watch?v=MIHC4NNScEI">HyperNormalisation explained by Adam Curtis</a></span></p>
-            <p><em><mark style="background-color: rgba(215, 90, 90, 0.828); color: rgb(236, 222, 196); border-radius: 4px;">Final project for my Photo II class.</mark></em>
+<section style="padding: 70px; padding-top:0%">
+            <h1 class="headline" style="background-color:rgba(220, 241, 84, 0.793); padding:10px; border-radius: 4px;">Heading Across a Great Divide <small style="font-size:medium; color: rgb(181, 84, 77);">Fall 2022</small></h1>
+            <p style="background-color:#fff9e7c9; border-radius: 8px; padding: 5px;"> <span style="font-size:17px; color: rgb(52, 4, 4);">"Somehow, you knew that everything was a bit odd, and a bit unreal, and often fake, but because there was no other picture of the world, and you were so within this system you accepted it as normal and just went on.”</span><span style="font-size:15px; margin-left: 5px;">  - <a href="https://www.youtube.com/watch?v=MIHC4NNScEI">HyperNormalisation explained by Adam Curtis</a></span>
+            <br><em><mark style="background-color: rgba(215, 90, 90, 0.828); color: rgb(236, 222, 196); border-radius: 4px;">Final project for my Photo II class.</mark></em>
               After becoming interested in Baudrillard's concept of hyperreality, I began to visually explore how technology is narrowing the gap between reality and simulation in a way that results in a very surreal and generally unstable perception of the world around us.
                 The structural inequalities in our society that maintain the social hierarchy of global capitalism have fractured the realities of many Americans by further widening the gap between the very wealthy and the poor, shrinking the middle class and decimating the <em>american dream</em>. 
                 In large cities like Boston, the income disparities driving this hierarchy are obvious. Because of my commute between MIT in Cambridge and Wellesley's campus during my senior year, I often found myself in Back Bay, in the area surrounding Newbury Street. Lined with commercial buildings, the stores range from fast-fashion stores closest to Cambridge, like Urban Outfitters and TJ Maxx, and span toward luxury brands such as Cartier and Chanel who reside at the end of the road. 
@@ -734,43 +709,14 @@ img {
                 <!-- <br><br> Two years ago, I was walking with my friend in nyc, the sun was setting and it was getting cold so the waiters on these outdoor patios were putting up heating lamps and I remember thinking how pretty the structure of the patio was; the wooden lattice frame covered in real vines and flowers, wrapped in warm string lights. As we walked past the eaters slurping down pasta and red wine at their tables, a man huddled inside a cardboard box. He had used newspapers to insulate himself and settled down to sleep for the night, through it was only around 7pm. Thinking back on it, the scene was a horrible lynchian manifestation, two realities coming together but refusing to blend, like oil and water. The question I always ask myself is whether the ignorance is a performance and I have yet to come up with a conclusive answer.  -->
                 Through this collection, I wanted to illustrate a perspective of the chaotic, absurd reality of the world while combining even further surreal aspects in photoshop to disorient the viewer. These images depict the containers of social inequity that we are all trapped in and our ignorance in the face of it, adding in visual themes of corporate development and an apocalypse of biblical proportions that is invisible to everyone in the scene while the viewer remains helpless to intervene.  
                 </p>
-
-<div class="archive">
-    <div class="gallery">
-        <img class="pic" id="wild" src="wildhorses.jpg">
-        <section>
-                    <div id="myModal" class="modal">
-                        <span class="close">&times;</span>
-                        <img class="modal-content" id="img01">
-                        <!-- <div id="caption"></div> -->
-                    </div>
-                    <script>
-                        // Get the modal
-                        var modal = document.getElementById("myModal");
-                        
-                        // Get the image and insert it inside the modal - use its "alt" text as a caption
-                        var img = document.getElementById("wild");
-                        var modalImg = document.getElementById("img01");
-                        // var captionText = document.getElementById("caption");
-                        img.onclick = function(){
-                        modal.style.display = "block";
-                        modalImg.src = this.src;
-                        // captionText.innerHTML = this.alt;
-                        }
-                        
-                        // Get the <span> element that closes the modal
-                        var span = document.getElementsByClassName("close")[0];
-                        
-                        // When the user clicks on <span> (x), close the modal
-                        span.onclick = function() { 
-                        modal.style.display = "none";
-                        }
-                        </script>
-        </section>
-            </div>
-    <div class="gallery">
-            <img class="pic" id="construction" src="construction.jpg">
-                <section>
+<div class="slideshow-container" style="margin:auto;">
+    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+<!-- Full-width images with number text -->
+<div class="mySlides2">
+     <div class="numbertext">1 / 12</div>
+     <img style="max-width: 100%" id="construction" src="construction.jpg">
+      </div>
                 <div id="myModal" class="modal">
                     <span class="close">&times;</span>
                     <img class="modal-content" id="img01">
@@ -798,13 +744,45 @@ img {
                     modal.style.display = "none";
                     }
                     </script>
-                </section>
-                <img class="pic" id="headless" src="headless.jpg">
-                <section>
+<div class="mySlides2">
+    <div class="numbertext">2 / 12</div>
+    <div style="text-align: center;">
+        <img style="max-width: 100%; max-height: 700px;" id="wild" src="wildhorses.jpg"></div></div>
+                   <div id="myModal" class="modal">
+                       <span class="close">&times;</span>
+                       <img class="modal-content" id="img01">
+                       <!-- <div id="caption"></div> -->
+                   </div>
+                   <script>
+                       // Get the modal
+                       var modal = document.getElementById("myModal");
+                       
+                       // Get the image and insert it inside the modal - use its "alt" text as a caption
+                       var img = document.getElementById("wild");
+                       var modalImg = document.getElementById("img01");
+                       // var captionText = document.getElementById("caption");
+                       img.onclick = function(){
+                       modal.style.display = "block";
+                       modalImg.src = this.src;
+                       // captionText.innerHTML = this.alt;
+                       }
+                       
+                       // Get the <span> element that closes the modal
+                       var span = document.getElementsByClassName("close")[0];
+                       
+                       // When the user clicks on <span> (x), close the modal
+                       span.onclick = function() { 
+                       modal.style.display = "none";
+                       }
+                       </script>
+<div class="mySlides2">
+    <div class="numbertext">3 / 12</div>
+    <img style="max-width: 100%" id="headless" src="headless.jpg">
+     </div>
                 <div id="myModal" class="modal">
                     <span class="close">&times;</span>
                     <img class="modal-content" id="img01">
-                    <div id="caption"></div>
+                    <!-- <div id="caption"></div> -->
                 </div>
                 <script>
                     // Get the modal
@@ -828,23 +806,17 @@ img {
                     modal.style.display = "none";
                     }
                     </script>
-                </section>
-        </div>
-    <div class="gallery">
-        <img class="pic" id="locks" src="locks.jpg" data-target="#carouselExample" data-slide-to="0">
-        <section>
+
+<div class="mySlides2">
+     <div class="numbertext">4 / 12</div>
+     <div style="text-align: center;">
+        <img style="max-width: 100%; max-height: 700px;" id="locks" src="locks.jpg"></div>
+      </div>
             <div id="myModal" class="modal">
                 <span class="close">&times;</span>
-                <!-- <button class="slide-arrow" id="slide-arrow-prev">
-                    &#8249;
-                    </button>
-                <button class="slide-arrow" id="slide-arrow-next">
-                    &#8250;
-                  </button> -->
                 <img class="modal-content" id="img01">
-                <div id="caption"></div>
+                <!-- <div id="caption"></div> -->
             </div>
-
             <script>
                 // Get the modal
                 var modal = document.getElementById("myModal");
@@ -867,11 +839,10 @@ img {
                 modal.style.display = "none";
                 }
                 </script>
-            </section>
-                </div>
-    <div class="gallery" style="width:400px">
-        <img class="pic" id="deercrime" src="deercrime.jpg">
-                <section>
+<div class="mySlides2">
+     <div class="numbertext">5 / 12</div>
+     <img style="max-width: 100%" id="deercrime" src="deercrime.jpg"></img>
+      </div>
                     <div id="myModal" class="modal">
                         <span class="close">&times;</span>
                         <img class="modal-content" id="img01">
@@ -899,11 +870,10 @@ img {
                         modal.style.display = "none";
                         }
                         </script>
-                    </section></img>
-    </div>
-    <div class="gallery">
-                <img class="pic" id="briver" src="briver.jpg">
-                <section>
+<div class="mySlides2">
+     <div class="numbertext">6 / 12</div>
+     <img style="max-width: 100%" id="briver" src="briver.jpg">
+      </div>
                     <div id="myModal" class="modal">
                         <span class="close">&times;</span>
                         <img class="modal-content" id="img01">
@@ -931,73 +901,11 @@ img {
                         modal.style.display = "none";
                         }
                         </script>
-                    </section>
-                <img class="pic" id="light2" src="lighting2.jpg">
-                    <section>
-                        <div id="myModal" class="modal">
-                            <span class="close">&times;</span>
-                            <img class="modal-content" id="img01">
-                            <div id="caption"></div>
-                        </div>
-                        <script>
-                            // Get the modal
-                            var modal = document.getElementById("myModal");
-                            
-                            // Get the image and insert it inside the modal - use its "alt" text as a caption
-                            var img = document.getElementById("light2");
-                            var modalImg = document.getElementById("img01");
-                            // var captionText = document.getElementById("caption");
-                            img.onclick = function(){
-                            modal.style.display = "block";
-                            modalImg.src = this.src;
-                            captionText.innerHTML = this.alt;
-                            }
-                            
-                            // Get the <span> element that closes the modal
-                            var span = document.getElementsByClassName("close")[0];
-                            
-                            // When the user clicks on <span> (x), close the modal
-                            span.onclick = function() { 
-                            modal.style.display = "none";
-                            }
-                            </script>
-                        </section>
-                </div>
-    <div class="gallery">
-            <img class="pic" id="stroll" src="eveningstroll.jpg">
-                    <section>
-                    <div id="myModal" class="modal">
-                        <span class="close">&times;</span>
-                        <img class="modal-content" id="img01">
-                        <div id="caption"></div>
-                    </div>
-                    <script>
-                        // Get the modal
-                        var modal = document.getElementById("myModal");
-                        
-                        // Get the image and insert it inside the modal - use its "alt" text as a caption
-                        var img = document.getElementById("stroll");
-                        var modalImg = document.getElementById("img01");
-                        // var captionText = document.getElementById("caption");
-                        img.onclick = function(){
-                        modal.style.display = "block";
-                        modalImg.src = this.src;
-                        captionText.innerHTML = this.alt;
-                        }
-                        
-                        // Get the <span> element that closes the modal
-                        var span = document.getElementsByClassName("close")[0];
-                        
-                        // When the user clicks on <span> (x), close the modal
-                        span.onclick = function() { 
-                        modal.style.display = "none";
-                        }
-                        </script>
-                        </section>
-                            </div>
-    <div class="gallery" style="width:400px">
-        <img class="pic" id="lighting" src="wellesleyJewettFromOutsideFall22.jpg">
-                <section>
+
+<div class="mySlides2">
+     <div class="numbertext">7 / 12</div>
+     <img style="max-width: 100%" id="lighting" src="wellesleyJewettFromOutsideFall22.jpg">
+      </div>
                     <div id="myModal" class="modal">
                         <span class="close">&times;</span>
                         <img class="modal-content" id="img01">
@@ -1025,11 +933,135 @@ img {
                         modal.style.display = "none";
                         }
                         </script>
-                    </section>
-        </div>
-    <div class="gallery">
-        <img class="pic" id="BWbuild" src="BWbuilding.jpg">
-                <section>
+<div class="mySlides2">
+    <div class="numbertext">8 / 12</div>
+    <div style="text-align: center;">
+        <img style="max-width: 100%; max-height: 700px;" id="stroll" src="eveningstroll.jpg"></div>
+     </div>
+                   <div id="myModal" class="modal">
+                       <span class="close">&times;</span>
+                       <img class="modal-content" id="img01">
+                       <div id="caption"></div>
+                   </div>
+                   <script>
+                       // Get the modal
+                       var modal = document.getElementById("myModal");
+                       
+                       // Get the image and insert it inside the modal - use its "alt" text as a caption
+                       var img = document.getElementById("stroll");
+                       var modalImg = document.getElementById("img01");
+                       // var captionText = document.getElementById("caption");
+                       img.onclick = function(){
+                       modal.style.display = "block";
+                       modalImg.src = this.src;
+                       captionText.innerHTML = this.alt;
+                       }
+                       
+                       // Get the <span> element that closes the modal
+                       var span = document.getElementsByClassName("close")[0];
+                       
+                       // When the user clicks on <span> (x), close the modal
+                       span.onclick = function() { 
+                       modal.style.display = "none";
+                       }
+                       </script>
+<div class="mySlides2">
+    <div class="numbertext">9 / 12</div>
+    <img style="max-width: 100%" id="backbaybuild" src="IMG_1224.jpeg"></div>
+           <div id="myModal" class="modal">
+               <span class="close">&times;</span>
+               <img class="modal-content" id="img01">
+               <div id="caption"></div>
+           </div>
+           <script>
+               // Get the modal
+               var modal = document.getElementById("myModal");
+               
+               // Get the image and insert it inside the modal - use its "alt" text as a caption
+               var img = document.getElementById("backbaybuild");
+               var modalImg = document.getElementById("img01");
+               // var captionText = document.getElementById("caption");
+               img.onclick = function(){
+               modal.style.display = "block";
+               modalImg.src = this.src;
+               captionText.innerHTML = this.alt;
+               }
+               
+               // Get the <span> element that closes the modal
+               var span = document.getElementsByClassName("close")[0];
+               
+               // When the user clicks on <span> (x), close the modal
+               span.onclick = function() { 
+               modal.style.display = "none";
+               }
+               </script> 
+<div class="mySlides2">
+    <div class="numbertext">10 / 12</div>
+    <img style="max-width: 100%" id="light2" src="lighting2.jpg">
+     </div>
+                        <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+                        <script>
+                            // Get the modal
+                            var modal = document.getElementById("myModal");
+                            
+                            // Get the image and insert it inside the modal - use its "alt" text as a caption
+                            var img = document.getElementById("light2");
+                            var modalImg = document.getElementById("img01");
+                            // var captionText = document.getElementById("caption");
+                            img.onclick = function(){
+                            modal.style.display = "block";
+                            modalImg.src = this.src;
+                            captionText.innerHTML = this.alt;
+                            }
+                            
+                            // Get the <span> element that closes the modal
+                            var span = document.getElementsByClassName("close")[0];
+                            
+                            // When the user clicks on <span> (x), close the modal
+                            span.onclick = function() { 
+                            modal.style.display = "none";
+                            }
+                            </script>
+<div class="mySlides2">
+    <div class="numbertext">11 / 12</div>
+    <div style="text-align: center;">
+        <img style="max-width: 100%; max-height: 700px;" id="angel" src="angel.jpg"></div>
+</div>
+                       <div id="myModal" class="modal">
+                           <span class="close">&times;</span>
+                           <img class="modal-content" id="img01">
+                           <div id="caption"></div>
+                       </div>
+                       <script>
+                           // Get the modal
+                           var modal = document.getElementById("myModal");
+                           
+                           // Get the image and insert it inside the modal - use its "alt" text as a caption
+                           var img = document.getElementById("angel");
+                           var modalImg = document.getElementById("img01");
+                           // var captionText = document.getElementById("caption");
+                           img.onclick = function(){
+                           modal.style.display = "block";
+                           modalImg.src = this.src;
+                           captionText.innerHTML = this.alt;
+                           }
+                           
+                           // Get the <span> element that closes the modal
+                           var span = document.getElementsByClassName("close")[0];
+                           
+                           // When the user clicks on <span> (x), close the modal
+                           span.onclick = function() { 
+                           modal.style.display = "none";
+                           }
+                           </script>
+<div class="mySlides2">
+     <div class="numbertext">12 / 12</div>
+     <div style="text-align: center;">
+        <img style="max-width: 100%; max-height: 700px;" id="BWbuild" src="BWbuilding.jpg"></div>
                     <div id="myModal" class="modal">
                         <span class="close">&times;</span>
                         <img class="modal-content" id="img01">
@@ -1057,11 +1089,10 @@ img {
                         modal.style.display = "none";
                         }
                         </script>
-                    </section>
-                </div>
-    <div class="gallery">
-        <img class="pic" id="mailtruck" src="mailtruck.jpg">
-            <section>
+</div>
+<!-- <div class="mySlides2">
+     <div class="numbertext">11 / 13</div>
+     <img style="max-width: 100%" id="mailtruck" src="mailtruck.jpg"></div>
                 <div id="myModal" class="modal">
                     <span class="close">&times;</span>
                     <img class="modal-content" id="img01">
@@ -1088,79 +1119,21 @@ img {
                     span.onclick = function() { 
                     modal.style.display = "none";
                     }
-                    </script>
-                </section>
-        <img class="pic" id="carwash" src="redcarwash.jpg">
-        <section>
-            <div id="myModal" class="modal">
-                <span class="close">&times;</span>
-                <img class="modal-content" id="img01">
-                <div id="caption"></div>
-            </div>
-            <script>
-                // Get the modal
-                var modal = document.getElementById("myModal");
-                
-                // Get the image and insert it inside the modal - use its "alt" text as a caption
-                var img = document.getElementById("carwash");
-                var modalImg = document.getElementById("img01");
-                // var captionText = document.getElementById("caption");
-                img.onclick = function(){
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
-                }
-                
-                // Get the <span> element that closes the modal
-                var span = document.getElementsByClassName("close")[0];
-                
-                // When the user clicks on <span> (x), close the modal
-                span.onclick = function() { 
-                modal.style.display = "none";
-                }
-                </script>
-            </section>      
-    </div>
-<div class="gallery">
-    <img class="pic" id="angel" src="angel.jpg">
-                    <section>
-                        <div id="myModal" class="modal">
-                            <span class="close">&times;</span>
-                            <img class="modal-content" id="img01">
-                            <div id="caption"></div>
-                        </div>
-                        <script>
-                            // Get the modal
-                            var modal = document.getElementById("myModal");
-                            
-                            // Get the image and insert it inside the modal - use its "alt" text as a caption
-                            var img = document.getElementById("angel");
-                            var modalImg = document.getElementById("img01");
-                            // var captionText = document.getElementById("caption");
-                            img.onclick = function(){
-                            modal.style.display = "block";
-                            modalImg.src = this.src;
-                            captionText.innerHTML = this.alt;
-                            }
-                            
-                            // Get the <span> element that closes the modal
-                            var span = document.getElementsByClassName("close")[0];
-                            
-                            // When the user clicks on <span> (x), close the modal
-                            span.onclick = function() { 
-                            modal.style.display = "none";
-                            }
-                            </script>
-                        </section>              
-                </div>
+                    </script> -->
+
 </div>
-<br>
-<section style="background-color:rgba(255, 228, 239, 0.27); border:1px solid rgb(52, 4, 4); border-radius: 4px;">
-<h1 class="headline" style="background-color:rgba(246, 198, 246, 0.688); margin-top: 0%; padding: 10px; border-radius: 4px;">the kitchen sink ˖｡⁺˚<small style="font-size:medium; color: rgba(181, 84, 77, 0.909);">analog & digital from 2018 - 2023</small></h1>
-<div class="archive" style="padding: 5px;">
-    <div class="gallery" style="width:500px; padding: 5px; padding-top: 0%; max-width: 100%;">
-        <img id="econ2" src="economy2.JPG" alt="Image" style="width:500px; border: 2px solid rgba(136, 171, 213, 0.565)">
-        <section>
+</section>
+
+<section style="padding:70px; padding-top: 0%;">
+<h1 class="headline" style="background-color:rgba(243, 212, 172, 0.607); margin-top: 0%; padding: 10px; border-radius: 4px;">˖｡⁺˚<small style="font-size:medium; color: rgba(181, 84, 77, 0.909);">some analog & digital from 2018 - 2023</small></h1>
+    <br><div class="slideshow-container" style="margin:auto;">
+        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+<!-- Full-width images with number text -->
+    <div class="mySlides3" style="text-align: center;">
+     <div class="numbertext">1 / 14</div>
+     <img style="max-width: 100%;" id="econ2" src="economy2.JPG">
+      </div>
                     <div id="myModal" class="modal">
                         <span class="close">&times;</span>
                         <img class="modal-content" id="img01">
@@ -1188,16 +1161,14 @@ img {
                         modal.style.display = "none";
                         }
                         </script>
-        </section>
-            </div>
-            <div class="gallery" style="width:500px; max-width: 100%">
-                <img class="pic" id="econ1" src="economy1.jpg" style="max-width: 100%;">
-                <section>
-                            <div id="myModal" class="modal">
-                                <span class="close">&times;</span>
-                                <img class="modal-content" id="img01">
-                                <div id="caption"></div>
-                            </div>
+<div class="mySlides3" style="margin:auto">
+    <div class="numbertext">2 / 14</div>
+    <img style="max-width: 100%" id="econ1" src="economy1.jpg">
+     </div>
+         <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+           </div>
                             <script>
                                 // Get the modal
                                 var modal = document.getElementById("myModal");
@@ -1220,12 +1191,12 @@ img {
                                 modal.style.display = "none";
                                 }
                                 </script>
-                </section>
-                    </div>
-                <div class="gallery" style="width:300px; padding: 2.5%; max-width:100%;"  >
-                        <img class="pic" id="swirl" src="swirlCompressed.jpg" style="max-width: 100%; width:500px; border: 2px solid rgb(84, 137, 186)">
-                        <section>
-                                    <div id="myModal" class="modal">
+
+<div class="mySlides3" style="margin:auto">
+    <div class="numbertext">3 / 14</div>
+    <img style="max-width: 100%" id="swirl" src="swirlCompressed.jpg">
+     </div>
+            <div id="myModal" class="modal">
                                         <span class="close">&times;</span>
                                         <img class="modal-content" id="img01">
                                         <div id="caption"></div>
@@ -1252,11 +1223,10 @@ img {
                                         modal.style.display = "none";
                                         }
                                         </script>
-                        </section>
-                            </div>
-                <div class="gallery" style="width:300px; padding: 1.5%; max-width:100%;"  >
-                                <img class="pic" id="carwash" src="IMG_1975.jpg" style="max-width: 100%; width:500px; border: 2px solid rgb(84, 137, 186)">
-                                <section>
+
+<div class="mySlides3" style="margin:auto">
+    <div class="numbertext">4 / 14</div>
+    <img style="max-width: 100%" id="carwash" src="IMG_1975.jpg">
                                             <div id="myModal" class="modal">
                                                 <span class="close">&times;</span>
                                                 <img class="modal-content" id="img01">
@@ -1284,11 +1254,13 @@ img {
                                                 modal.style.display = "none";
                                                 }
                                                 </script>
-                                </section>
-                                    </div>
-<div class="gallery" style="max-width:100%;">
-    <img class="pic" id="E2" src="Elicia2.jpg">
-                        <section>
+                                                </div>
+
+<div class="mySlides3" style="margin:auto">
+    <div class="numbertext">5 / 14</div>
+    <div style="text-align: center;">
+        <img style="max-width: 100%; max-height: 700px;" id="E2" src="Elicia2.jpg"></div>
+     </div>
                             <div id="myModal" class="modal">
                                 <span class="close">&times;</span>
                                 <img class="modal-content" id="img01">
@@ -1316,11 +1288,12 @@ img {
                                 modal.style.display = "none";
                                 }
                                 </script>
-                            </section>              
-                    </div>
-<div class="gallery" style="max-width:100%;">
-    <img class="pic" id="china" src="chinatown.jpg">
-                    <section>
+
+<div class="mySlides3" style="margin:auto">
+     <div class="numbertext">6 / 14</div>
+     <div style="text-align: center;">
+     <img style="max-width: 100%; max-height: 700px;" id="china" src="chinatown.jpg"></div>
+      </div>
                         <div id="myModal" class="modal">
                             <span class="close">&times;</span>
                             <img class="modal-content" id="img01">
@@ -1348,11 +1321,11 @@ img {
                             modal.style.display = "none";
                             }
                             </script>
-                        </section>              
-                </div>
-<div class="gallery" style="max-width:100%;">
-    <img class="pic" id="film1" src="film1.jpg">
-                        <section>
+
+<div class="mySlides3">
+    <div class="numbertext">7 / 14</div>
+    <img style="max-width: 100%" id="film1" src="film1.jpg">
+     </div>
                             <div id="myModal" class="modal">
                                 <span class="close">&times;</span>
                                 <img class="modal-content" id="img01">
@@ -1380,9 +1353,11 @@ img {
                                 modal.style.display = "none";
                                 }
                                 </script>
-                            </section>   
-                            <img class="pic" id="6" src="6.jpg">
-                            <section>
+ <div class="mySlides3">
+    <div class="numbertext">7 / 14</div>
+    <div style="text-align: center;">
+    <img style="max-width: 100%; max-height: 700px" id="woman" src="woman.jpg"></div>
+     </div>
                                 <div id="myModal" class="modal">
                                     <span class="close">&times;</span>
                                     <img class="modal-content" id="img01">
@@ -1393,7 +1368,7 @@ img {
                                     var modal = document.getElementById("myModal");
                                     
                                     // Get the image and insert it inside the modal - use its "alt" text as a caption
-                                    var img = document.getElementById("6");
+                                    var img = document.getElementById("woman");
                                     var modalImg = document.getElementById("img01");
                                     // var captionText = document.getElementById("caption");
                                     img.onclick = function(){
@@ -1410,11 +1385,12 @@ img {
                                     modal.style.display = "none";
                                     }
                                     </script>
-                                </section>              
-                    </div>
-<div class="gallery">
-    <img class="pic" id="film3" src="film3.jpg">
-                        <section>
+           
+<div class="mySlides3">
+    <div class="numbertext">8 / 14</div>
+    <div style="text-align: center;">
+        <img style="max-width: 100%; max-height: 700px;" id="film3" src="film3.jpg"></div>
+     
                             <div id="myModal" class="modal">
                                 <span class="close">&times;</span>
                                 <img class="modal-content" id="img01">
@@ -1441,12 +1417,11 @@ img {
                                 span.onclick = function() { 
                                 modal.style.display = "none";
                                 }
-                                </script>
-                            </section>              
-                    </div>
-<div class="gallery" style="width:400px;">
-    <img class="pic" id="1" src="1.jpg">
-                        <section>
+                                </script>  </div>        
+<div class="mySlides3">
+    <div class="numbertext">9 / 14</div>
+    <img style="max-width: 100%" id="shops" src="shops.jpg">
+     
                             <div id="myModal" class="modal">
                                 <span class="close">&times;</span>
                                 <img class="modal-content" id="img01">
@@ -1457,7 +1432,7 @@ img {
                                 var modal = document.getElementById("myModal");
                                 
                                 // Get the image and insert it inside the modal - use its "alt" text as a caption
-                                var img = document.getElementById("1");
+                                var img = document.getElementById("shops");
                                 var modalImg = document.getElementById("img01");
                                 // var captionText = document.getElementById("caption");
                                 img.onclick = function(){
@@ -1473,12 +1448,12 @@ img {
                                 span.onclick = function() { 
                                 modal.style.display = "none";
                                 }
-                                </script>
-                            </section>              
-                    </div>
-<div class="gallery" style="margin-top:0%;">
-    <img class="pic" id="8" src="8.jpg">
-                            <section>
+                                </script></div>
+<div class="mySlides3">
+    <div class="numbertext">10 / 14</div>
+    <div style="text-align: center;">
+        <img style="max-width: 100%; max-height: 700px;" id="8" src="8.jpg"></div>
+                                    
                                 <div id="myModal" class="modal">
                                     <span class="close">&times;</span>
                                     <img class="modal-content" id="img01">
@@ -1505,12 +1480,11 @@ img {
                                     span.onclick = function() { 
                                     modal.style.display = "none";
                                     }
-                                    </script>
-                                </section>              
-                    </div>
-<div class="gallery" style="width:400px;">
-    <img class="pic" id="sub" src="subaru.jpg">
-                        <section>
+                                    </script></div>
+<div class="mySlides3">
+    <div class="numbertext">11 / 14</div>
+    <img style="max-width: 100%" id="sub" src="subaru.jpg">
+     
                             <div id="myModal" class="modal">
                                 <span class="close">&times;</span>
                                 <img class="modal-content" id="img01">
@@ -1537,12 +1511,12 @@ img {
                                 span.onclick = function() { 
                                 modal.style.display = "none";
                                 }
-                                </script>
-                            </section>              
-                    </div>
-<div class="gallery">
-    <img class="pic" id="china2" src="Chinatown2.jpg">
-                        <section>
+                                </script></div>
+<div class="mySlides3">
+    <div class="numbertext">12 / 14</div>
+    <div style="text-align: center;">
+        <img style="max-width: 100%; max-height: 700px;" id="china2" src="Chinatown2.jpg"></div>
+     
                             <div id="myModal" class="modal">
                                 <span class="close">&times;</span>
                                 <img class="modal-content" id="img01">
@@ -1569,12 +1543,12 @@ img {
                                 span.onclick = function() { 
                                 modal.style.display = "none";
                                 }
-                                </script>
-                            </section>              
-                    </div>
-<div class="gallery">
-    <img class="pic" id="twohead" src="4.jpg">
-                        <section>
+                                </script></div>
+<div class="mySlides3">
+    <div class="numbertext">13 / 14</div>
+    <div style="text-align: center;">
+        <img style="max-width: 100%; max-height: 700px;" id="twohead" src="4.jpg"></div>
+</div>
                             <div id="myModal" class="modal">
                                 <span class="close">&times;</span>
                                 <img class="modal-content" id="img01">
@@ -1602,11 +1576,10 @@ img {
                                 modal.style.display = "none";
                                 }
                                 </script>
-                            </section>              
-                    </div>
-                    <div class="gallery" style="width:300px">
-                        <img class="pic" id="walk" src="walk.jpg">
-                        <section>
+<div class="mySlides3">
+    <div class="numbertext">14 / 14</div>
+    <img style="max-width: 100%" id="walk" src="walk.jpg">
+</div>
                                     <div id="myModal" class="modal">
                                         <span class="close">&times;</span>
                                         <img class="modal-content" id="img01">
@@ -1634,11 +1607,32 @@ img {
                                         modal.style.display = "none";
                                         }
                                         </script>
-                        </section>
-                            </div>
-        </div>
+    </div>
+        <script>
+            
+            let slideIndex = [1,1,1];
+            let slideId = ["mySlides1", "mySlides2", "mySlides3"]
+            showSlides(1, 0);
+            showSlides(1, 1);
+            showSlides(1, 2);
+            
+            function plusSlides(n, no) {
+              showSlides(slideIndex[no] += n, no);
+            }
+            
+            function showSlides(n, no) {
+              let i;
+              let x = document.getElementsByClassName(slideId[no]);
+              if (n > x.length) {slideIndex[no] = 1}    
+              if (n < 1) {slideIndex[no] = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex[no]-1].style.display = "block";  
+            }
+                </script>
+</div>
 </section>
-
 </main>
 <div class="outer">
     <div class="footer">🌀🪱💫 site coded by Sophie Sebastiani in 2023 💫🪱🌀</div></div>
