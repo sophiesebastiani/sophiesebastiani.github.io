@@ -60,6 +60,9 @@ margin: 0px auto;
   /* z-index: 0; */
 }
 
+li a{
+  text-decoration: none;
+}
 
 /* Next & previous buttons */
 .prev,
@@ -167,7 +170,7 @@ background-color: rgba(90, 79, 79, 0.534);
       <li style="background-color:#f0a462e8; padding: 2.5px; text-decoration: none;"><a  href="index.html">Home 🏡</a></li>
       <li style="background-color: #e6c690;; padding: 2.5px; text-decoration: none;"><a href="Video.html">Video</a></li>
       <li style="background-color: #bfd0ad; padding: 2.5px; text-decoration: none;"><a class="active" href="Photo.html">Photo</a></li>
-      <li style="background-color: #e9b6c6;"><a  href="interactive.html">Interactive + Multimedia</a></li>
+      <li style="background-color: #e9b6c6;"><a  href="interactive.html">Interactive</a></li>
 
     </ul>
 <main>
@@ -180,7 +183,7 @@ background-color: rgba(90, 79, 79, 0.534);
 
     <!-- Full-width images with number text -->
     <div class="mySlides1">
-      <div class="numbertext">1 / 15 〡 2023 PRC Selected Image</div>
+      <div class="numbertext">1 / 17 〡 2023 PRC Selected Image</div>
       <img style="max-width: 100%" id="prcImage" src="prcImage.jpg">
     </div>
 
@@ -212,9 +215,74 @@ background-color: rgba(90, 79, 79, 0.534);
         }
         </script>
 
-  
+<div class="mySlides1">
+  <div class="numbertext">2 / 17 〡 Panopticon Gallery; Boston, Massachusetts </div>
+    <img src="panopticongallery.JPG" alt="Panopticon Gallery; Boston, Massachusetts (May 2023)" style="width:100%;" id="gallery">
+</div>
+
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <!-- <div id="caption"></div> -->
+</div>
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("gallery");
+    var modalImg = document.getElementById("img01");
+    // var captionText = document.getElementById("caption");
+    img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    // captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+    modal.style.display = "none";
+    }
+    </script>
+
+<div class="mySlides1">
+  <div class="numbertext">3 / 17 </div>
+    <img src="500collage2.webp" alt="Alernative collage" style="width:100%" id="collage2">
+</div>
+
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <!-- <div id="caption"></div> -->
+</div>
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("collage2");
+    var modalImg = document.getElementById("img01");
+    // var captionText = document.getElementById("caption");
+    img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    // captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+    modal.style.display = "none";
+    }
+    </script>
+
     <div class="mySlides1">
-      <div class="numbertext">2 / 15 〡 Fairhope, AL</div>
+      <div class="numbertext">4 / 17 〡 Fairhope, Alabama</div>
         <img src="IMG_0875Compressed.jpg" alt="Fairhope, AL - January 2023" style="width:100%" id="crane">
     </div>
 
@@ -247,7 +315,7 @@ background-color: rgba(90, 79, 79, 0.534);
         </script>
   
     <div class="mySlides1">
-      <div class="numbertext">3 / 15  |  sweet cow off Co Rd 48 (shot on iphone)</div>
+      <div class="numbertext">5 / 17  |  sweet cow off Co Rd 48 (shot on iphone)</div>
         <img id="cow2" src="cow2.jpg" style="width:100%">
     </div>
 
@@ -280,7 +348,7 @@ background-color: rgba(90, 79, 79, 0.534);
         </script>
   
     <div class="mySlides1">
-      <div class="numbertext">4 / 15 〡 Mobile, AL; off the highway</div>
+      <div class="numbertext">6 / 17 〡 Mobile, Alabama; off the highway</div>
       <img id="bama" src="bama2.jpg" alt="Mobile, AL; off the highway" style="width:100%">
     </div>
 
@@ -311,9 +379,42 @@ background-color: rgba(90, 79, 79, 0.534);
         modal.style.display = "none";
         }
         </script>
+
+<div class="mySlides1">
+  <div class="numbertext">7 / 17 </div>
+  <img id="collage3" src="collage3.webp" alt="" style="width:100%">
+</div>
+
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <!-- <div id="caption"></div> -->
+</div>
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("collage3");
+    var modalImg = document.getElementById("img01");
+    // var captionText = document.getElementById("caption");
+    img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    // captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+    modal.style.display = "none";
+    }
+    </script>
   
     <div class="mySlides1">
-      <div class="numbertext">5 / 15 〡 Fairhope, AL; new Aldi construction across the street from the Walmart Supercenter (shot on iphone)</div>
+      <div class="numbertext">8 / 17 〡 Fairhope, Alabama; new Aldi construction across the street from the Walmart Supercenter (shot on iphone)</div>
         <img id="aldi" src="IMG_0638BW.jpg" style="width:100%" alt="Fairhope, AL; January 2023; new Aldi construction across the street from the Walmart Supercenter (shot on iphone)">
     </div>
 
@@ -346,7 +447,7 @@ background-color: rgba(90, 79, 79, 0.534);
         </script>
 
 <div class="mySlides1">
-    <div class="numbertext">6 / 15 〡 Fairhope, AL</div>
+    <div class="numbertext">9 / 17 〡 Fairhope, Alabama; a construction worker stares down Co Rd 48</div>
       <img id="working" src="working4.jpg" alt="Fairhope, AL" style="width:100%">
   </div>
 
@@ -379,7 +480,7 @@ background-color: rgba(90, 79, 79, 0.534);
     </script>
   
     <div class="mySlides1">
-      <div class="numbertext">7 / 15  | Fairhope, AL; new condominum development</div>
+      <div class="numbertext">10 / 17  | Fairhope, Alabama; new condominum development;</div>
         <img id="condos" src="IMG_0882Compressed.jpg" alt="Fairhope, AL; January 2023; new condominum development" style="width:100%">
     </div>
 
@@ -412,7 +513,7 @@ background-color: rgba(90, 79, 79, 0.534);
         </script>
 
     <div class="mySlides1">
-        <div class="numbertext">8 / 15  |  Desktop collage with images shot on iphone</div>
+        <div class="numbertext">11 / 17  |  Desktop collage with images shot on iphone</div>
         <img id="collageBW" src="collageBW.jpg" style="width:100%">
       </div>
 
@@ -445,7 +546,7 @@ background-color: rgba(90, 79, 79, 0.534);
         </script>
 
       <div class="mySlides1">
-        <div class="numbertext">9 / 15</div>
+        <div class="numbertext">12 / 17 | Fairhope, Alabama; overlooking the pier</div>
           <img id="over" src="overlookCompressed.jpg" style="width:100%">
       </div>
 
@@ -478,7 +579,7 @@ background-color: rgba(90, 79, 79, 0.534);
         </script>
 
       <div class="mySlides1">
-        <div class="numbertext">10 / 15</div>
+        <div class="numbertext">13 / 17 | Mobile, Alabama</div>
           <img id="graves" src="IMG_1003BW.jpg" style="width:100%">
       </div>
 
@@ -511,7 +612,7 @@ background-color: rgba(90, 79, 79, 0.534);
         </script>
 
 <div class="mySlides1">
-    <div class="numbertext">11 / 15</div>
+    <div class="numbertext">14 / 17 | Fairhope, Alabama</div>
       <img id="houses" src="houses.jpeg" style="width:100%">
   </div>
 
@@ -544,7 +645,7 @@ background-color: rgba(90, 79, 79, 0.534);
     </script>
 
 <div class="mySlides1">
-    <div class="numbertext">12 / 15</div>
+    <div class="numbertext">15 / 17</div>
       <img id="cow3" src="cow3.jpg" style="width:100%">
   </div>
     
@@ -577,7 +678,8 @@ background-color: rgba(90, 79, 79, 0.534);
     </script>
 
     <div class="mySlides1">
-        <div class="numbertext">13 / 15</div>
+        <div class="numbertext">16 / 17 | Fairhope, Alabama
+        </div>
           <img     id="danger" src="danger.jpg" style="width:100%">
       </div>
 
@@ -610,7 +712,8 @@ background-color: rgba(90, 79, 79, 0.534);
         </script>
 
 <div class="mySlides1">
-    <div class="numbertext">14 / 15</div>
+    <div class="numbertext">17 / 17 | Fairhope, Alabama; Aldi construction site
+    </div>
       <img id="lot" src="lot.jpg" style="width:100%">
   </div>
   
@@ -642,38 +745,6 @@ background-color: rgba(90, 79, 79, 0.534);
     }
     </script>
 
-<div class="mySlides1">
-  <div class="numbertext">15 / 15 〡 Panopticon Gallery; Boston, Massachusetts </div>
-    <img src="panopticongallery.JPG" alt="Fairhope, AL - January 2023" style="width:100%" id="crane">
-</div>
-
-<div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-    <!-- <div id="caption"></div> -->
-</div>
-<script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-    
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("crane");
-    var modalImg = document.getElementById("img01");
-    // var captionText = document.getElementById("caption");
-    img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    // captionText.innerHTML = this.alt;
-    }
-    
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-    
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-    modal.style.display = "none";
-    }
-    </script>
   
     <!-- Image text -->
     <!-- <div class="caption-container">
@@ -730,19 +801,19 @@ background-color: rgba(90, 79, 79, 0.534);
     </div>
 <br>
     <p style="background-color:#fff9e7c9; border-radius: 8px; padding: 5px; padding-bottom: 0%;">My photo collage, <span style="font-weight:bold;">500 Feet Away</span> <em>(pictured above)</em> was selected by a jury of Wellesley College Art Department Faculty as one of three students to have their work displayed in the Panopticon Gallery in Boston, hosted by the Photographic Resource Center for their annual <a href=https://www.prcboston.org/2023-student-show/#>2023 Student Show.</a>
-      Check out the other photos I shot during winter break on my Canon 30D and iphone in the gallery below.
+      Check out the other photos I shot during winter break on my Canon 30D and iphone in the gallery above.
       </p>
 </div>
 
 
 <div class="padding" style="padding-top:0%; padding-bottom:25px;">
-            <h1 class="headline" style="background-color:rgba(220, 241, 84, 0.793); padding:10px; border-radius: 8px;">Heading Across a Great Divide <small style="letter-spacing: 1px;font-size:medium; color: rgb(181, 84, 77);">Fall 2022 - Spring 2023</small></h1>
+            <h1 class="headline" style="background-color:rgba(220, 241, 84, 0.748); padding:10px; border-radius: 8px;">Heading Across a Great Divide <small style="letter-spacing: 1px;font-size:medium; color: rgb(181, 84, 77);">Fall 2022 - Spring 2023</small></h1>
 <br><div class="slideshow-container" style="margin:auto;">
     <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
 <!-- Full-width images with number text -->
 <div class="mySlides2">
-     <div class="numbertext">1 / 12</div>
+     <div class="numbertext">1 / 12 | Wellesley, Massachusetts</div>
      <img style="max-width: 100%" id="construction" src="construction.jpg">
       </div>
                 <div id="myModal" class="modal">
@@ -773,7 +844,8 @@ background-color: rgba(90, 79, 79, 0.534);
                     }
                     </script>
 <div class="mySlides2">
-    <div class="numbertext">2 / 12</div>
+    <div class="numbertext">2 / 12 | Back Bay, Boston, Massachusetts
+    </div>
     <div style="text-align: center;">
         <img style="max-width: 100%; max-height: 700px;" id="wild" src="wildhorses.jpg"></div></div>
                    <div id="myModal" class="modal">
@@ -804,7 +876,7 @@ background-color: rgba(90, 79, 79, 0.534);
                        }
                        </script>
 <div class="mySlides2">
-    <div class="numbertext">3 / 12</div>
+    <div class="numbertext">3 / 12 | Newbury Street, Back Bay, Boston, Massachusetts</div>
     <img style="max-width: 100%" id="headless" src="headless.jpg">
      </div>
                 <div id="myModal" class="modal">
@@ -836,7 +908,7 @@ background-color: rgba(90, 79, 79, 0.534);
                     </script>
 
 <div class="mySlides2">
-     <div class="numbertext">4 / 12</div>
+     <div class="numbertext">4 / 12 | Boston, Massachusetts</div>
      <div style="text-align: center;">
         <img style="max-width: 100%; max-height: 700px;" id="locks" src="locks.jpg"></div>
       </div>
@@ -868,7 +940,7 @@ background-color: rgba(90, 79, 79, 0.534);
                 }
                 </script>
 <div class="mySlides2">
-     <div class="numbertext">5 / 12</div>
+     <div class="numbertext">5 / 12 | Wellesley College and Back Bay, Boston, Massachusetts</div>
      <img style="max-width: 100%" id="deercrime" src="deercrime.jpg"></img>
       </div>
                     <div id="myModal" class="modal">
@@ -899,8 +971,8 @@ background-color: rgba(90, 79, 79, 0.534);
                         }
                         </script>
 <div class="mySlides2">
-     <div class="numbertext">6 / 12</div>
-     <img style="max-width: 100%" id="briver" src="briver.jpg">
+     <div class="numbertext">6 / 12 | Charles River, Boston, Massachusetts</div>
+     <img style="max-width: 100%" id="briver" src="charlesriver.webp">
       </div>
                     <div id="myModal" class="modal">
                         <span class="close">&times;</span>
@@ -931,7 +1003,7 @@ background-color: rgba(90, 79, 79, 0.534);
                         </script>
 
 <div class="mySlides2">
-     <div class="numbertext">7 / 12</div>
+     <div class="numbertext">7 / 12 | Wellesley, Massachusetts; evening at Wellesley College</div>
      <img style="max-width: 100%" id="lighting" src="wellesleyJewettFromOutsideFall22.jpg">
       </div>
                     <div id="myModal" class="modal">
@@ -962,7 +1034,7 @@ background-color: rgba(90, 79, 79, 0.534);
                         }
                         </script>
 <div class="mySlides2">
-    <div class="numbertext">8 / 12</div>
+    <div class="numbertext">8 / 12 | Back Bay, Boston, Massachusetts</div>
     <div style="text-align: center;">
         <img style="max-width: 100%; max-height: 700px;" id="stroll" src="eveningstroll.jpg"></div>
      </div>
@@ -994,7 +1066,7 @@ background-color: rgba(90, 79, 79, 0.534);
                        }
                        </script>
 <div class="mySlides2">
-    <div class="numbertext">9 / 12</div>
+    <div class="numbertext">9 / 12 | Back Bay, Boston, Massachusetts</div>
     <img style="max-width: 100%" id="backbaybuild" src="IMG_1224.jpeg"></div>
            <div id="myModal" class="modal">
                <span class="close">&times;</span>
@@ -1024,7 +1096,7 @@ background-color: rgba(90, 79, 79, 0.534);
                }
                </script> 
 <div class="mySlides2">
-    <div class="numbertext">10 / 12</div>
+    <div class="numbertext">10 / 12 | Wellesley, Massachusetts; evening at Wellesley College</div>
     <img style="max-width: 100%" id="light2" src="lighting2.jpg">
      </div>
                         <div id="myModal" class="modal">
@@ -1055,7 +1127,7 @@ background-color: rgba(90, 79, 79, 0.534);
                             }
                             </script>
 <div class="mySlides2">
-    <div class="numbertext">11 / 12</div>
+    <div class="numbertext">11 / 12 | Back Bay, Boston, Massachusetts on Halloween</div>
     <div style="text-align: center;">
         <img style="max-width: 100%; max-height: 700px;" id="angel" src="angel.jpg"></div>
 </div>
@@ -1087,7 +1159,7 @@ background-color: rgba(90, 79, 79, 0.534);
                            }
                            </script>
 <div class="mySlides2">
-     <div class="numbertext">12 / 12</div>
+     <div class="numbertext">12 / 12 | Wellesley, Massachusetts; empty storefront</div>
      <div style="text-align: center;">
         <img style="max-width: 100%; max-height: 700px;" id="BWbuild" src="BWbuilding.jpg"></div>
                     <div id="myModal" class="modal">
