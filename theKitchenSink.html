@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="carousel-fit.css" rel="stylesheet" />
+    <link rel="stylesheet" href="screen.css">
+    <meta name=author content="Sophie Sebastiani">
+    <title>Analog & Digital Archive</title>
+    <link rel="icon" type="image/x-icon" href="Screen Shot 2022-11-26 at 1.11.25 PM.png">
+</head>
+
+<body>
+    <style>
+        body {
+          background-color: rgb(249, 248, 246);
+            /* background-image: url('backgroundindex.png');
+          background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover; */
+        }
+        * {
+  box-sizing: border-box;
+}
+
+
+
+/* Position the image container (needed to position the left and right arrows) */
+/* .container {
+  position: relative;
+} */
+
+/* Hide the images by default */
+.mySlides1, .mySlides2, .mySlides3 {display: none; }
+
+.mySlides1, .mySlides2, .mySlides3
+    img {
+  text-align:center; 
+  vertical-align: middle;
+margin: 0px auto;
+  cursor: pointer;
+  max-height: 700px;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+.slideshow-container {
+    vertical-align: middle;
+  max-width: 1000px;
+  position: relative;
+  margin: 0px auto;
+  cursor: pointer;
+  /* z-index: 0; */
+}
+
+li a{
+  text-decoration: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  transition: 0.6s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  width: auto;
+  padding: 35px 14px;
+  margin-top: -55px;
+  color:#bac8b2;
+background-color: rgba(90, 79, 79, 0.534);
+  /* color: rgb(176, 110, 99); */
+  /* background-color: #b4cfece1; */
+  font-family: 'Arial', sans-serif;
+  font-size: 22px;
+  user-select: none;
+  -webkit-user-select: none;
+  text-decoration: none;
+}
+
+.padding {
+    padding: 70px;
+    padding-top:50px; 
+    padding-bottom: 20px;
+  }
+
+@media only screen and (max-width: 775px) {
+    .padding {
+    padding: 10px;
+    padding-top:60px; 
+    padding-bottom: 20px;
+  }
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  /* border-radius: 8px 0px 0px 8px; */
+  border-radius: 8px;
+}
+
+.prev {
+  left: 0;
+  /* border-radius: 0px 8px 8px 0px; */
+  border-radius: 8px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  /* background-color: rgba(90, 79, 79, 0.8); */
+  color: rgb(176, 110, 99);
+  background-color: #b4cfecce;
+  /* color:#abbfa0; */
+  text-decoration: none;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  background-color: rgba(225, 199, 199, 0.365);
+  color:rgba(52, 4, 4, 0.604);
+  font-family: 'Geneva', sans-serif;
+  font-size: small;
+  text-align: left;
+  /* font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; */
+}
+
+/* Container for image text */
+/* .caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+} */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side
+.column {
+  float: left;
+  width: 10%;
+  border: 1px solid rgba(52, 4, 4, 0.524);
+} */
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.8;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+    </style>
+    <ul style="text-align: left; padding-left: 29px; margin-top: 10px; text-decoration: none;">
+      <li style="background-color:#f0a462e8; padding: 2.5px; text-decoration: none;"><a  href="index.html">Home 🏡</a></li>
+      <li style="background-color: #e6c690;; padding: 2.5px; text-decoration: none;"><a href="Video.html">Video</a></li>
+      <li style="background-color: #bfd0ad; padding: 2.5px; text-decoration: none;"><a class="active" href="Photo.html">Photo</a></li>
+      <li style="background-color: #e9b6c6;"><a  href="interactive.html">Interactive</a></li>
+
+    </ul>
+<main>
+
+
+<div class="padding" style="padding-bottom:45px;">
+  <h1 class="headline" style="padding: 10px; border-radius: 8px; font-size:23pt; margin-bottom: 0%; font-weight: bold;">Archive <small style="font-size:14pt; color: rgb(181, 84, 77)">analog & digital selections from 2018 - 2023</small></h1>
+    <br><div class="slideshow-container" style="margin:auto;">
+      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        <!-- <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a> -->
+<!-- Full-width images with number text -->
+<div class="mySlides1" style="text-align: center;">
+  <div class="numbertext">1 / 16 | Summer 2023 Collage; LA; Seattle; Fort Morgan</div>
+  <img style="max-width: 100%;" id="sum23" src="summer23collage.jpg">
+   </div>
+                 <div id="myModal" class="modal">
+                     <span class="close">&times;</span>
+                     <img class="modal-content" id="img01">
+                     <div id="caption"></div>
+                 </div>
+                 <script>
+                     // Get the modal
+                     var modal = document.getElementById("myModal");
+                     
+                     // Get the image and insert it inside the modal - use its "alt" text as a caption
+                     var img = document.getElementById("sum23");
+                     var modalImg = document.getElementById("img01");
+                     // var captionText = document.getElementById("caption");
+                     img.onclick = function(){
+                     modal.style.display = "block";
+                     modalImg.src = this.src;
+                     captionText.innerHTML = this.alt;
+                     }
+                     
+                     // Get the <span> element that closes the modal
+                     var span = document.getElementsByClassName("close")[0];
+                     
+                     // When the user clicks on <span> (x), close the modal
+                     span.onclick = function() { 
+                     modal.style.display = "none";
+                     }
+                     </script>
+    <div class="mySlides1" style="text-align: center;">
+     <div class="numbertext">2 / 16 | Economy Hardware (Closed) in Boston (2023)</div>
+     <img style="max-width: 100%; max-height: 700px" id="econ2" src="economy2.JPG">
+      </div>
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                    <script>
+                        // Get the modal
+                        var modal = document.getElementById("myModal");
+                        
+                        // Get the image and insert it inside the modal - use its "alt" text as a caption
+                        var img = document.getElementById("econ2");
+                        var modalImg = document.getElementById("img01");
+                        // var captionText = document.getElementById("caption");
+                        img.onclick = function(){
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                        captionText.innerHTML = this.alt;
+                        }
+                        
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close")[0];
+                        
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function() { 
+                        modal.style.display = "none";
+                        }
+                        </script>
+<div class="mySlides1" style="margin:auto">
+    <div class="numbertext">3 / 16 | Boston (2023)</div>
+    <img style="max-width: 100%" id="econ1" src="economy1.jpg">
+     </div>
+         <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+           </div>
+                            <script>
+                                // Get the modal
+                                var modal = document.getElementById("myModal");
+                                
+                                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                                var img = document.getElementById("econ1");
+                                var modalImg = document.getElementById("img01");
+                                // var captionText = document.getElementById("caption");
+                                img.onclick = function(){
+                                modal.style.display = "block";
+                                modalImg.src = this.src;
+                                captionText.innerHTML = this.alt;
+                                }
+                                
+                                // Get the <span> element that closes the modal
+                                var span = document.getElementsByClassName("close")[0];
+                                
+                                // When the user clicks on <span> (x), close the modal
+                                span.onclick = function() { 
+                                modal.style.display = "none";
+                                }
+                                </script>
+
+<div class="mySlides1" style="margin:auto">
+    <div class="numbertext">4 / 16 | Wellesley College obscured (2022)</div>
+    <img style="max-width: 100%" id="swirl" src="swirlCompressed.jpg">
+     </div>
+            <div id="myModal" class="modal">
+                                        <span class="close">&times;</span>
+                                        <img class="modal-content" id="img01">
+                                        <div id="caption"></div>
+                                    </div>
+                                    <script>
+                                        // Get the modal
+                                        var modal = document.getElementById("myModal");
+                                        
+                                        // Get the image and insert it inside the modal - use its "alt" text as a caption
+                                        var img = document.getElementById("swirl");
+                                        var modalImg = document.getElementById("img01");
+                                        // var captionText = document.getElementById("caption");
+                                        img.onclick = function(){
+                                        modal.style.display = "block";
+                                        modalImg.src = this.src;
+                                        captionText.innerHTML = this.alt;
+                                        }
+                                        
+                                        // Get the <span> element that closes the modal
+                                        var span = document.getElementsByClassName("close")[0];
+                                        
+                                        // When the user clicks on <span> (x), close the modal
+                                        span.onclick = function() { 
+                                        modal.style.display = "none";
+                                        }
+                                        </script>
+
+
+<div class="mySlides1" style="margin:auto;">
+  <div style="text-align: center;">
+    <div class="numbertext">5 / 16 | Mobile (2018)</div>
+    <img style="max-width: 100%; max-height: 700px;" id="E2" src="Elicia2.jpg"></div>
+                                            <div id="myModal" class="modal">
+                                                <span class="close">&times;</span>
+                                                <img class="modal-content" id="img01">
+                                                <!-- <div id="caption"></div> -->
+                                            </div>
+                                            <script>
+                                                // Get the modal
+                                                var modal = document.getElementById("myModal");
+                                                
+                                                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                                                var img = document.getElementById("E2");
+                                                var modalImg = document.getElementById("img01");
+                                                // var captionText = document.getElementById("caption");
+                                                img.onclick = function(){
+                                                modal.style.display = "block";
+                                                modalImg.src = this.src;
+                                                captionText.innerHTML = this.alt;
+                                                }
+                                                
+                                                // Get the <span> element that closes the modal
+                                                var span = document.getElementsByClassName("close")[0];
+                                                
+                                                // When the user clicks on <span> (x), close the modal
+                                                span.onclick = function() { 
+                                                modal.style.display = "none";
+                                                }
+                                                </script>
+                                                </div>
+
+<div class="mySlides1" style="margin:auto">
+    <div class="numbertext">6 / 16 | Wellesley (2022)</div>
+    <div style="text-align: center;">
+        <img style="max-width: 100%; max-height: 700px;" id="carwash" src="IMG_1975.jpg"></div>
+     </div>
+                            <div id="myModal" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img01">
+                                <div id="caption"></div>
+                            </div>
+                            <script>
+                                // Get the modal
+                                var modal = document.getElementById("myModal");
+                                
+                                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                                var img = document.getElementById("carwash");
+                                var modalImg = document.getElementById("img01");
+                                // var captionText = document.getElementById("caption");
+                                img.onclick = function(){
+                                modal.style.display = "block";
+                                modalImg.src = this.src;
+                                captionText.innerHTML = this.alt;
+                                }
+                                
+                                // Get the <span> element that closes the modal
+                                var span = document.getElementsByClassName("close")[0];
+                                
+                                // When the user clicks on <span> (x), close the modal
+                                span.onclick = function() { 
+                                modal.style.display = "none";
+                                }
+                                </script>
+
+<div class="mySlides1" style="margin:auto">
+     <div class="numbertext">7 / 16 | Chinatown, NYC (2018)</div>
+     <div style="text-align: center;">
+     <img style="max-width: 100%; max-height: 700px;" id="china" src="chinatown.jpg"></div>
+      </div>
+                        <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+                        <script>
+                            // Get the modal
+                            var modal = document.getElementById("myModal");
+                            
+                            // Get the image and insert it inside the modal - use its "alt" text as a caption
+                            var img = document.getElementById("china");
+                            var modalImg = document.getElementById("img01");
+                            // var captionText = document.getElementById("caption");
+                            img.onclick = function(){
+                            modal.style.display = "block";
+                            modalImg.src = this.src;
+                            captionText.innerHTML = this.alt;
+                            }
+                            
+                            // Get the <span> element that closes the modal
+                            var span = document.getElementsByClassName("close")[0];
+                            
+                            // When the user clicks on <span> (x), close the modal
+                            span.onclick = function() { 
+                            modal.style.display = "none";
+                            }
+                            </script>
+
+<div class="mySlides1">
+    <div class="numbertext">8 / 16 | Mobile (2018)</div>
+    <img style="max-width: 100%" id="film1" src="film1.jpg">
+     </div>
+                            <div id="myModal" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img01">
+                                <div id="caption"></div>
+                            </div>
+                            <script>
+                                // Get the modal
+                                var modal = document.getElementById("myModal");
+                                
+                                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                                var img = document.getElementById("film1");
+                                var modalImg = document.getElementById("img01");
+                                // var captionText = document.getElementById("caption");
+                                img.onclick = function(){
+                                modal.style.display = "block";
+                                modalImg.src = this.src;
+                                captionText.innerHTML = this.alt;
+                                }
+                                
+                                // Get the <span> element that closes the modal
+                                var span = document.getElementsByClassName("close")[0];
+                                
+                                // When the user clicks on <span> (x), close the modal
+                                span.onclick = function() { 
+                                modal.style.display = "none";
+                                }
+                                </script>
+ <div class="mySlides1">
+    <div class="numbertext">9 / 16 | NYC (2018)</div>
+    <div style="text-align: center;">
+    <img style="max-width: 100%; max-height: 700px" id="woman" src="woman.jpg"></div>
+     </div>
+                                <div id="myModal" class="modal">
+                                    <span class="close">&times;</span>
+                                    <img class="modal-content" id="img01">
+                                    <div id="caption"></div>
+                                </div>
+                                <script>
+                                    // Get the modal
+                                    var modal = document.getElementById("myModal");
+                                    
+                                    // Get the image and insert it inside the modal - use its "alt" text as a caption
+                                    var img = document.getElementById("woman");
+                                    var modalImg = document.getElementById("img01");
+                                    // var captionText = document.getElementById("caption");
+                                    img.onclick = function(){
+                                    modal.style.display = "block";
+                                    modalImg.src = this.src;
+                                    captionText.innerHTML = this.alt;
+                                    }
+                                    
+                                    // Get the <span> element that closes the modal
+                                    var span = document.getElementsByClassName("close")[0];
+                                    
+                                    // When the user clicks on <span> (x), close the modal
+                                    span.onclick = function() { 
+                                    modal.style.display = "none";
+                                    }
+                                    </script>
+           
+<div class="mySlides1">
+    <div class="numbertext">9 / 16 | Mobile (2018)</div>
+    <div style="text-align: center;">
+        <img style="max-width: 100%; max-height: 700px;" id="film3" src="film3.jpg"></div>
+     
+                            <div id="myModal" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img01">
+                                <div id="caption"></div>
+                            </div>
+                            <script>
+                                // Get the modal
+                                var modal = document.getElementById("myModal");
+                                
+                                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                                var img = document.getElementById("film3");
+                                var modalImg = document.getElementById("img01");
+                                // var captionText = document.getElementById("caption");
+                                img.onclick = function(){
+                                modal.style.display = "block";
+                                modalImg.src = this.src;
+                                captionText.innerHTML = this.alt;
+                                }
+                                
+                                // Get the <span> element that closes the modal
+                                var span = document.getElementsByClassName("close")[0];
+                                
+                                // When the user clicks on <span> (x), close the modal
+                                span.onclick = function() { 
+                                modal.style.display = "none";
+                                }
+                                </script>  </div>        
+<div class="mySlides1">
+    <div class="numbertext">10 / 16 | Chinatown, NYC (2018)</div>
+    <img style="max-width: 100%" id="shops" src="shops.jpg">
+     
+                            <div id="myModal" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img01">
+                                <div id="caption"></div>
+                            </div>
+                            <script>
+                                // Get the modal
+                                var modal = document.getElementById("myModal");
+                                
+                                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                                var img = document.getElementById("shops");
+                                var modalImg = document.getElementById("img01");
+                                // var captionText = document.getElementById("caption");
+                                img.onclick = function(){
+                                modal.style.display = "block";
+                                modalImg.src = this.src;
+                                captionText.innerHTML = this.alt;
+                                }
+                                
+                                // Get the <span> element that closes the modal
+                                var span = document.getElementsByClassName("close")[0];
+                                
+                                // When the user clicks on <span> (x), close the modal
+                                span.onclick = function() { 
+                                modal.style.display = "none";
+                                }
+                                </script></div>
+<div class="mySlides1">
+    <div class="numbertext">11 / 16 | Mobile (2018)</div>
+    <div style="text-align: center;">
+        <img style="max-width: 100%; max-height: 700px;" id="8" src="8.jpg"></div>
+                                    
+                                <div id="myModal" class="modal">
+                                    <span class="close">&times;</span>
+                                    <img class="modal-content" id="img01">
+                                    <div id="caption"></div>
+                                </div>
+                                <script>
+                                    // Get the modal
+                                    var modal = document.getElementById("myModal");
+                                    
+                                    // Get the image and insert it inside the modal - use its "alt" text as a caption
+                                    var img = document.getElementById("8");
+                                    var modalImg = document.getElementById("img01");
+                                    // var captionText = document.getElementById("caption");
+                                    img.onclick = function(){
+                                    modal.style.display = "block";
+                                    modalImg.src = this.src;
+                                    captionText.innerHTML = this.alt;
+                                    }
+                                    
+                                    // Get the <span> element that closes the modal
+                                    var span = document.getElementsByClassName("close")[0];
+                                    
+                                    // When the user clicks on <span> (x), close the modal
+                                    span.onclick = function() { 
+                                    modal.style.display = "none";
+                                    }
+                                    </script></div>
+<div class="mySlides1">
+    <div class="numbertext">12 / 16 | Mobile (2018)</div>
+    <img style="max-width: 100%" id="sub" src="subaru.jpg">
+     
+                            <div id="myModal" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img01">
+                                <div id="caption"></div>
+                            </div>
+                            <script>
+                                // Get the modal
+                                var modal = document.getElementById("myModal");
+                                
+                                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                                var img = document.getElementById("sub");
+                                var modalImg = document.getElementById("img01");
+                                // var captionText = document.getElementById("caption");
+                                img.onclick = function(){
+                                modal.style.display = "block";
+                                modalImg.src = this.src;
+                                captionText.innerHTML = this.alt;
+                                }
+                                
+                                // Get the <span> element that closes the modal
+                                var span = document.getElementsByClassName("close")[0];
+                                
+                                // When the user clicks on <span> (x), close the modal
+                                span.onclick = function() { 
+                                modal.style.display = "none";
+                                }
+                                </script></div>
+<div class="mySlides1">
+    <div class="numbertext">13 / 16 | NYC (2018)</div>
+    <div style="text-align: center;">
+        <img style="max-width: 100%; max-height: 700px;" id="china2" src="Chinatown2.jpg"></div>
+     
+                            <div id="myModal" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img01">
+                                <div id="caption"></div>
+                            </div>
+                            <script>
+                                // Get the modal
+                                var modal = document.getElementById("myModal");
+                                
+                                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                                var img = document.getElementById("china2");
+                                var modalImg = document.getElementById("img01");
+                                // var captionText = document.getElementById("caption");
+                                img.onclick = function(){
+                                modal.style.display = "block";
+                                modalImg.src = this.src;
+                                captionText.innerHTML = this.alt;
+                                }
+                                
+                                // Get the <span> element that closes the modal
+                                var span = document.getElementsByClassName("close")[0];
+                                
+                                // When the user clicks on <span> (x), close the modal
+                                span.onclick = function() { 
+                                modal.style.display = "none";
+                                }
+                                </script></div>
+<div class="mySlides1">
+    <div class="numbertext">14 / 16 | Mobile (2018)</div>
+    <div style="text-align: center;">
+        <img style="max-width: 100%; max-height: 700px;" id="twohead" src="4.jpg"></div>
+</div>
+                            <div id="myModal" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img01">
+                                <div id="caption"></div>
+                            </div>
+                            <script>
+                                // Get the modal
+                                var modal = document.getElementById("myModal");
+                                
+                                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                                var img = document.getElementById("twohead");
+                                var modalImg = document.getElementById("img01");
+                                // var captionText = document.getElementById("caption");
+                                img.onclick = function(){
+                                modal.style.display = "block";
+                                modalImg.src = this.src;
+                                captionText.innerHTML = this.alt;
+                                }
+                                
+                                // Get the <span> element that closes the modal
+                                var span = document.getElementsByClassName("close")[0];
+                                
+                                // When the user clicks on <span> (x), close the modal
+                                span.onclick = function() { 
+                                modal.style.display = "none";
+                                }
+                                </script>
+<div class="mySlides1">
+    <div class="numbertext">15 / 16 | Spanish Fort (2018)</div>
+    <img style="max-width: 100%" id="walk" src="walk.jpg">
+</div>
+                                    <div id="myModal" class="modal">
+                                        <span class="close">&times;</span>
+                                        <img class="modal-content" id="img01">
+                                        <div id="caption"></div>
+                                    </div>
+                                    <script>
+                                        // Get the modal
+                                        var modal = document.getElementById("myModal");
+                                        
+                                        // Get the image and insert it inside the modal - use its "alt" text as a caption
+                                        var img = document.getElementById("walk");
+                                        var modalImg = document.getElementById("img01");
+                                        // var captionText = document.getElementById("caption");
+                                        img.onclick = function(){
+                                        modal.style.display = "block";
+                                        modalImg.src = this.src;
+                                        captionText.innerHTML = this.alt;
+                                        }
+                                        
+                                        // Get the <span> element that closes the modal
+                                        var span = document.getElementsByClassName("close")[0];
+                                        
+                                        // When the user clicks on <span> (x), close the modal
+                                        span.onclick = function() { 
+                                        modal.style.display = "none";
+                                        }
+                                        </script>
+<div class="mySlides1">
+  <div class="numbertext">16 / 16 | Mobile (2018)</div>
+  <img style="max-width: 100%" id="roadtrees" src="roadtrees.jpg">
+</div>
+                                  <div id="myModal" class="modal">
+                                      <span class="close">&times;</span>
+                                      <img class="modal-content" id="img01">
+                                      <div id="caption"></div>
+                                  </div>
+                                  <script>
+                                      // Get the modal
+                                      var modal = document.getElementById("myModal");
+                                      
+                                      // Get the image and insert it inside the modal - use its "alt" text as a caption
+                                      var img = document.getElementById("roadtrees");
+                                      var modalImg = document.getElementById("img01");
+                                      // var captionText = document.getElementById("caption");
+                                      img.onclick = function(){
+                                      modal.style.display = "block";
+                                      modalImg.src = this.src;
+                                      captionText.innerHTML = this.alt;
+                                      }
+                                      
+                                      // Get the <span> element that closes the modal
+                                      var span = document.getElementsByClassName("close")[0];
+                                      
+                                      // When the user clicks on <span> (x), close the modal
+                                      span.onclick = function() { 
+                                      modal.style.display = "none";
+                                      }
+                                      </script>
+    </div>
+        <script>
+            
+            let slideIndex = [1,1,1];
+            let slideId = ["mySlides1", "mySlides2", "mySlides3"]
+            showSlides(1, 0);
+            showSlides(1, 1);
+            showSlides(1, 2);
+            
+            function plusSlides(n, no) {
+              showSlides(slideIndex[no] += n, no);
+            }
+            
+            function showSlides(n, no) {
+              let i;
+              let x = document.getElementsByClassName(slideId[no]);
+              if (n > x.length) {slideIndex[no] = 1}    
+              if (n < 1) {slideIndex[no] = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex[no]-1].style.display = "block";  
+            }
+                </script>
+</div>
+</div>
+</main>
+<div class="outer">
+    <div class="footer">🌀🪱💫 site coded by Sophie Sebastiani ・ 2023 ・ Github 💫🪱🌀</div></div>
+</body>
+</html>
+

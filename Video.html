@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="screen.css">
+            <!-- Bootstrap -->
+            <link href="css/bootstrap.css" rel="stylesheet">
+            <script src="js/respond.js"></script>
     <meta name=author content="Sophie Sebastiani">
     <title>Video</title>
     <link rel="icon" type="image/x-icon" href="Screen Shot 2022-11-26 at 1.11.25 PM.png">
@@ -13,11 +16,11 @@
 <body>
   <style>
     body {
-      background-image: url('backgroundindex.png');
+      /* background-image: url('backgroundindex.png');
           background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size:cover;  
-      /* background-color: rgba(249, 248, 246, 0.857); */
+        background-size:cover;   */
+        background-color: rgb(249, 248, 246);
     }
 
     .padding {
@@ -33,6 +36,55 @@
     padding-bottom: 20px;
   }
 }
+
+.grid-container {
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 17px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgb(52, 4, 4);
+  border-radius: 25px;
+  padding: 0%;
+  margin-left: 0%;
+  margin-right:0%;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.grid-item:hover {
+  border: 2.75px solid rgb(202, 86, 54);
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: rgba(255, 255, 255, 0.931);
+  color: rgb(52, 4, 4);
+  text-align: center;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: medium;
+font-family: Arial, Helvetica, sans-serif;
+letter-spacing: 1px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 43%;
+  margin-left: -60px;
+}
+
+.grid-item:hover .tooltiptext {
+  visibility: visible;
+}
+
 </style>
 <ul style="text-align: left; padding-left: 29px; margin-top: 10px">
   <li style="background-color:#f0a462e8;"><a  href="index.html">Home 🏡</a></li>
@@ -43,86 +95,63 @@
 </ul>
 <main>
     <div class="padding" style="padding-top: 70px;">
-      <!-- <div class="container">
-        <div class="row"> -->
-          <!-- <h1 class="headline" style="padding-left: 0%; padding-top:0%; padding-bottom: 15px; font-size:25px; font-weight: bold; background-color: transparent;"><mark style="color:rgb(255, 249, 238); background-color:rgb(213, 55, 55); padding:0%;">Video:</mark></h1> -->
-          <!-- <div class="col-sm" style="padding: 25px; padding-top: 20px; background-color:rgba(163, 186, 168, 0.522); border:1px solid rgb(52, 4, 4)">
-                <h1 class="headline"><a href="https://www.prcboston.org/2023-student-show/#">Life and After-Life Screening</a><h1>
-                    <p><mark style="background-color: rgba(253, 247, 237, 0.857)"></a>Watch the advanced video projects class </mark></p>
-                    <img width="450" height="300" id="prcImage" style="border:1px solid rgb(52, 4, 4); max-width:100%" src="Screening365.jpeg" alt="<p>500 Feet Away (2023), A construction worker stares down county road 48 toward the fallen roadkill, Bambi; the Walmart Supercenter to his back, the newly constructed Aldi his north eastern star.</p>">
-                    <section>
-                        <div id="myModal" class="modal">
-                            <span class="close">&times;</span>
-                            <img class="modal-content" id="img01">
-                            <div id="caption"></div>
-                        </div>
-                        <script>
-                            // Get the modal
-                            var modal = document.getElementById("myModal");
-                            
-                            // Get the image and insert it inside the modal - use its "alt" text as a caption
-                            var img = document.getElementById("prcImage");
-                            var modalImg = document.getElementById("img01");
-                            var captionText = document.getElementById("caption");
-                            img.onclick = function(){
-                            modal.style.display = "block";
-                            modalImg.src = this.src;
-                            captionText.innerHTML = this.alt;
-                            }
-                            
-                            // Get the <span> element that closes the modal
-                            var span = document.getElementsByClassName("close")[0];
-                            
-                            // When the user clicks on <span> (x), close the modal
-                            span.onclick = function() { 
-                            modal.style.display = "none";
-                            }
-                            </script>
-                        </section>
-            </div>
-            <div class="col-sm" style="background-color:rgba(184, 176, 162, 0.5); padding: 25px; border-right: 1px solid rgb(52, 4, 4); border-top: 1px solid rgb(52, 4, 4); border-bottom:1px solid rgb(52, 4, 4)">
-                    <a href="Mapshots.html"><img width="480" height="350" style="max-width:100%; border: 1px solid rgb(52, 4, 4)" src="screening.jpg">
-                    </img></a><br><br>
-                    <p><mark style="background-color: rgba(253, 247, 237, 0.857)">Screening of Myth of the Self-Regulatory Machine</mark></p> </div>
-            </div>
-        </div>
-        <br> -->
-
-        <h1 class="headline" style="background-color:rgba(254, 137, 94, 0.836); font-weight: normal; border-radius: 8px;padding: 10px;">The Myth of the Self-Regulatory Machine <small style="letter-spacing: 1px;font-size:medium; color: rgba(253, 247, 237); font-weight: normal;">Spring 2023</small></h1>
-<br><section style="padding:15px; padding-top:0%; text-align: center;"><iframe width=960 height=540 style="border-radius:8px; border: 0.5px solid rgb(81, 68, 68); margin-left: 1%; max-width:100%;" src="https://player.vimeo.com/video/827746067?h=9ab686b9b4" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="Where's Your Soul? The Failure of Urban Renewal"></iframe>
-            <br><br>
-            <p style="background-color: #fff9e7c9; border-radius: 8px; padding: 5px;"><em><mark style="background-color: rgba(215, 90, 90, 0.8); color: rgb(247, 237, 220); border-radius: 8px;">Final project for Advanced Video Production.</em></mark>
-               I was drawn to this project, particularly the regulatory aspect, because of the magnitude of the issues surrounding 3d printing and artificial intelligence, the game of hot potato the Supreme Court is playing with Congress over this problem, and the difficulties the 1st Amendment (+ others) poses to passing any legislation at all.
-               I wish I could have spent an entire year creating this documentary and I hope to uptdate it in the future; but, the timing of this film is very important to me with the information it shares about large language models (LLM) and their flaws ripe for regulatory action. Acting as director, cameraman + crew, and editor this time was incredibly challenging but ultimately rewarding as it allowed complete control for me to tighten this vast observation into a cohesive narrative and pose some interesting questions about the freedom of internet usage in the future along the way. 
-              </p></section>
-<h1 class="headline" style="background-color:rgba(166, 201, 208, 0.82); font-weight: normal; padding:10px; border-radius: 8px;">Where's Your Soul? The Failure of Urban Renewal <small style="letter-spacing: 1px;font-size:medium; color: rgba(253, 247, 237);font-weight: normal">Fall 2022</small></h1>
-<br><section style="padding:15px; padding-top:0%; max-width: 100%; text-align: center;"><iframe style="border-radius:8px; border: 0.5px solid rgb(81, 68, 68); margin-left: 1%; max-width:100%" src="https://player.vimeo.com/video/886954083?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479" width="960" height="540" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Where's Your Soul? The Failure of Urban Renewal (2022)"></iframe>            
-  <br><br><p style="background-color:#fff9e7c9; border-radius: 8px; padding: 5px;"><em><mark style="background-color: rgba(215, 90, 90, 0.8); color: rgb(247, 237, 220); border-radius: 8px;">Final project for Experimental Video Production.</em></mark>
-               
-              An analysis of how the current (as of 2022) housing crisis facing the US stems from the highly racialized failure of the 1950's and 60's movement of urban renewal by all levels of the American government. Similar to my video essay critiquing the NFT craze, this work pulls much inspiration from Adam Curtis' documentary work, especially in creating historical narrative through the collage of moving images.
-              The opening sequence of clips were filmed by me in Boston. The rest of the video incorporates appropriated footage, especially clips from contemporary news media, which I use to weave a visual timeline of the historical inequities in the housing market and address the cause of the same pattern of crashes in the market or great displacements like the one caused by the failure of this policy implementation.
-              </p></section>
-    
-  <h1 class="headline" style="background-color:rgba(137, 240, 27, 0.925); font-weight: normal;padding: 10px; border-radius: 8px;">NFTs or The Exploitation of Speculative Markets <small style="letter-spacing: 1px;font-size:medium; color: rgba(181, 84, 77, 0.909);font-weight: normal">Spring 2022</small></h1>
+      <h1 class="headline" style="padding: 10px; border-radius: 8px; font-size:23pt; margin-bottom: 0%; font-weight: bold;">Video <small style="font-size:14pt; color: rgb(181, 84, 77); font-weight: normal; letter-spacing: 1px;">from 2021 - 2023</small></h1>
+  <!-- <h1 class="headline" style="background-color:rgba(137, 240, 27, 0.925); font-weight: normal;padding: 10px; border-radius: 8px;">NFTs or The Exploitation of Speculative Markets <small style="letter-spacing: 1px;font-size:medium; color: rgba(181, 84, 77, 0.909);font-weight: normal">Spring 2022</small></h1> -->
 <br>
-<section style="padding:15px; padding-top:0%; max-width: 100%; text-align: center;"><iframe width="960" height="540" style="border-radius:8px; border: 0.5px solid rgb(81, 68, 68); margin-left: 1.5%;max-width:100%" src="https://player.vimeo.com/video/802148201?h=45ba3d5501&amp;badge=0&amp;muted=0&amp;autoplay=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; web-share; picture-in-picture" allowfullscreen title="(Nfts) the Value of the Digital Image - a Critique of Speculative Art Markets"></iframe>         </body>
-        <br></section>
-        <p style="background-color: #fff9e7c9; border-radius: 8px; padding: 5px;"> <em><mark style="background-color: rgba(215, 90, 90, 0.8); color: rgb(247, 237, 220); border-radius: 8px;">Final Project + <a href="https://docs.google.com/document/d/1dMSI4Gok1meXQb_fmCRRg6Lc8Vtim--c/edit?usp=sharing&ouid=103206116209846339059&rtpof=true&sd=true" style="color: rgb(209, 234, 255)">Paper (read here)</a> for Decolonial Art History.</mark></em> Video begins with a case against NFTs and the concept of speculative value in the art market through appropriated footage and follows with an introspection on the experience of viewing art (physically and digitally) + a conversation with a lovely gentleman who works as a security guard at the Davis about going to the museum.
-        The paper critiques the artificial price inflation of digital objects within a speculative market and the fabrication of false realities that conceal real-world problems like rising poverty and homelessness in America and abroad.</p>
-        <br>
+<div class="container" style="padding-top:0%;">
+<div class="grid-container">
+  <div class="row">
+    <!-- <h1 class="headline" style="font-size:25px; background-color: transparent; font-family: 'Arial narrow', sans-serif;"><mark style="border-radius: 8px;color:rgb(255, 249, 238); background-color:rgb(213, 55, 55)">Featured:</mark></h1> -->
+    <div class="col-sm" style="padding-bottom: 15px;">
+  <div class="grid-item">
+<a href="MythofSelfRegulatoryMachine.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: auto; cursor: pointer; border-radius: 23px;" src="mythPremiere.webp">
+  <span class="tooltiptext" style="font-size: 11pt; background-color: rgba(255, 218, 185, 0.93);">The Myth of the Self-Regulatory Machine (2023)</span>
+</a></div>
+<!-- //div for col-sm// --> </div>
+<div class="col-sm" style="padding-bottom: 15px;">
+<div class="grid-item"><a href="WheresYourSoul.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: auto; cursor: pointer; border-radius: 23.5px;" src="soul.webp">
+    <span class="tooltiptext" style="font-size: 11pt; top:20%;">Where's Your Soul? The Failure of Urban Renewal (2022)</span>
+  </a></div>
+<!-- //div for col-sm// --></div>  
+<div class="col-sm" style="padding-bottom: 15px;">
+  <div class="grid-item"><a href="NFTsArtHistoryVideo.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: fit-content; cursor: pointer; border-radius: 23.5px;" src="network.webp">
+  <span class="tooltiptext" style="background-color: #dee260e9; top:25%; padding: 11px">NFTs or the Exploitation of Art Markets (2022)</span></a>
+  </div> </div>
+  <!-- // div for row // --> </div>
 
-<h1 class="headline" style="font-weight: normal; background-color:rgba(150, 232, 217, 0.831); padding:10px; border-radius: 8px;">Stop Motion Visualizer (set to Japanese Breakfast's 🎶Posing in Bondage🎶)<small style="letter-spacing: 1px;font-size:medium; color: rgba(181, 84, 77, 0.909);font-weight: normal"> Fall 2021</small></h1>
-<br>
-<section style="padding:15px; padding-top:0%; max-width: 100%; text-align: center;"><iframe width="960" height="540"  style="border-radius:8px;border: 0px solid rgb(81, 68, 68); margin-left: 1.5%; max-width:100%" src="https://www.youtube.com/embed/lP4hZrwo6aA?si=gwn-CZfY85R9pAnX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  <br>
-</section><p style="background-color:#fff9e7c9; border-radius: 8px; padding: 5px;"> <em><mark style="background-color: rgba(215, 90, 90, 0.8); color: rgb(247, 237, 220); border-radius: 8px;">Created in Intro to 2D Design.</em></mark> 
-             I love the look of stop motion; treating it like an analog process while being replicated on a digital camera and allowing for creative manipulation between frames, which I tried to play with in messing with the time and sequence of movements. This assignment was all about movement, audio, and finding visual rythym. I chose Japanese Breakfast's Posing in Bondage (2021) because practically the beat allowed for the rapid cuts necessitated by the many frames I used but its also a song that I think really speaks to a basic human need and desire for companionship, a complicated sense of yearning that I *tried* my best to replicate in less than 2 minutes 😄. I used Adobe AfterEffects to create the animations.
-          Creating context, a visual narrative, through the spatial or sequential organization of static and moving images is so fun for me; I enjoy crafting a scene or series of clips that are densely-packed with information or feature small details that force the viewer to really pay attention, really look at the work. In this case, the visual metaphors are pretty obvious and simple but I think this early work really illustrates my interest in storytelling through collage, both spatially and temporally.
-          </p>
-        </div>
-
+<!-- //div grid container/// -->
+</div>
+<!-- // div container/// -->
+</div>
+<div class="container" style="padding-top:0%;">
+  <div class="grid-container">
+    <div class="row">
+      <!-- <h1 class="headline" style="font-size:25px; background-color: transparent; font-family: 'Arial narrow', sans-serif;"><mark style="border-radius: 8px;color:rgb(255, 249, 238); background-color:rgb(213, 55, 55)">Featured:</mark></h1> -->
+      <div class="col-sm" style="padding-bottom: 15px;">
+    <div class="grid-item">
+  <a href="Flashes.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: auto; cursor: pointer; border-radius: 23px;" src="flashes.webp">
+    <span class="tooltiptext" style="background-color: #e9b6c6df;">Flashes (2021)</span>
+  </a></div>
+  <!-- //div for col-sm// --> </div>
+  <div class="col-sm" style="padding-bottom: 15px; visibility: hidden;">
+  <div class="grid-item"><a href="HeadingAcrossaGreatDivide.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: auto; cursor: pointer; border-radius: 35px;" src="construction.png">
+      <span class="tooltiptext">Heading Across a Great Divide (2023)</span>
+    </a></div>
+  <!-- //div for col-sm// --></div>  
+  <div class="col-sm" style="padding-bottom: 15px; visibility: hidden;">
+    <div class="grid-item"><a href="theKitchenSink.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: fit-content; cursor: pointer; border-radius: 35px;" src="shops.jpg">
+    <span class="tooltiptext">Analog & Digital from 2018 - 2024</span></a>
+    </div> </div>
+    <!-- // div for row // --> </div>
+  
+  <!-- //div grid container/// -->
+  </div>
+  <!-- // div container/// -->
+  </div>
+<!-- //padding div// -->
+</div>
 </main>
 <div class="outer">
-  <div class="footer">🌀🪱💫 site coded by Sophie Sebastiani ・ 2023 ・ Github 💫🪱🌀</div></div>
+  <div class="footer" style="padding: 25px">🌀🪱💫 site coded by Sophie Sebastiani ・ 2023 ・ Github 💫🪱🌀</div></div>
 </body>
 </html>

@@ -58,8 +58,10 @@ body {
 .indexheadline a:hover {
   /* color: rgb(186, 72, 64); */
   /* color: rgb(193, 71, 62);  */
-  background-color: rgba(224, 222, 158, 0.663);
-  border-radius: 8px;
+  /* background-color: rgba(224, 222, 158, 0.456); */
+  border: 1.75px solid rgb(202, 86, 54);
+  border-radius: 10px;
+  display:inline-block;
   /* color: rgb(202, 86, 54); */
   /* border: 1.5px solid rgb(202, 86, 54);
   text-decoration: none; */
@@ -411,7 +413,7 @@ p {
   -webkit-text-stroke-color: rgb(156, 156, 156); */
   /* padding-left: 10%;
   padding-right: 10%; */
-  background-color: rgba(186, 204, 228, 0.736);
+  background-color: rgba(147, 177, 183, 0.216);
   /* margin-top: 0%; */
   padding-right: 5%;
   padding-bottom: 1%; 
@@ -441,7 +443,7 @@ p {
   /* color: rgb(193, 71, 62);  */
   color: rgb(206, 76, 40);
   /* color: rgb(202, 86, 54); */
-  background-image: url('backhover.png');
+  background-image: url('backhover.webp');
 }
 
 @media only screen and (max-width: 1000px) {
