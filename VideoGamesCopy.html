@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="screen.css">
     <meta name=author content="Sophie Sebastiani">
-    <title>Photo</title>
+    <title>Video Games</title>
     <link rel="icon" type="image/x-icon" href="Screen Shot 2022-11-26 at 1.11.25 PM.png">
 </head>
 <body>
@@ -32,6 +32,9 @@
     padding-top:60px; 
     padding-bottom: 20px;
   }
+  .col-sm {
+    min-width:100px;
+  }
 }
 
 .grid-container {
@@ -40,12 +43,12 @@
   grid-template-columns: auto auto auto;
   padding: 10px;
   padding-top: 15px;
-  padding-bottom: 25%;
+  padding-bottom: 27%;
 }
 
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(52, 4, 4);
+  /* background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(52, 4, 4); */
   border-radius: 25px;
   padding: 0%;
   margin-left: 0%;
@@ -53,6 +56,8 @@
   font-size: 30px;
   text-align: center;
   position: relative;
+  min-width: 300px;
+  display:inline-block;
 }
 
 .grid-item:hover {
@@ -62,7 +67,7 @@
 .tooltiptext {
   visibility: hidden;
   width: 150px;
-  background-color: rgba(235, 243, 242, 0.958);
+  background-color: rgba(213, 235, 241, 0.843);
   color: rgb(52, 4, 4);
   text-align: center;
   border-radius: 15px;
@@ -93,7 +98,7 @@ letter-spacing: 1px;
 </ul>
 <main>
     <div class="padding" style="padding-top: 70px;">
-      <h1 class="headline" style="padding: 10px; border-radius: 8px; font-size:23pt; margin-bottom: 0%; font-weight: bold;">Photo <small style="font-size:14pt; color: rgb(181, 84, 77); font-weight: normal; letter-spacing: 1px;">from 2018 - 2024</small></h1>
+      <h1 class="headline" style="padding: 10px; border-radius: 8px; font-size:30pt; margin-bottom: 0%; font-weight: bold;">Video Games <small style="font-size:14pt; color: rgb(181, 84, 77); font-weight: normal; letter-spacing: 1px;">from 2022 - 2023</small></h1>
   <!-- <h1 class="headline" style="background-color:rgba(137, 240, 27, 0.925); font-weight: normal;padding: 10px; border-radius: 8px;">NFTs or The Exploitation of Speculative Markets <small style="letter-spacing: 1px;font-size:medium; color: rgba(181, 84, 77, 0.909);font-weight: normal">Spring 2022</small></h1> -->
 <br>
 <div class="container" style="padding-top:0%;">
@@ -102,18 +107,18 @@ letter-spacing: 1px;
     <!-- <h1 class="headline" style="font-size:25px; background-color: transparent; font-family: 'Arial narrow', sans-serif;"><mark style="border-radius: 8px;color:rgb(255, 249, 238); background-color:rgb(213, 55, 55)">Featured:</mark></h1> -->
     <div class="col-sm" style="padding-bottom: 15px;">
   <div class="grid-item">
-<a href="500FeetAway.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: auto; cursor: pointer; border-radius: 21.5px;" src="500collage2.webp">
-  <span class="tooltiptext" style="padding: 11px; top: 35%; ">500 Feet Away (2023)</span>
+<a href="500FeetAway.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: auto; cursor: pointer; border-radius: 21.5px;" src="dayclip.gif">
+  <span class="tooltiptext" style="padding: 11px; top: 33%; ">A Day Like Any Other (2023)</span>
 </a></div>
 <!-- //div for col-sm// --> </div>
 <div class="col-sm" style="padding-bottom: 15px;">
-<div class="grid-item"><a href="HeadingAcrossaGreatDivide.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: auto; cursor: pointer; border-radius: 23px;" src="construction.webp">
-    <span class="tooltiptext" style="top:28%; padding:11px; background-color: #f4ff76de;">Heading Across a Great Divide (2023)</span>
+<div class="grid-item"><a href="HeadingAcrossaGreatDivide.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: auto; cursor: pointer; border-radius: 23px;" src="3dGame2.png">
+    <span class="tooltiptext" style="top:33%; padding:11px; background-color: #fff5f5d4;">Project Terra (2023)</span>
   </a></div>
 <!-- //div for col-sm// --></div>  
 <div class="col-sm" style="padding-bottom: 15px;">
-  <div class="grid-item"><a href="theKitchenSink.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: fit-content; cursor: pointer; border-radius: 23px;" src="shops.jpg">
-  <span class="tooltiptext" style="top:29%; padding: 11px; background-color: #ffeefee4;">Analog & Digital from 2018 - 2024</span></a>
+  <div class="grid-item"><a href="theKitchenSink.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: fit-content; cursor: pointer; border-radius: 23px;" src="gifOrwellianSmaller.gif">
+  <span class="tooltiptext" style="top:22%; padding: 11px; background-color: #dce3edf6;">Orwellian Industries Simulator (2022)</span></a>
   </div> </div>
   <!-- // div for row // --> </div>
 <!-- //div grid container/// -->
@@ -124,6 +129,8 @@ letter-spacing: 1px;
 </div>
 </main>
 <div class="outer">
-  <div class="footer" style="padding: 25px; margin-bottom: 0%;">🌀🪱💫 site coded by Sophie Sebastiani ・ 2023 ・ Github 💫🪱🌀</div></div>
+  <div class="footer" style="padding: 35px">🌀🪱💫 site coded by Sophie Sebastiani ・ 2023 ・ Github 💫🪱🌀
+    <br>
+</div></div>
 </body>
 </html>
