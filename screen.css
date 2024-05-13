@@ -161,7 +161,10 @@ ul {
     /* color:rgb(159, 142, 142); */
     /* color:rgb(161, 196, 109); */
   }
-
+ 
+  li a:hover {
+    color:#24468a;
+  }
   li a.split {
     float: right;
     /* background-color: #04AA6D;
@@ -483,7 +486,7 @@ p {
 .panel {
   padding: 0 18px;
   display: none;
-  background-color: rgba(253, 240, 240, 0.52);
+  background-color:  rgba(253, 240, 240, 0.52);
   overflow: hidden;
   max-height: 0;
   transition: max-height .7s ease-in-out;
