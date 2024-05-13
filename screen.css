@@ -75,8 +75,7 @@ font-family: "myFont2", "Alte Haas Grotesk Bold", sans-serif;
 .indexheadline a:hover {
   /* color: rgb(186, 72, 64); */
   /* color: rgb(193, 71, 62);  */
-  /* background-color: rgba(224, 222, 158, 0.456); */
-  border: 1.75px solid rgb(202, 86, 54);
+  background-color: rgba(233, 205, 200, 0.456);
   border-radius: 10px;
   display:inline-block;
   /* color: rgb(202, 86, 54); */
@@ -198,7 +197,7 @@ ul {
 
 .active {
     /* background-color:rgba(93, 142, 182, 0.22); */
-    color:rgb(255, 240, 238);
+    color:rgb(183, 77, 11);
     /* color: rgb(202, 86, 54); */
     /* color:rgb(81, 68, 68); */
     text-decoration: none;
@@ -260,8 +259,10 @@ p {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 2; /* Sit on top */
-    padding-top: 70px; /* Location of the box */
+    padding-top: 0px; /* Location of the box */
     left: 0;
+    right:0;
+    bottom:0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
@@ -274,24 +275,27 @@ p {
   .modal-content {
     margin: auto;
     display: block;
-    max-width: 75%;
-    max-height: 700px;
+    max-width: 100%;
+    max-height: 100%;
   }
 
   /* The Close Button */
 .close {
+  z-index: 3;
     position: absolute;
     top: 15px;
     right: 35px;
-    color: rgb(39, 7, 7);
+    color: rgb(23, 4, 5);
+    background-color: #fcf0f0;
+    border-radius: 10px;
+    padding: 10px;
     font-size: 35px;
-    font-weight:lighter;
-    transition: 0.3s;
+    transition: 0.2s;
   }
   
   .close:hover,
   .close:focus {
-    color: #604c4c;
+    color: #9e5757;
     text-decoration: none;
     cursor: pointer;
   }
@@ -443,7 +447,9 @@ p {
   background-color: rgba(253, 240, 240, 0.52);
   /* background-image: url('backgroundaccord.png'); */
   background-size: cover;
-  border: 0pt solid rgb(52, 4, 4);
+  border:0pt;
+  border-bottom:1.25pt solid rgba(148, 138, 138, 0.672);
+  border-style:dotted;
   border-radius: 5px;
   text-align: left;
   font-weight: normal;
@@ -481,8 +487,10 @@ p {
   overflow: hidden;
   max-height: 0;
   transition: max-height .7s ease-in-out;
-  border-radius: 5px;
-  border-bottom: 1pt solid rgba(148, 138, 138, 0.672);
+  border-radius: 10px;
+  border:0pt;
+  border-bottom: 1.25pt solid rgba(148, 138, 138, 0.672);
+  border-style:dotted;
 }
 
 .rotate {
