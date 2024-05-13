@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="screen.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="carousel-fit.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name=author content="Sophie Sebastiani">
     <title>Sophie Sebastiani</title>
@@ -22,6 +27,10 @@
         background-size:cover; */
         background-color: rgb(249, 248, 246);
         }
+        * {
+  box-sizing: border-box;
+}
+
 
         @font-face {
           font-family: "myFont";
@@ -29,6 +38,137 @@
         }
         html {
   font-family: "myFont", "Alte Haas Grotesk Regular", sans-serif;
+}
+
+/* Hide the images by default */
+.mySlides1, .mySlides2, .mySlides3 {display: none; }
+
+.mySlides1, .mySlides2, .mySlides3
+    img {
+  text-align:center; 
+  vertical-align: middle;
+margin: 0px auto;
+  cursor: pointer;
+  max-height: 700px;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+.slideshow-container {
+    vertical-align: middle;
+  max-width: 1000px;
+  position: relative;
+  margin: 0px auto;
+  cursor: pointer;
+  /* z-index: 0; */
+}
+
+li a{
+  text-decoration: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  transition: 0.6s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 10%;
+  width: auto;
+  padding: 300px 50px;
+  margin-top: -80px;
+  color:#bac8b2;
+  /* color: rgb(176, 110, 99); */
+  /* background-color: #b4cfece1; */
+  font-family: 'myFont2';
+  font-size: 35px;
+  user-select: none;
+  -webkit-user-select: none;
+  text-decoration: none;
+}
+
+.padding {
+    padding: 40px;
+    padding-top:1px; 
+    padding-bottom: 20px;
+  }
+
+@media only screen and (max-width: 775px) {
+    .padding {
+    padding: 10px;
+    padding-top:60px; 
+    padding-bottom: 20px;
+  }
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  /* border-radius: 8px 0px 0px 8px; */
+  border-radius: 8px;
+}
+
+.prev {
+  left: 0;
+  /* border-radius: 0px 8px 8px 0px; */
+  border-radius: 8px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  /* background-color: rgba(90, 79, 79, 0.8); */
+  color: rgb(176, 110, 99);
+  /* background-color: #b4cfecce; */
+  /* color:#abbfa0; */
+  text-decoration: none;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  background-color: rgba(225, 199, 199, 0.365);
+  color:rgba(52, 4, 4, 0.604);
+  font-family: 'Geneva', sans-serif;
+  font-size: small;
+  text-align: left;
+  /* font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; */
+}
+
+/* Container for image text */
+/* .caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+} */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side
+.column {
+  float: left;
+  width: 10%;
+  border: 1px solid rgba(52, 4, 4, 0.524);
+} */
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.8;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
 }
     </style>
 <button class="accordion"><span style="font-size:27px; font-family:'myFont2';">About Sophie <span style="font-size:17px; font-family: 'myFont2', sans-serif;"> ↴ </span> </span>
@@ -105,12 +245,73 @@
       <!-- <img src='recession3.png' style="margin-top: 1.5%;  height: auto; display: block; margin-left: auto; margin-right: auto; width:900px; border: 1pt solid rgb(52, 4, 4)">
         <p style="text-align: right; margin-top: 0.5%;"> <mark style="background-color: rgba(110, 167, 99, 0.789); color:rgb(250, 248, 239)">🦠 🧠 a desktop collage made from digital scraps and my sketchbook 🛌 💭</mark></p>
           </img> -->
+          <div class="padding" style="padding-bottom:5px; margin-top: 0%;">
+            <br><div class="slideshow-container" style="margin:auto;">
+              <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
                       <section style="padding:25px;padding-bottom:1%;margin-left: auto; margin-right: auto;width:1000px; max-width:100%;">
-                        <a href="500FeetAway.html"><img width="960" height="600" id="prcImage" style="max-width:100%; height: auto; border-radius: 4px; border: 0pt solid rgb(52, 4, 4); cursor: pointer;" src="prcImage.jpg">
+                        <!-- <a href="500FeetAway.html"><img width="960" height="600" id="prcImage" style="max-width:100%; height: auto; border-radius: 4px; border: 0pt solid rgb(52, 4, 4); cursor: pointer;" src="prcImage.jpg">
                         </a>
                       </section>
                       <p style="text-align: right;"> <mark style="color:rgb(52, 4, 4); background-color: rgba(250, 234, 206, 0.816); padding:3px; border-radius: 6px;">500 Feet Away (2023) featured in the Photographic Resource Center <a href="https://www.prcboston.org/2023-student-show/#">2023 Student Show</a> hosted by the Panopticon Gallery in Boston. </mark></p>
-                      
+                       -->
+                       <div class="mySlides1">
+                        <!-- <div class="numbertext">5 / 12 | Wellesley College and Back Bay, Boston, Massachusetts</div> -->
+                        <img style="max-width: 100%" id="deercrime" src="deercrime.jpg"></img>
+                         </div> 
+                         <div class="mySlides1" style="margin:auto">
+                          <!-- <div class="numbertext">3 / 14 | Boston, MA (2023)</div> -->
+                          <img style="max-width: 100%" id="econ1" src="economy1.jpg">
+                           </div>
+                           <div class="mySlides1">
+                            <!-- <div class="numbertext">6 / 17 〡 Mobile, Alabama; off the highway</div> -->
+                            <img id="bama" src="bama2.jpg" alt="Mobile, AL; off the highway" style="width:100%">
+                          </div>
+                            <div class="mySlides1">
+                              <!-- <div class="numbertext">10 / 14 | New York City, NY (2018)</div> -->
+                              <div style="text-align: center;">
+                              <img style="max-width: 100%; max-height: 700px" id="woman" src="woman.jpg"></div>
+                               </div>  
+                               <div class="mySlides1">
+                                <img style="max-width: 100%" id="sub" src="subaru.jpg">
+                              </div> 
+                               <div class="mySlides1">
+                                <!-- <div class="numbertext">1 / 12 | Wellesley, Massachusetts</div> -->
+                                <img style="max-width: 100%" id="construction" src="construction.webp">
+                                 </div>     
+                                   <div class="mySlides1">
+                                    <img style="max-width: 100%" id="walk" src="walk.jpg">
+                                </div>
+                                <div class="mySlides1">
+                                  <div style="text-align: center;">
+                                      <img style="max-width: 100%; max-height: 700px;" id="film3" src="film3.jpg"></div>
+                                   
+
+                                                       <script>
+            
+                                                        let slideIndex = [1,1,1];
+                                                        let slideId = ["mySlides1", "mySlides2", "mySlides3"]
+                                                        showSlides(1, 0);
+                                                        showSlides(1, 1);
+                                                        showSlides(1, 2);
+                                                        
+                                                        function plusSlides(n, no) {
+                                                          showSlides(slideIndex[no] += n, no);
+                                                        }
+                                                        
+                                                        function showSlides(n, no) {
+                                                          let i;
+                                                          let x = document.getElementsByClassName(slideId[no]);
+                                                          if (n > x.length) {slideIndex[no] = 1}    
+                                                          if (n < 1) {slideIndex[no] = x.length}
+                                                          for (i = 0; i < x.length; i++) {
+                                                             x[i].style.display = "none";  
+                                                          }
+                                                          x[slideIndex[no]-1].style.display = "block";  
+                                                        }
+                                                            </script>
+                      </div>
+                      </div>
                       <div class="container" style="padding-top:0%;">
                         <div class="row">
                       <!-- <h1 class="headline" style="font-size:25px; background-color: transparent; font-family: 'Arial narrow', sans-serif;"><mark style="border-radius: 8px;color:rgb(255, 249, 238); background-color:rgb(213, 55, 55)">Featured:</mark></h1> -->
