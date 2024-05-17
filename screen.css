@@ -16,7 +16,7 @@ body {
   font-family: "myFont";
 src: url("/Users/sophiesebastiani/sophiesebastianiGit/alte_haas_grotesk/AlteHaasGroteskRegular.ttf");
 }
-html {
+div {
 font-family: "myFont", "Alte Haas Grotesk Regular", sans-serif;
 }
 
@@ -24,7 +24,7 @@ font-family: "myFont", "Alte Haas Grotesk Regular", sans-serif;
   font-family: "myFont2";
 src: url("/Users/sophiesebastiani/sophiesebastianiGit/alte_haas_grotesk/AlteHaasGroteskBold.ttf");
 }
-html {
+div {
 font-family: "myFont2", "Alte Haas Grotesk Bold", sans-serif;
 }
 
@@ -460,6 +460,8 @@ p {
   border-radius: 5px;
   text-align: left;
   font-weight: normal;
+font-family:"myFont2", "Alte Haas Grotesk Bold", sans-serif;
+  ;
   color:rgba(52, 4, 4, 0.865);
   cursor: pointer;
   padding-left: 3%;
