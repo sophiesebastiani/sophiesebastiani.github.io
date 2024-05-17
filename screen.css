@@ -127,6 +127,7 @@ ul {
     margin-top: 0%;
     z-index: 1;
     margin: auto;
+    font-family:"myFont2", "Alte Haas Grotesk Bold", sans-serif;
     /* background-color: #dddddd; */
   }
   
@@ -138,6 +139,7 @@ ul {
     /* border: 1.2px solid rgb(84, 73, 73); */
     border-radius: 35px;
     padding: 2.5px;
+    font-family:"myFont2", "Alte Haas Grotesk Bold", sans-serif;
 
   }
 
