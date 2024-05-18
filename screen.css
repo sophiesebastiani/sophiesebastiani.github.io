@@ -459,7 +459,7 @@ p {
   border-style:dotted;
   border-radius: 5px;
   text-align: left;
-  font-weight: normal;
+  /* font-weight: normal; */
 font-family:'myFont2', sans-serif;
   color:rgba(52, 4, 4, 0.865);
   cursor: pointer;
