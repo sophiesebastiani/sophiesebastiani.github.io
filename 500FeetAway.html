@@ -132,11 +132,11 @@ li a:hover{
 
 /* Number text (1/3 etc) */
 .numbertext {
-  background-color: rgba(225, 199, 199, 0.365);
+  /* background-color: rgba(225, 199, 199, 0.365); */
   color:rgba(52, 4, 4, 0.604);
   font-family:'myFont', sans-serif;
   font-size: small;
-  text-align: left;
+  text-align: right;
   padding-left: 5px;
   /* font-size: 12px;
   padding: 8px 12px;
@@ -190,188 +190,22 @@ li a:hover{
             <!-- Container for the image gallery -->
     <br><div class="slideshow-container" style="margin:auto; border-radius: 4px;">
 
-    <!-- Full-width images with number text -->
-    <div class="mySlides1">
-      <div class="numbertext">1 / 17 〡 2023 PRC Selected Image</div>
-      <img style="max-width: 100%" id="prcImage" src="prcImage.jpg">
-    </div>
-
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-        <div id="caption"></div>
-    </div>
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-        
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("prcImage");
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-        }
-        
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-        
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() { 
-        modal.style.display = "none";
-        }
-        </script>
-
-<div class="mySlides1">
-  <div class="numbertext">2 / 17 〡 Panopticon Gallery; Boston, Massachusetts </div>
-    <img src="panopticongallery.JPG" alt="Panopticon Gallery; Boston, Massachusetts (May 2023)" style="width:100%;" id="gallery">
-</div>
-
-<div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-    <!-- <div id="caption"></div> -->
-</div>
-<script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-    
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("gallery");
-    var modalImg = document.getElementById("img01");
-    // var captionText = document.getElementById("caption");
-    img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    // captionText.innerHTML = this.alt;
-    }
-    
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-    
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-    modal.style.display = "none";
-    }
-    </script>
-
-<div class="mySlides1">
-  <div class="numbertext">3 / 17 </div>
-    <img src="500collage2.webp" alt="Alernative collage" style="width:100%" id="collage2">
-</div>
-
-<div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-    <!-- <div id="caption"></div> -->
-</div>
-<script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-    
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("collage2");
-    var modalImg = document.getElementById("img01");
-    // var captionText = document.getElementById("caption");
-    img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    // captionText.innerHTML = this.alt;
-    }
-    
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-    
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-    modal.style.display = "none";
-    }
-    </script>
-
-    <div class="mySlides1">
-      <div class="numbertext">4 / 17 〡 Fairhope, Alabama</div>
-        <img src="IMG_0875Compressed.jpg" alt="Fairhope, AL - January 2023" style="width:100%" id="crane">
-    </div>
-
-    <div id="myModal" class="modal">
+      <div class="mySlides1">
+        <img id="scans" src="Scan 6.jpg" style="max-width:100%">
+            <div class="numbertext">Baldwin County between the ages of 8 and 10 (scan collage made in 2024)</div>
+      </div>
+      
+      <div id="myModal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="img01">
         <!-- <div id="caption"></div> -->
-    </div>
-    <script>
+      </div>
+      <script>
         // Get the modal
         var modal = document.getElementById("myModal");
         
         // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("crane");
-        var modalImg = document.getElementById("img01");
-        // var captionText = document.getElementById("caption");
-        img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        // captionText.innerHTML = this.alt;
-        }
-        
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-        
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() { 
-        modal.style.display = "none";
-        }
-        </script>
-  
-    <div class="mySlides1">
-      <div class="numbertext">5 / 17  |  sweet cow off Co Rd 48 (shot on iphone)</div>
-        <img id="cow2" src="cow2.jpg" style="width:100%">
-    </div>
-
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-        <!-- <div id="caption"></div> -->
-    </div>
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-        
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("cow2");
-        var modalImg = document.getElementById("img01");
-        // var captionText = document.getElementById("caption");
-        img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        // captionText.innerHTML = this.alt;
-        }
-        
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-        
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() { 
-        modal.style.display = "none";
-        }
-        </script>
-  
-    <div class="mySlides1">
-      <div class="numbertext">6 / 17 〡 Mobile, Alabama; off the highway</div>
-      <img id="bama" src="bama2.jpg" alt="Mobile, AL; off the highway" style="width:100%">
-    </div>
-
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-        <!-- <div id="caption"></div> -->
-    </div>
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-        
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("bama");
+        var img = document.getElementById("scans");
         var modalImg = document.getElementById("img01");
         // var captionText = document.getElementById("caption");
         img.onclick = function(){
@@ -390,8 +224,144 @@ li a:hover{
         </script>
 
 <div class="mySlides1">
-  <div class="numbertext">7 / 17 </div>
-  <img id="collage3" src="collage3.webp" alt="" style="width:100%">
+  <img id="father" src="Sebastiani_My father, after an accident clearing trees in the wake of Hurricane Ida (Loxley, Alabama).jpg" style="max-width:100%; max-height:700px">
+    <div class="numbertext">My father, after an accident clearing trees in the wake of Hurricane Ida (Loxley, Alabama. 2021)</div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <!-- <div id="caption"></div> -->
+</div>
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById("father");
+  var modalImg = document.getElementById("img01");
+  // var captionText = document.getElementById("caption");
+  img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  // captionText.innerHTML = this.alt;
+  }
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+  modal.style.display = "none";
+  }
+  </script>
+
+<div class="mySlides1">
+  <img id="over" src="IMG_0893Q30.jpg" style="max-width:100%">
+<div class="numbertext">couple overlooking the pier (Fairhope, Alabama. 2023)</div>
+
+</div>
+
+<div id="myModal" class="modal">
+<span class="close">&times;</span>
+<img class="modal-content" id="img01">
+<!-- <div id="caption"></div> -->
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("over");
+var modalImg = document.getElementById("img01");
+// var captionText = document.getElementById("caption");
+img.onclick = function(){
+modal.style.display = "block";
+modalImg.src = this.src;
+// captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+modal.style.display = "none";
+}
+</script>
+
+<div class="mySlides1">
+  
+  <img src="bamaQ50P70.jpg" alt="Alernative collage" style="max-width:100%; max-height:700px" id="collage2">
+  <div class="numbertext">Baldwin and Mobile Counties, Alabama (photos taken in 2023-24. collage made in 2024)</div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <!-- <div class="numbertext">3 / 17 </div> -->
+  <div id="caption"></div>
+</div>
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById("collage2");
+  var modalImg = document.getElementById("img01");
+  // var captionText = document.getElementById("caption");
+  img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  // captionText.innerHTML = this.alt;
+  }
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+  modal.style.display = "none";
+  }
+  </script>
+
+<div class="mySlides1">
+  <img id="closed" src="Sebastiani_foreclosure (Mobile, Alabama).jpg" style="max-width:100%">
+  <div class="numbertext">foreclosure (Mobile, Alabama. 2023)</div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="closed">
+  <!-- <div id="caption"></div> -->
+</div>
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById("closed");
+  var modalImg = document.getElementById("img01");
+  // var captionText = document.getElementById("caption");
+  img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  // captionText.innerHTML = this.alt;
+  }
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+  modal.style.display = "none";
+  }
+  </script>
+
+<div class="mySlides1">
+  <img id="flowerhand" src="flowerhandQ80.jpg" alt="" style="max-width:100%; max-height:700px;">
+  <div class="numbertext">backyard reflection (Loxley, Alabama. 2021)</div>
+
 </div>
 
 <div id="myModal" class="modal">
@@ -404,7 +374,7 @@ li a:hover{
     var modal = document.getElementById("myModal");
     
     // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("collage3");
+    var img = document.getElementById("flowerhand");
     var modalImg = document.getElementById("img01");
     // var captionText = document.getElementById("caption");
     img.onclick = function(){
@@ -421,10 +391,44 @@ li a:hover{
     modal.style.display = "none";
     }
     </script>
+
+        <!-- Full-width images with number text -->
+        <div class="mySlides1">
+          <img style="max-width: 100%" id="prcImage" src="500FeetAwayCollageQ20P70.jpg">
+          <div class="numbertext">the body of a deer yards away from an Aldi construction site being built across the street from an established Walmart (Fairhope, Alabama. 2023)</div>
+        </div>
+    
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("prcImage");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+            }
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+            modal.style.display = "none";
+            }
+            </script>
   
     <div class="mySlides1">
-      <div class="numbertext">8 / 17 〡 Fairhope, Alabama; new Aldi construction across the street from the Walmart Supercenter (shot on iphone)</div>
-        <img id="aldi" src="IMG_0638BW.jpg" style="width:100%" alt="Fairhope, AL; January 2023; new Aldi construction across the street from the Walmart Supercenter (shot on iphone)">
+        <img id="aldi" src="meatQ30.jpg" style="max-width:100%">
+              <div class="numbertext">dinner (Loxley, Alabama. 2021)</div>
     </div>
 
     <div id="myModal" class="modal">
@@ -455,22 +459,23 @@ li a:hover{
         }
         </script>
 
-<div class="mySlides1">
-    <div class="numbertext">9 / 17 〡 Fairhope, Alabama; a construction worker stares down Co Rd 48</div>
-      <img id="working" src="working4.jpg" alt="Fairhope, AL" style="width:100%">
-  </div>
+<!-- <div class="mySlides1">
+  <img id="bama" src="Sebastiani_abandoned auto shop, off the highway.jpg" alt="Mobile, AL; off the highway" style="max-width:100%">
+  <div class="numbertext">foreclosed auto shop off the highway (Mobile, Alabama)</div>
 
-  <div id="myModal" class="modal">
+</div>
+
+<div id="myModal" class="modal">
     <span class="close">&times;</span>
     <img class="modal-content" id="img01">
     <!-- <div id="caption"></div> -->
-</div>
+<!-- </div>
 <script>
     // Get the modal
     var modal = document.getElementById("myModal");
     
     // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("working");
+    var img = document.getElementById("bama");
     var modalImg = document.getElementById("img01");
     // var captionText = document.getElementById("caption");
     img.onclick = function(){
@@ -486,246 +491,14 @@ li a:hover{
     span.onclick = function() { 
     modal.style.display = "none";
     }
-    </script>
-  
-    <div class="mySlides1">
-      <div class="numbertext">10 / 17  | Fairhope, Alabama; new condominum development;</div>
-        <img id="condos" src="IMG_0882Compressed.jpg" alt="Fairhope, AL; January 2023; new condominum development" style="width:100%">
-    </div>
-
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-        <!-- <div id="caption"></div> -->
-    </div>
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-        
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("condos");
-        var modalImg = document.getElementById("img01");
-        // var captionText = document.getElementById("caption");
-        img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        // captionText.innerHTML = this.alt;
-        }
-        
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-        
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() { 
-        modal.style.display = "none";
-        }
-        </script>
+    </script> -->
 
     <div class="mySlides1">
-        <div class="numbertext">11 / 17  |  Desktop collage with images shot on iphone</div>
-        <img id="collageBW" src="collageBW.jpg" style="width:100%">
-      </div>
-
-      <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-        <!-- <div id="caption"></div> -->
-    </div>
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-        
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("collageBW");
-        var modalImg = document.getElementById("img01");
-        // var captionText = document.getElementById("caption");
-        img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        // captionText.innerHTML = this.alt;
-        }
-        
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-        
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() { 
-        modal.style.display = "none";
-        }
-        </script>
-
-      <div class="mySlides1">
-        <div class="numbertext">12 / 17 | Fairhope, Alabama; overlooking the pier</div>
-          <img id="over" src="overlookCompressed.jpg" style="width:100%">
-      </div>
-
-      <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-        <!-- <div id="caption"></div> -->
-    </div>
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-        
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("over");
-        var modalImg = document.getElementById("img01");
-        // var captionText = document.getElementById("caption");
-        img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        // captionText.innerHTML = this.alt;
-        }
-        
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-        
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() { 
-        modal.style.display = "none";
-        }
-        </script>
-
-      <div class="mySlides1">
-        <div class="numbertext">13 / 17 | Mobile, Alabama</div>
-          <img id="graves" src="IMG_1003BW.jpg" style="width:100%">
-      </div>
-
-      <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-        <!-- <div id="caption"></div> -->
-    </div>
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-        
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("graves");
-        var modalImg = document.getElementById("img01");
-        // var captionText = document.getElementById("caption");
-        img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        // captionText.innerHTML = this.alt;
-        }
-        
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-        
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() { 
-        modal.style.display = "none";
-        }
-        </script>
-
-<div class="mySlides1">
-    <div class="numbertext">14 / 17 | Fairhope, Alabama</div>
-      <img id="houses" src="houses.jpeg" style="width:100%">
-  </div>
-
-  <div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-    <!-- <div id="caption"></div> -->
-</div>
-<script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-    
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("houses");
-    var modalImg = document.getElementById("img01");
-    // var captionText = document.getElementById("caption");
-    img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    // captionText.innerHTML = this.alt;
-    }
-    
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-    
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-    modal.style.display = "none";
-    }
-    </script>
-
-<div class="mySlides1">
-    <div class="numbertext">15 / 17</div>
-      <img id="cow3" src="cow3.jpg" style="width:100%">
-  </div>
-    
-  <div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-    <!-- <div id="caption"></div> -->
-</div>
-<script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-    
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("cow3");
-    var modalImg = document.getElementById("img01");
-    // var captionText = document.getElementById("caption");
-    img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    // captionText.innerHTML = this.alt;
-    }
-    
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-    
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-    modal.style.display = "none";
-    }
-    </script>
-
-    <div class="mySlides1">
-        <div class="numbertext">16 / 17 | Fairhope, Alabama
-        </div>
-          <img     id="danger" src="danger.jpg" style="width:100%">
-      </div>
-
-      <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-        <!-- <div id="caption"></div> -->
-    </div>
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-        
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("danger");
-        var modalImg = document.getElementById("img01");
-        // var captionText = document.getElementById("caption");
-        img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        // captionText.innerHTML = this.alt;
-        }
-        
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-        
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() { 
-        modal.style.display = "none";
-        }
-        </script>
-
-<div class="mySlides1">
-    <div class="numbertext">17 / 17 | Fairhope, Alabama; Aldi construction site
-    </div>
-      <img id="lot" src="lot.jpg" style="width:100%">
-  </div>
+      <img     id="swamp" src="Sebastiani_AlabamaSwampland.jpg" style="max-width:100%">
+        <div class="numbertext"> Alabama swampland between the ages of 8 and 10 (scan collage made in 2024)</div>
   
+  </div>
+
   <div id="myModal" class="modal">
     <span class="close">&times;</span>
     <img class="modal-content" id="img01">
@@ -736,7 +509,7 @@ li a:hover{
     var modal = document.getElementById("myModal");
     
     // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("lot");
+    var img = document.getElementById("swamp");
     var modalImg = document.getElementById("img01");
     // var captionText = document.getElementById("caption");
     img.onclick = function(){
@@ -754,7 +527,108 @@ li a:hover{
     }
     </script>
 
+<div class="mySlides1">
+  <img src="IMG_0875Q35.jpg" alt="Fairhope, AL - January 2023" style="max-width:100%" id="crane">
+  <div class="numbertext">maintenence worker examining power lines over the street (Fairhope, Alabama. 2023)</div>
+
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <!-- <div id="caption"></div> -->
+</div>
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
   
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById("crane");
+  var modalImg = document.getElementById("img01");
+  // var captionText = document.getElementById("caption");
+  img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  // captionText.innerHTML = this.alt;
+  }
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+  modal.style.display = "none";
+  }
+  </script>
+
+
+<div class="mySlides1">
+    <img id="working" src="Sebastiani_aldi construction worker on break, across the street from the walmart (Fairhope, Alabama).jpg" alt="Fairhope, AL" style="max-width:100%">
+  <div class="numbertext">Aldi construction worker on break, across the street from the Walmart (Fairhope, Alabama. 2023)</div>
+  </div>
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <!-- <div id="caption"></div> -->
+</div>
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById("working");
+  var modalImg = document.getElementById("img01");
+  // var captionText = document.getElementById("caption");
+  img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  // captionText.innerHTML = this.alt;
+  }
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+  modal.style.display = "none";
+  }
+  </script>
+
+<div class="mySlides1">
+    <img id="lot" src="lot.jpg" style="width:100%">
+      <div class="numbertext">Aldi construction site (Fairhope, Alabama. 2023)</div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <!-- <div id="caption"></div> -->
+</div>
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById("lot");
+  var modalImg = document.getElementById("img01");
+  // var captionText = document.getElementById("caption");
+  img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  // captionText.innerHTML = this.alt;
+  }
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+  modal.style.display = "none";
+  }
+  </script>
+
+
     <!-- Image text -->
     <!-- <div class="caption-container">
       <p id="caption"></p>
@@ -808,9 +682,9 @@ li a:hover{
       <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
     <!-- </div> -->
     </div>
-
+<br>
 <h1 class="headline" style="padding-left: 45px; border-radius: 8px; font-size:23pt; margin-bottom: 2.75px;">Five Hundred Feet Away <small style="font-size:14pt; color: rgb(181, 84, 77)">Winter 2022 - Spring 2023</small></h1>
-    <p style="background-color:#fff9e7c9; border-radius: 8px; padding: 5px; margin-left: 45px; margin-right: 45px;"><span style="font-weight:bold;">500 Feet Away</span> <em>(pictured above)</em> was selected by a jury of Wellesley College Art Department Faculty as one of three students to have their work displayed in the Panopticon Gallery in Boston, hosted by the Photographic Resource Center for their annual <a href=https://www.prcboston.org/2023-student-show/#>2023 Student Show.</a>
+    <p style="background-color:#fff9e7c9; border-radius: 8px; padding: 5px; margin-left: 45px; margin-right: 45px;"><span style="font-weight:bold;">500 Feet Away</span> <em>(pictured above)</em> was selected by a jury of Wellesley College Art Department Faculty as one of three students to have their work displayed in the Panopticon Gallery in Boston, hosted by the Photographic Resource Center for their annual <a href=https://www.prcboston.org/2023-student-show/# target="_blank" rel="noopener noreferrer">2023 Student Show.</a>
       </p>
 </div>
 
@@ -845,7 +719,7 @@ li a:hover{
 </div>
 </main>
 <div class="outer">
-    <div class="footer">🌀🪱💫 site coded by Sophie Sebastiani ・ 2023 ・ Github 💫🪱🌀</div></div>
+    <div class="footer">🌀🪱💫 site coded by Sophie Sebastiani ・ 2023 ・ GitHub 💫🪱🌀</div></div>
 </body>
 </html>
 

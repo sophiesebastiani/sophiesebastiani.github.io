@@ -484,7 +484,7 @@ font-family:'myFont2', sans-serif;
 @media only screen and (max-width: 1000px) {
   .accordion:hover {
     background-image: none;
-    background-color: rgb(179, 205, 214);
+    background-color: #c3d8d69e;
   }
 }
 
