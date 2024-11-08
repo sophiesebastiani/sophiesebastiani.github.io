@@ -66,6 +66,7 @@ li a:hover{
 /* Next & previous buttons */
 .prev,
 .next {
+  visibility: hidden;
   transition: 0.6s ease;
   cursor: pointer;
   position: absolute;
@@ -83,6 +84,14 @@ li a:hover{
   text-decoration: none;
 }
 
+.slideshow-container:hover .prev  {
+  visibility: visible;
+}
+
+.slideshow-container:hover .next  {
+  visibility: visible;
+}
+
 .padding {
     padding: 40px;
     padding-top:1px; 
@@ -98,8 +107,12 @@ li a:hover{
     margin-top: 0%;
   }
 
+.slideshow-container .prev, .next {
+  visibility: visible;
+}
   .prev,
 .next {
+  visibility: visible;
   padding: 0px;
   padding-top: 120px;
   margin-top: 0%;
@@ -177,10 +190,10 @@ li a:hover{
     </style>
 
 <div style="margin-left: 1.5%; margin-top: 1.5%;">
-  <li style="background-color:#ec9549c3;"><a  style="text-decoration: none; font-family:'myFont2', sans-serif;" href="index.html">🏡</a></li>
-  <li style="background-color: #eed9b5d1;"><a style="text-decoration: none; font-family:'myFont2', sans-serif;" href="Video.html">Video</a></li>
-  <li style="background-color: rgba(170, 178, 161, 0.434)"><a  style="text-decoration: none; font-family:'myFont2', sans-serif;" href="Photo.html">Photo</a></li>
-  <li style="background-color: #e7c9d2db;"><a style="text-decoration: none; font-family:'myFont2', sans-serif;" href="interactive.html">Interactive</a></li>
+  <li style="background-color:#f3dbe2db;"><a class="active"  href="index.html">🏡</a></li>
+  <!-- <li style="background-color: #eed9b5d1;"><a  href="Video.html">Video</a></li>
+  <li style="background-color: rgba(170, 178, 161, 0.434)"><a   href="Photo.html">Photo</a></li> -->
+  <li style="background-color: #eed9b5d1"><a  href="work.html">Works</a></li>
   <li style="background-color: #c9dce7db;"><a href="research.html">Research</a></li>
 
     <!-- <li style="background-color: #d2c0ac;"><a  href="Mapshots.html">Mapshots</a></li>
