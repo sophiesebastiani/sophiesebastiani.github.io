@@ -1,194 +1,192 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
-    <link rel="stylesheet" href="screen.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link rel="stylesheet" href="screen.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link href="carousel-fit.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name=author content="Sophie Sebastiani">
-    <title>Visual Work</title>
+    <title>Lens-based Projects</title>
     <link rel="icon" type="image/x-icon" href="Screen Shot 2022-11-26 at 1.11.25 PM.png">
 </head>
-
 <body>
-    <style>
-        body {
-          /* background-image: url('backgroundindex.png');
+  <style>
+    body {
+      /* background-image: url('backgroundindex.png');
           background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size:cover; */
+        background-size:cover;   */
         background-color: rgb(249, 248, 246);
-        }
+    }
 
-        @media only screen and (max-width: 800px) {
-    .h1 {
-    margin-top:10px;
-  }
-}
-
-.padding {
-    padding: 60px;
-    padding-top:60px; 
+    .padding {
+    padding: 40px;
+    padding-top:1px; 
     padding-bottom: 20px;
   }
 
 @media only screen and (max-width: 775px) {
     .padding {
-    margin: 0px;
-    padding:0px;
+    padding: 20px;
     padding-top:60px; 
     padding-bottom: 20px;
   }
+  .col-sm {
+    min-width:100px;
+  }
+  .grid-item .tooltiptext {
+  visibility: visible;
+}
 }
 
-    </style>
+.grid-container {
+  display: grid;
+  padding: 10px;
+  margin-left:15%;
+  padding-top: 15px;
+  padding-bottom: 0%;
+  text-align:center;
+}
 
-<ul style="text-align: left; padding-left: 29px; margin-top: 10px">
-  <li style="background-color:#f3dbe2db;"><a  href="index.html">🏡</a></li>
-  <!-- <li style="background-color: #eed9b5d1;"><a  href="Video.html">Video</a></li>
-  <li style="background-color: rgba(170, 178, 161, 0.434)"><a   href="Photo.html">Photo</a></li> -->
-  <li style="background-color: #eed9b5d1"><a  class="active" href="work.html">Works</a></li>
-  <li style="background-color: #c9dce7db;"><a href="research.html">Research</a></li>
+.grid-item {
+  /* background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(52, 4, 4); */
+  border-radius: 30px;
+  padding: 0%;
+  padding-bottom: 30px;
+  margin-left: 0%;
+  margin-right:0%;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  min-width: 300px;
+  display:inline-block;
+}
 
-</ul>
-    <!-- <li style="background-color: #d2c0ac;"><a  href="Mapshots.html">Mapshots</a></li>
-    <li style="background-color: #a0bad5;"><a href="Impressions.html">Impressions</a></li> -->
+/* .grid-item:hover {
+  border: 2px solid rgb(202, 86, 54);
+} */
 
-        <!-- <script>
-          function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-              x.className += "responsive";
-            } else {
-              x.className = "topnav";
-            }
-          }
-          </script> -->
-        <!-- </div>  -->  
+.tooltiptext {
+  visibility: hidden;
+  width: 275px;
+  /* background-color: rgba(235, 243, 242, 0.828); */
+  color: rgb(52, 4, 4);
+  text-align: right;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 10pt;
+  font-family:'myFont', sans-serif;
+letter-spacing: 1px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 60%;
+  left: 60%;
+  margin-left: -55px;
+}
+
+
+.grid-item:hover .tooltiptext {
+  visibility: visible;
+}
+
+</style>
+
 <main>
-    <body>
-<div class="padding">
-<div class="container">
-  <div class="row" style="border-radius: 8px;">
-    <div class="col-sm-5" style="padding: 20px; padding-top: 0%; padding-bottom: 2.5px; padding-top:40px;">
-      <section style="padding: 10px; padding-bottom: 15px; padding-left: 3.5%;"><a href="videoGames.html"><img width="512" height="256" style="max-width:100%; height:auto; border-radius: 1.75px;" src="gifOrwellianSmaller.gif">
-      </img></a></section>
-      <h1 class="headline"><a href="videoGames.html" style="letter-spacing: .5px; font-weight: normal; font-size: 30px; display: inline; margin: 15px; margin-left: 23px;padding-bottom:0%; margin-top:20px">Video Games</a></h1>                            
-      <p style="margin: 20px; font-size:17px; color:rgb(52, 4, 4); background-color:#fff9e7c9; border-radius: 8px; padding: 10px; padding-top:0%; margin-top: 1.75px;">
-        Created in Unity 2D and 3D from 2022 - 2023.
-        Drawn to the subversion of storytelling through interactivity and the ability to design unique user interfaces, I develop games that emphasize human computer interaction and comment on meta realities. 
-      </mark></p>
-    </div>
-    <!-- <div class="col-sm" style="padding: 15px; padding-top: 0px; padding-bottom: 2.5px; padding-left: 0%; text-align: right;">         </div> -->
+    <div class="padding">
+      <!-- <h1 class="headline" style="padding: 10px; border-radius: 8px; font-size:30pt; margin-bottom: 0%; font-weight: bold;">Photo <small style="font-size:14pt; color: rgb(181, 84, 77); font-weight: normal; letter-spacing: 1px;">from 2018 - 2024</small></h1> -->
+  <!-- <h1 class="headline" style="background-color:rgba(137, 240, 27, 0.925); font-weight: normal;padding: 10px; border-radius: 8px;">NFTs or The Exploitation of Speculative Markets <small style="letter-spacing: 1px;font-size:medium; color: rgba(181, 84, 77, 0.909);font-weight: normal">Spring 2022</small></h1> -->
+<br><br>
 
-      <!-- <p style="font-size:15px; text-align: right;"><span style="display: inline;
-        padding: 4px;
-        font-size: small;
-            border-radius: 16px;
-            background-color: rgba(228, 106, 106, 0.642); color: rgb(245, 241, 234);">Figma</span>
-        <span style="display: inline;
-        padding: 4px;
-        font-size: small;
-            border-radius: 16px;
-            background-color: rgba(228, 106, 106, 0.642); color: rgb(245, 241, 234);">Mobile UI/UX design</span>
-        <span style="display: inline;
-        padding: 4px;
-        font-size: small;
-            border-radius: 16px;
-            background-color: rgba(228, 106, 106, 0.642); color: rgb(245, 241, 234);">Usability testing</span>
-        </p> -->
+  <section style="position:fixed; margin-top:2.5%">
+      <p style="margin-top: 3.5%; margin-bottom: 0%; font-family:'myFont', 'Alte Haas Grotesk Regular', sans-serif; letter-spacing: 0.25px;">
+         <mark style="font-weight: bold; font-family: 'myFont', sans-serif; font-size: 20pt;background-color: #f8f8db88; border-radius:5px;">
+           <a class="active" style="font-size:20pt; text-decoration: none; color:#bac8b2" href="index.html">Sophie Sebastiani</a>
+           </mark> 
+ 
+    <div style="margin-left: .5%; margin-top: 0%;">
+     <!-- <li style="background-color:#f3dbe2db;"><a class="active"  href="index.html">🏡</a></li><br> -->
+     <!-- <li style="background-color: #eed9b5d1;"><a  href="Video.html">Video</a></li>
+     <li style="background-color: rgba(170, 178, 161, 0.434)"><a   href="Photo.html">Photo</a></li> -->
+     <li><a  href="work.html" style="text-decoration: none;">Work</a></li><br>
+     <li><a href="research.html" style="text-decoration: none;">Research</a></li><br>
+     <li><a  href="info.html" style="text-decoration: none;">Info</a></li>
 
-      <div class="col-sm-5" style="padding: 20px; padding-top: 75px; padding-bottom: 2.5px; margin: auto;">
-                                <!-- <p style="text-align: right"><span style="display: inline;
-                                font-size: small;
-                                  padding: 4px;
-                              border-radius: 16px;
-                              background-color: rgba(228, 106, 106, 0.642); color: rgb(245, 241, 234);">Unity 2D + 3D</span> 
-                                  <span style="display: inline;
-                                  padding: 4px;
-                                  font-size: small;
-                              border-radius: 16px;
-                              background-color: rgba(228, 106, 106, 0.642); color: rgb(245, 241, 234);">C#</span> 
-                                  <span style="display: inline;
-                                  padding: 4px;
-                                  font-size: small;
-                              border-radius: 16px;
-                              background-color:rgba(228, 106, 106, 0.642); color: rgb(245, 241, 234);">UI/UX design</span> 
-                                  <span style="display: inline;
-                                  padding: 4px;
-                                  font-size: small;
-                              border-radius: 16px;
-                              background-color: rgba(228, 106, 106, 0.642); color: rgb(245, 241, 234);">Original asset creation in Adobe Photoshop</span> 
-                                  </p>      -->
-     
-                          <section style="padding: 10px; padding-top: 0%; padding-bottom: 15px; text-align: right;"><a href="photovideo.html"><img width="512" height="256" style=" max-width:100%; height:auto; border-radius:1.75px;" src="flashes.webp">
-                          </img></a></section>
-                  
-                          <h1 class="headline" style="text-align: right;"><a href="photovideo.html" style="letter-spacing: .5px; display: inline; margin: 15px; margin-left: 10px;padding: 10px; font-weight: normal; font-size:30px;">Lens-based Work</a><h1>
-                          <p style="text-align: right; margin: 20px; font-size:17px; color:rgb(52, 4, 4); background-color:#fff9e7c9; border-radius: 8px; padding: 10px; padding-top: 0%; margin-top: 0%;"> 
-                            Photo series and audiovisual projects, including long-form documentaries developed from 2018 - 2024. 
-                              </p>
-                          
-                  </div>
 
-    <div class="col-sm-5" style="margin-top:0%; padding: 20px; padding-top: 15px; padding-bottom: 2.5px;">
-      <section style="padding: 15px; padding-left: 3.5%;"><a href="Mapshots.html"><img width="512" height="256" style="max-width:100%; height:auto; border-radius: 1.75px;" src="highfidelityLanding.gif">
-      </img></a></section>
-      <h1 class="headline"><a href="Mapshots.html" style="letter-spacing: .5px; font-weight: normal; font-size: 30px; display: inline; margin: 15px; margin-left: 23px;padding-bottom:0%;">Mapshots</a></h1>                            
-      <p style="margin: 20px; font-size:17px; color:rgb(52, 4, 4); background-color:#fff9e7c9; border-radius: 8px; padding: 10px; padding-top:0%; margin-top: 1.75px;">Mobile prototype made in Figma focused on creating spatial memory through visual media and text-based posts for past, present, and future Wellesley College students in Spring 2023.
-      </mark></p>
-    </div>
-
-      <!-- <p style="font-size:15px; text-align: right;"><span style="display: inline;
-        padding: 4px;
-        font-size: small;
-            border-radius: 16px;
-            background-color: rgba(228, 106, 106, 0.642); color: rgb(245, 241, 234);">Figma</span>
-        <span style="display: inline;
-        padding: 4px;
-        font-size: small;
-            border-radius: 16px;
-            background-color: rgba(228, 106, 106, 0.642); color: rgb(245, 241, 234);">Mobile UI/UX design</span>
-        <span style="display: inline;
-        padding: 4px;
-        font-size: small;
-            border-radius: 16px;
-            background-color: rgba(228, 106, 106, 0.642); color: rgb(245, 241, 234);">Usability testing</span>
-        </p> -->
-
-  <div class="col-sm-5" style="padding: 20px; padding-bottom: 2.5px; margin:auto; padding-right: 0%; text-align: right;">
-    <!-- <p><span style="display: inline;
-    font-size: small;
-      padding: 4px;
-          border-radius: 16px;
-          background-color: rgba(228, 106, 106, 0.642); color: rgb(245, 241, 234);">Multimedia</span>
-          <span style="display: inline;
-          font-size: small;
-            padding: 4px;
-                border-radius: 16px;
-                background-color: rgba(228, 106, 106, 0.642); color: rgb(245, 241, 234);">Photography</span>
-      </p> -->
-
-        <section style="padding: 15px; padding-top: 0%; padding-right: 0%;text-align: right;"><a href="Impressions.html" ><img width="512" height="256" style="max-width:100%; height:auto; border-radius: 1.75px;" src="Impressions.gif">
-        </img></a></section>
-        <h1 class="headline" style="text-align: right; letter-spacing: .5px; padding-top: 5px;"><a href="Impressions.html" style="font-weight: normal; font-size: 30px;display:inline; margin: 15px; margin-bottom:0%; padding: 10px;">Impressions</a></h1>                            
-        <p style="border-radius: 8px; padding: 5px; text-align: right; margin: 20px; margin-top: 0%;font-size:17px; color:rgb(52, 4, 4); background-color:#fff9e7b0; border-radius: 8px; padding-left: 5.75px; padding-right: 5.75px;">
-          A multimedia dedication to Wellesley's architecture and gardens through the lens of Helmut Brinker’s seven principles of equal value and Watanabe Yoshio’s 1953 collection of photographs capturing the shrines at Ise, Japan.
-         Japanese Art and Architecture Final Project and <a href="https://docs.google.com/document/d/1jR8M7EEdMTdUoHF186nCVsfgAWEoEjnQ/edit?usp=sharing&ouid=103206116209846339059&rtpof=true&sd=true" style="color: rgb(102, 139, 169);">Paper</a>;
-        </p>
-</div>
-      
-  
    
-              </div>
-</main><br>
-<div class="outer">
-  <div class="footer" style="padding:35px">
-    <a style="font-size: small; text-decoration: none; font-family:'myFont2', sans-serif; color:rgb(52, 4, 4);" href="mailto: sebastianisophie@gmail.com">Email</a> ・ <a style="color:rgb(52, 4, 4); font-size: small; text-decoration: none; font-family:'myFont2', sans-serif;" href="https://www.instagram.com/sophiesebastiani" target="_blank" rel="noopener noreferrer">Instagram</a> ・ <a style="color:rgb(52, 4, 4); font-size: small; text-decoration: none; font-family:'myFont2', sans-serif;" href="https://www.linkedin.com/in/sophiesebastiani333" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+       <!-- <li style="background-color: #d2c0ac;"><a  href="Mapshots.html">Mapshots</a></li>
+       <li style="background-color: #a0bad5;"><a href="Impressions.html">Impressions</a></li> -->
+           </div>
+           </p> 
+</section>
+    <!-- <h1 class="headline" style="font-size:25px; background-color: transparent; font-family: 'Arial narrow', sans-serif;"><mark style="border-radius: 8px;color:rgb(255, 249, 238); background-color:rgb(213, 55, 55)">Featured:</mark></h1> -->
+    <div class="grid-container">
+    <div class="col-sm" style="padding-bottom: 15px;">
+  <div class="grid-item">
+<a href="500FeetAway.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: auto; cursor: pointer; border-radius: 1.75px;" src="Sebastiani_foreclosure (Mobile, Alabama).jpg">
+  <span class="tooltiptext" style="padding: 11px; top: 90.5%;"> Five Hundred Feet Away <mark style="background-color: #dee260de; border-radius: 1.5px;">Photo</mark></span>
+</a></div>
+<!-- //div for col-sm// --> </div>
 
-  <br></div></div>
+<div class="col-sm" style="padding-bottom: 15px;">
+<div class="grid-item"><a href="HeadingAcrossaGreatDivide.html"><img width="500" height="100" id="hagd" style="max-width:100%; height: auto; cursor: pointer; border-radius: 1.75px;" src="construction.webp">
+    <span class="tooltiptext" style="padding: 11px; top: 90.5%; left:55%; width: 300px"> Heading Across a Great Divide <mark style="background-color: #dee260de; border-radius: 1.5px;">Photo</mark></span>
+  </a></div>
+<!-- //div for col-sm// --></div>  
+
+  <div class="col-sm" style="padding-bottom: 15px;">
+    <div class="grid-item">
+  <a href="MythofSelfRegulatoryMachine.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: auto; cursor: pointer; border-radius: 1.75px;" src="Myth.jpg">
+    <span class="tooltiptext" style="padding: 11px; top: 90%; left:45%; width: 350px">Regulation in 3D Printing and AI <mark style="background-color: #e9b6c6cb; border-radius: 1.5px;">Video</mark></span>
+  </a></div>
+  <!-- //div for col-sm// --> </div>
+
+  <div class="col-sm" style="padding-bottom: 15px;">
+  <div class="grid-item"><a href="WheresYourSoul.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: auto; cursor: pointer; border-radius: 1.75px;" src="soul.webp">
+      <span class="tooltiptext" style="padding: 11px; top: 90.5%; left: 39%; width: 380px">The Failure of Urban Renewal <mark style="background-color: #e9b6c6cb; border-radius: 1.5px;">Video</mark></span>
+    </a></div>
+  <!-- //div for col-sm// --></div>  
+
+  <div class="col-sm" style="padding-bottom: 15px;">
+    <div class="grid-item"><a href="ADayLikeAnyOther.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: fit-content; cursor: pointer; border-radius: 1.75px;" src="ADLAOvg.jpg">
+    <span class="tooltiptext" style="padding: 11px; top: 90%; left: 45%; width: 360px">A Day Like Any Other <mark style="background-color: #e0daffe5; border-radius: 1.5px;">Interactive</mark></span>
+  </a>
+    </div> </div>
+
+    <div class="col-sm" style="padding-bottom: 15px;">
+      <div class="grid-item"><a href="OrwellianIndustries.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: fit-content; cursor: pointer; border-radius: 1.75px;" src="OIvg.jpg">
+      <span class="tooltiptext" style="padding: 11px; top: 90%; left: 45%; width: 360px">Orwellian Industries: The Simulator <mark style="background-color: #e0daffe5; border-radius: 1.5px;">Interactive</mark></span>
+    </a>
+      </div> </div>
+    <!-- <div class="col-sm" style="padding-bottom: 15px;">
+      <div class="grid-item">
+    <a href="Flashes.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: auto; cursor: pointer; border-radius: 1.75px" src="flashes.webp">
+      <span class="tooltiptext" style="padding: 11px; top: 90%; left: 42%; width: 350px">Flashes <mark style="background-color: #e9b6c6cb; border-radius: 1.5px;">Video</mark></span>
+    </a></div> -->
+  <!-- // div for row // --> </div>
+<!-- //div grid container/// -->
+</div>
+<!-- // div container/// -->
+</div>
+<!-- //padding div// -->
+</div>
+</main>
+<div class="outer">
+  <div class="footer" style="padding: 35px">
+    <li><a  style="font-size: small; text-decoration: none; font-family:'myFont2', sans-serif;" href="mailto: sebastianisophie@gmail.com">Email</a></li>
+    <li><a style="font-size: small; text-decoration: none; font-family:'myFont2', sans-serif;" href="https://www.instagram.com/sophiesebastiani" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+    <li><a  style="font-size: small; text-decoration: none; font-family:'myFont2', sans-serif;" href="https://www.linkedin.com/in/sophiesebastiani" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>              
+    <li><a  style="font-size: small; text-decoration: none; font-family:'myFont2', sans-serif;" href="https://vimeo.com/user194713210" target="_blank" rel="noopener noreferrer">Vimeo</a></li>              
+<br>
+</div></div>
 </body>
 </html>

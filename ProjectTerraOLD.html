@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="carousel-fit.css" rel="stylesheet" />
+    <link rel="stylesheet" href="screen.css">
+    <meta name=author content="Sophie Sebastiani">
+    <title>Project Terra (2023)</title>
+    <link rel="icon" type="image/x-icon" href="Screen Shot 2022-11-26 at 1.11.25 PM.png">
+</head>
+
+<body>
+    <style>
+        body {
+          background-color: rgb(249, 248, 246);
+            /* background-image: url('backgroundindex.png');
+          background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover; */
+        }
+        * {
+  box-sizing: border-box;
+}
+
+
+
+/* Position the image container (needed to position the left and right arrows) */
+/* .container {
+  position: relative;
+} */
+
+/* Hide the images by default */
+.mySlides1, .mySlides2, .mySlides3 {display: none; }
+
+.mySlides1, .mySlides2, .mySlides3
+    img {
+  text-align:center; 
+  vertical-align: middle;
+margin: 0px auto;
+  cursor: pointer;
+  max-height: 700px;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+.slideshow-container {
+    vertical-align: middle;
+  max-width: 1000px;
+  position: relative;
+  margin: 0px auto;
+  cursor: pointer;
+  /* z-index: 0; */
+}
+
+li a:hover{
+  text-decoration: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  transition: 0.6s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 10%;
+  width: auto;
+  padding: 300px 30px;
+  margin-top: -55px;
+  color:#bac8b2;
+  /* color: rgb(176, 110, 99); */
+  /* background-color: #b4cfece1; */
+  font-family:'myFont2',sans-serif;
+  font-size: 35px;
+  user-select: none;
+  -webkit-user-select: none;
+  text-decoration: none;
+}
+
+.padding {
+    padding: 70px;
+    padding-top:50px; 
+    padding-bottom: 20px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .padding {
+    padding: 20px;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    font-size: 15px;
+  }
+
+  .prev,
+.next {
+  padding: 10px;
+  padding-top: 120px;
+  margin-top: 0%;
+
+}
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  /* border-radius: 8px 0px 0px 8px; */
+  border-radius: 8px;
+}
+
+.prev {
+  left: 0;
+  /* border-radius: 0px 8px 8px 0px; */
+  border-radius: 8px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  /* background-color: rgba(90, 79, 79, 0.8); */
+  color: rgb(176, 110, 99);
+  /* color:#abbfa0; */
+  text-decoration: none;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  background-color: rgba(225, 199, 199, 0.365);
+  color:rgba(52, 4, 4, 0.604);
+  font-family:'myFont', sans-serif;
+  font-size: small;
+  text-align: left;
+  /* font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; */
+}
+
+/* Container for image text */
+/* .caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+} */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side
+.column {
+  float: left;
+  width: 10%;
+  border: 1px solid rgba(52, 4, 4, 0.524);
+} */
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.8;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+    </style>
+    <ul style="text-align: left; padding-left: 29px; margin-top: 10px; text-decoration: none;">
+      <li style="margin-left: 0%; padding-left: 0%;"><a href="videoGames.html">← Back</a></li>
+      <li style="background-color:#f3dbe2db;"><a  href="index.html">🏡</a></li>
+      <!-- <li style="background-color: #eed9b5d1;"><a  href="Video.html">Video</a></li>
+      <li style="background-color: rgba(170, 178, 161, 0.434)"><a   href="Photo.html">Photo</a></li> -->
+      <li style="background-color: #eed9b5d1"><a  href="work.html">Works</a></li>
+      <li style="background-color: #c9dce7db;"><a href="research.html">Research</a></li>
+    </ul>
+<main>
+
+
+<div class="padding">
+<br>
+
+<div class="slideshow-container" style="margin:auto;">
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+  <!-- for multiple slideshows on a website: if mySlides2 use the below code for controlling multiple slideshows!-->
+    <!-- <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a> -->
+<!-- Full-width images with number text -->
+<div class="mySlides1">
+     <div class="numbertext">1 / 5 | Project Terra Title / Loading Screen</div>
+     <img style="max-width: 100%" id="construction" src="3dGame0.png">
+      </div>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById("myModal");
+                    
+                    // Get the image and insert it inside the modal - use its "alt" text as a caption
+                    var img = document.getElementById("construction");
+                    var modalImg = document.getElementById("img01");
+                    // var captionText = document.getElementById("caption");
+                    img.onclick = function(){
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                    }
+                    
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+                    
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() { 
+                    modal.style.display = "none";
+                    }
+                    </script>
+<div class="mySlides1">
+    <div class="numbertext">2 / 5 | Demo area and the player's introduction to your in-game guide and 2-T0R, your robot companion.
+    </div>
+    <div style="text-align: center;">
+        <img style="max-width: 100%; max-height: 700px;" id="wild" src="3dGame1.png"></div></div>
+                   <div id="myModal" class="modal">
+                       <span class="close">&times;</span>
+                       <img class="modal-content" id="img01">
+                       <!-- <div id="caption"></div> -->
+                   </div>
+                   <script>
+                       // Get the modal
+                       var modal = document.getElementById("myModal");
+                       
+                       // Get the image and insert it inside the modal - use its "alt" text as a caption
+                       var img = document.getElementById("wild");
+                       var modalImg = document.getElementById("img01");
+                       // var captionText = document.getElementById("caption");
+                       img.onclick = function(){
+                       modal.style.display = "block";
+                       modalImg.src = this.src;
+                       // captionText.innerHTML = this.alt;
+                       }
+                       
+                       // Get the <span> element that closes the modal
+                       var span = document.getElementsByClassName("close")[0];
+                       
+                       // When the user clicks on <span> (x), close the modal
+                       span.onclick = function() { 
+                       modal.style.display = "none";
+                       }
+                       </script>
+<div class="mySlides1">
+    <div class="numbertext">3 / 5 | 2-T0R directs the player's attention toward the Museum, where a great mystery awaits.</div>
+    <img style="max-width: 100%" id="headless" src="3dGame2.png">
+     </div>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <!-- <div id="caption"></div> -->
+                </div>
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById("myModal");
+                    
+                    // Get the image and insert it inside the modal - use its "alt" text as a caption
+                    var img = document.getElementById("headless");
+                    var modalImg = document.getElementById("img01");
+                    // var captionText = document.getElementById("caption");
+                    img.onclick = function(){
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                    }
+                    
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+                    
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() { 
+                    modal.style.display = "none";
+                    }
+                    </script>
+
+<div class="mySlides1">
+     <div class="numbertext">4 / 5 | 2-T0R the robot stands in the Wasteland in front of the Museum.</div>
+     <div style="text-align: center;">
+        <img style="max-width: 100%; max-height: 700px;" id="locks" src="3dGame3.png"></div>
+      </div>
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <!-- <div id="caption"></div> -->
+            </div>
+            <script>
+                // Get the modal
+                var modal = document.getElementById("myModal");
+                
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById("locks");
+                var modalImg = document.getElementById("img01");
+                // var captionText = document.getElementById("caption");
+                img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+                }
+                
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+                
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() { 
+                modal.style.display = "none";
+                }
+                </script>
+                
+                <div class="mySlides1">
+                  <div class="numbertext">5 / 5 | A Diorama inside the Museum.</div>
+                  <div style="text-align: center;">
+                     <img style="max-width: 100%; max-height: 700px;" id="3d5" src="3dGame5.jpg"></div>
+                   </div>
+                         <div id="myModal" class="modal">
+                             <span class="close">&times;</span>
+                             <img class="modal-content" id="img01">
+                             <!-- <div id="caption"></div> -->
+                         </div>
+                         <script>
+                             // Get the modal
+                             var modal = document.getElementById("myModal");
+                             
+                             // Get the image and insert it inside the modal - use its "alt" text as a caption
+                             var img = document.getElementById("3d5");
+                             var modalImg = document.getElementById("img01");
+                             // var captionText = document.getElementById("caption");
+                             img.onclick = function(){
+                             modal.style.display = "block";
+                             modalImg.src = this.src;
+                             captionText.innerHTML = this.alt;
+                             }
+                             
+                             // Get the <span> element that closes the modal
+                             var span = document.getElementsByClassName("close")[0];
+                             
+                             // When the user clicks on <span> (x), close the modal
+                             span.onclick = function() { 
+                             modal.style.display = "none";
+                             }
+                             </script>
+
+</div>
+<h1 class="headline" style="padding: 10px; padding-left:5px; border-radius: 8px; font-size:23pt; margin-bottom: 0%;">Project Terra <small style="font-size:14pt; color: rgb(181, 84, 77); letter-spacing: 1px;">Spring 2023</small></h1>
+<p style="padding:10px; padding-bottom: 0%; background-color:#fff9e7c9; border-radius: 8px; margin-left: 0px; margin-top: 0%; ">
+  In <span style="font-weight:bold;">Project Terra</span>, you land in the quarry of a mysterious world, with only the company of your loyal robot companion 2-T0R to aid you in your exploration. Once you complete the quarry tutorial stage, you decide to navigate to the only landmark in sight, an imposing museum in the middle of a dessert which holds a terrifying secret.
+  My focus on the project was shaping the landscape and architecture of this world through 3D modeling, asset integration and lighting within the Unity 3D game engine. 
+  <span style="font-weight:bold;"> Unity 3D game made with Janavi Padala in Digital Worlds for Gaming at Wellesley College. </span>
+</p>
+    </div>
+
+        <script>
+            
+            let slideIndex = [1,1,1];
+            let slideId = ["mySlides1", "mySlides2", "mySlides3"]
+            showSlides(1, 0);
+            showSlides(1, 1);
+            showSlides(1, 2);
+            
+            function plusSlides(n, no) {
+              showSlides(slideIndex[no] += n, no);
+            }
+            
+            function showSlides(n, no) {
+              let i;
+              let x = document.getElementsByClassName(slideId[no]);
+              if (n > x.length) {slideIndex[no] = 1}    
+              if (n < 1) {slideIndex[no] = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex[no]-1].style.display = "block";  
+            }
+                </script>
+</div>
+</div>
+<br>
+</main>
+<div class="outer">
+  <div class="footer" style="padding:35px;">
+    <a style="font-size: small; text-decoration: none; font-family:'myFont2', sans-serif; color:rgb(52, 4, 4);" href="mailto: sebastianisophie@gmail.com">Email</a> ・ <a style="color:rgb(52, 4, 4); font-size: small; text-decoration: none; font-family:'myFont2', sans-serif;" href="https://www.instagram.com/sophiesebastiani" target="_blank" rel="noopener noreferrer">Instagram</a> ・ <a style="color:rgb(52, 4, 4); font-size: small; text-decoration: none; font-family:'myFont2', sans-serif;" href="https://www.linkedin.com/in/sophiesebastiani333" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+<br>
+    </div></div>
+</body>
+</html>
+

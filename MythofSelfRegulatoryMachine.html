@@ -4,107 +4,381 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="screen.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="carousel-fit.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name=author content="Sophie Sebastiani">
-    <title>The Myth of the Self-Regulatory Machine (2023)</title>
+    <title>Sophie Sebastiani</title>
     <link rel="icon" type="image/x-icon" href="Screen Shot 2022-11-26 at 1.11.25 PM.png">
+    <meta name="google-site-verification" content="rGDql-EMHljArS1bdbIrPyOktMmy2oPaq6GDRcThppA" />
 </head>
+
 <body>
-  <style>
-    body {
-      /* background-image: url('backgroundindex.png');
+    <style>
+        body {
+          /* background-image: url('backgroundindex.png');
           background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size:cover;   */
+        background-size:cover; */
         background-color: rgb(249, 248, 246);
-    }
-
-    .padding {
-    padding: 70px;
-    padding-top:60px; 
-    padding-bottom: 20px;
-  }
-
-@media only screen and (max-width: 775px) {
-    .padding {
-    padding: 10px;
-    padding-top:60px; 
-    padding-bottom: 20px;
-  }
+        }
+        * {
+  box-sizing: border-box;
 }
-</style>
-<ul style="text-align: left; padding-left: 29px; margin-top: 10px">
-  <li style="margin-left: 0%; padding-left: 0%;"><a href="photovideo.html">← Back</a></li>
-  <li style="background-color:#f3dbe2db;"><a  href="index.html">🏡</a></li>
-  <!-- <li style="background-color: #eed9b5d1;"><a  href="Video.html">Video</a></li>
-  <li style="background-color: rgba(170, 178, 161, 0.434)"><a   href="Photo.html">Photo</a></li> -->
-  <li style="background-color: #eed9b5d1"><a href="work.html">Works</a></li>
-  <li style="background-color: #c9dce7db;"><a href="research.html">Research</a></li>
 
-</ul>
+
+/* Hide the images by default */
+.mySlides1, .mySlides2, .mySlides3 {display: none; }
+
+.mySlides1, .mySlides2, .mySlides3
+    img {
+  text-align:center; 
+  vertical-align: middle;
+margin: 0px auto;
+  cursor: pointer;
+  max-height: 700px;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+.slideshow-container {
+    vertical-align: middle;
+  max-width: 1000px;
+  position: relative;
+  margin: 0px auto;
+  cursor: pointer;
+  /* z-index: 0; */
+}
+
+li a:hover{
+  text-decoration: none;
+  /* color:#bac8b2; */
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  visibility: hidden;
+  transition: 0.6s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 10%;
+  width: auto;
+  padding: 300px 50px;
+  margin-top: -80px;
+  color:#bac8b2;
+  /* color: rgb(176, 110, 99); */
+  /* background-color: #b4cfece1; */
+  font-family:'Arial black', sans-serif;
+  font-size: 30px;
+  user-select: none;
+  -webkit-user-select: none;
+  text-decoration: none;
+}
+
+.slideshow-container:hover .prev  {
+  visibility: visible;
+  /* transition: 0.5s; */
+}
+
+.slideshow-container:hover .next  {
+  visibility: visible;
+}
+
+.padding {
+    padding: 40px;
+    padding-top:1px; 
+    padding-bottom: 20px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .padding {
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    margin-top: 0%;
+  }
+
+.slideshow-container .prev, .next {
+  visibility: visible;
+}
+  .prev,
+.next {
+  visibility: visible;
+  padding: 0px;
+  padding-top: 120px;
+  margin-top: 0%;
+  font-size: 25px;
+
+}
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: -40px;
+  /* border-radius: 8px 0px 0px 8px; */
+  border-radius: 8px;
+}
+
+.prev {
+  left: -100px;
+  /* border-radius: 0px 8px 8px 0px; */
+  border-radius: 8px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  /* background-color: rgba(90, 79, 79, 0.8); */
+  color: #d66909;
+  /* background-color: #b4cfecce; */
+  /* color:#abbfa0; */
+  text-decoration: none;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  background-color: rgba(225, 199, 199, 0);
+  color:rgba(52, 4, 4, 0.604);
+  font-family:'myFont', sans-serif;
+  font-size: small;
+  text-align: right;
+  padding-top:5px;
+  /* font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; */
+}
+
+/* Container for image text */
+/* .caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+} */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side
+.column {
+  float: left;
+  width: 10%;
+  border: 1px solid rgba(52, 4, 4, 0.524);
+} */
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.8;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+.headline {
+    color: rgb(52, 4, 4);
+    text-align: left;
+    padding:5px;
+    text-decoration: none;
+    font-weight: normal;
+    display: block;
+    font-family:'myFont', sans-serif;
+}
+    </style>
+
+        <!-- <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += "responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+          </script> -->
+        <!-- </div>  -->  
 <main>
-    <div class="padding" style="padding-top: 70px;">
-      <!-- <div class="container">
-        <div class="row"> -->
-          <!-- <h1 class="headline" style="padding-left: 0%; padding-top:0%; padding-bottom: 15px; font-size:25px; font-weight: bold; background-color: transparent;"><mark style="color:rgb(255, 249, 238); background-color:rgb(213, 55, 55); padding:0%;">Video:</mark></h1> -->
-          <!-- <div class="col-sm" style="padding: 25px; padding-top: 20px; background-color:rgba(163, 186, 168, 0.522); border:1px solid rgb(52, 4, 4)">
-                <h1 class="headline"><a href="https://www.prcboston.org/2023-student-show/#">Life and After-Life Screening</a><h1>
-                    <p><mark style="background-color: rgba(253, 247, 237, 0.857)"></a>Watch the advanced video projects class </mark></p>
-                    <img width="450" height="300" id="prcImage" style="border:1px solid rgb(52, 4, 4); max-width:100%" src="Screening365.jpeg" alt="<p>500 Feet Away (2023), A construction worker stares down county road 48 toward the fallen roadkill, Bambi; the Walmart Supercenter to his back, the newly constructed Aldi his north eastern star.</p>">
-                    <section>
-                        <div id="myModal" class="modal">
-                            <span class="close">&times;</span>
-                            <img class="modal-content" id="img01">
-                            <div id="caption"></div>
-                        </div>
-                        <script>
-                            // Get the modal
-                            var modal = document.getElementById("myModal");
-                            
-                            // Get the image and insert it inside the modal - use its "alt" text as a caption
-                            var img = document.getElementById("prcImage");
-                            var modalImg = document.getElementById("img01");
-                            var captionText = document.getElementById("caption");
-                            img.onclick = function(){
-                            modal.style.display = "block";
-                            modalImg.src = this.src;
-                            captionText.innerHTML = this.alt;
-                            }
-                            
-                            // Get the <span> element that closes the modal
-                            var span = document.getElementsByClassName("close")[0];
-                            
-                            // When the user clicks on <span> (x), close the modal
-                            span.onclick = function() { 
-                            modal.style.display = "none";
-                            }
-                            </script>
-                        </section>
-            </div>
-            <div class="col-sm" style="background-color:rgba(184, 176, 162, 0.5); padding: 25px; border-right: 1px solid rgb(52, 4, 4); border-top: 1px solid rgb(52, 4, 4); border-bottom:1px solid rgb(52, 4, 4)">
-                    <a href="Mapshots.html"><img width="480" height="350" style="max-width:100%; border: 1px solid rgb(52, 4, 4)" src="screening.jpg">
-                    </img></a><br><br>
-                    <p><mark style="background-color: rgba(253, 247, 237, 0.857)">Screening of Myth of the Self-Regulatory Machine</mark></p> </div>
-            </div>
-        </div>
-        <br> -->
-        <!-- <h1 class="headline" style="background-color:rgba(254, 137, 94, 0.836); font-weight: normal; border-radius: 8px;padding: 10px;">The Myth of the Self-Regulatory Machine <small style="letter-spacing: 1px;font-size:medium; color: rgba(253, 247, 237); font-weight: normal;">Spring 2023</small></h1> -->
-<section style="padding:15px; padding-top:0%; text-align: center;"><iframe width=960 height=540 style="border-radius:8px; border: 0.5px solid rgb(81, 68, 68); margin-left: 1%; max-width:100%;" src="https://player.vimeo.com/video/827746067?h=9ab686b9b4" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="Where's Your Soul? The Failure of Urban Renewal"></iframe>
-            <br><br>
-            <h1 class="headline" style="padding: 10px; border-radius: 8px; font-size:23pt; margin-bottom: 0%; padding-left: 0%;">The Myth of the Self-Regulatory Machine <small style="font-size:14pt; color: rgb(181, 84, 77); font-weight: normal; letter-spacing: 1px;">Spring 2023</small></h1>
+    <body>
+      <!-- <img src='recession3.png' style="margin-top: 1.5%;  height: auto; display: block; margin-left: auto; margin-right: auto; width:900px; border: 1pt solid rgb(52, 4, 4)">
+        <p style="text-align: right; margin-top: 0.5%;"> <mark style="background-color: rgba(110, 167, 99, 0.789); color:rgb(250, 248, 239)">🦠 🧠 a desktop collage made from digital scraps and my sketchbook 🛌 💭</mark></p>
+          </img> -->
+          <div class="padding" style="padding-bottom:5px; margin-top: 0%;">
+            <div class="row">
+              <div class="col-sm-4" style="margin-top: 40px;">
+        
+  <section style="position:fixed; margin-top:2.5%">
+         <p style="margin-top: 3.5%; margin-bottom: 0%; font-family:'myFont', 'Alte Haas Grotesk Regular', sans-serif; letter-spacing: 0.25px;">
+            <mark style="font-weight: bold; font-family: 'myFont', sans-serif; font-size: 20pt;background-color: #f8f8db88; border-radius:5px;">
+              <a class="active" style="font-size:20pt; text-decoration: none; color:#bac8b2" href="index.html">Sophie Sebastiani</a>
+              </mark> 
+    
+       <div style="margin-left: .5%; margin-top: 0%;">
+        <!-- <li style="background-color:#f3dbe2db;"><a class="active"  href="index.html">🏡</a></li><br> -->
+        <!-- <li style="background-color: #eed9b5d1;"><a  href="Video.html">Video</a></li>
+        <li style="background-color: rgba(170, 178, 161, 0.434)"><a   href="Photo.html">Photo</a></li> -->
+        <!-- <li><a href="photovideo.html" style="font-size:15pt;">←</a></li><br> -->
+        <li><a  href="work.html">Work</a></li><br>
+        <li><a href="research.html">Research</a></li><br>
+        <li><a  href="info.html">Info</a></li>
 
-            <p style="background-color: #fff9e7c9; border-radius: 8px; padding: 5px; margin-left: 5px;">
-               This documentary covers the magnitude of the issues surrounding 3D printing and artificial intelligence, the game of hot potato the Supreme Court is playing with Congress over this problem, and the difficulties the 1st Amendment (+ others) poses to passing any legislation at all.
-               I believe the timing of this film is very important with the information it shares about large language models (LLM) and their flaws ripe for regulatory action. Acting as director, cameraman + crew, and editor this time was incredibly challenging but ultimately rewarding as it allowed complete control for me to tighten this vast observation into a cohesive narrative and pose some interesting questions about the freedom of internet usage in the future along the way. 
-               <span style="font-weight:bold;">Documentary Final Project for Advanced Video Production at Wellesley College. </span>
-              </p></section>
-    </div>
+      
+          <!-- <li style="background-color: #d2c0ac;"><a  href="Mapshots.html">Mapshots</a></li>
+          <li style="background-color: #a0bad5;"><a href="Impressions.html">Impressions</a></li> -->
+              </div>
+              </p> 
+  </section>
+              
+               <!-- <div style="border:1.5px solid rgb(202, 67, 30); border-radius: 15px; width: 100px; padding: 5pt; background-color: #6eaac30b;">
+              
+                <p style="text-align:left; margin-left: 5%; font-size: small; font-family:'myFont', sans-serif;">🐛 <a href="mailto: sebastianisophie@gmail.com">Email</a></p>
+                <p style="text-align:left; margin-left: 5%; font-size: small; font-family:'myFont', sans-serif;">🐞 <a href=https://www.instagram.com/sophiesebastiani>Instagram</a> </p>
+                <p style="text-align:left; margin-left: 5%; font-size: small; font-family:'myFont', sans-serif;">🪰 <a href=https://www.linkedin.com/in/sophiesebastiani333>LinkedIn</a> </p>
+                <p style="text-align:left; margin-left: 3.25%; font-family:'myFont', sans-serif; background-color:rgba(230, 192, 174, 0.443); border-radius: 25px; padding: 5px; padding-right: 7px;display:inline; font-size: small;">🪲 <a href=SebastianiSophieCV.pdf>CV</a>
+                </p>   </div> -->
+              </div>
+              <div class="col-sm-8" style="margin-top: 50px;">
+                <section style="padding-top:0%; text-align: center;"><iframe width=960 height=540 style="margin-right: 1%; max-width:100%;" src="https://player.vimeo.com/video/827746067?h=9ab686b9b4" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="Where's Your Soul? The Failure of Urban Renewal"></iframe>
+                
+                  <h1 class="headline" style="padding-top:5px; border-radius: 8px; font-size:20pt; margin-bottom: 0%; padding-left: 20px;">The Myth of the Self-Regulatory Machine <small style="font-size:14pt; color: #d66909; font-weight: normal; letter-spacing: 1px;">Spring 2023</small></h1>
+      
+                  <p style="border-radius: 8px; padding: 5px; padding-left:20px; margin-left: 5px; font-size:11pt;">
+                     This documentary covers the magnitude of the issues surrounding 3D printing and artificial intelligence, the game of hot potato the Supreme Court is playing with Congress over this problem, and the difficulties the 1st Amendment (+ others) poses to passing any legislation at all.
+                     I believe the timing of this film is very important with the information it shares about large language models (LLM) and their flaws ripe for regulatory action. Acting as director, cameraman + crew, and editor this time was incredibly challenging but ultimately rewarding as it allowed complete control for me to tighten this vast observation into a cohesive narrative and pose some interesting questions about the freedom of internet usage in the future along the way. 
+                     <span style="font-weight:bold;">Documentary Final Project for Advanced Video Production at Wellesley College. </span>
+                    </p></section>
+            
+            
+                <!-- Image text -->
+                <!-- <div class="caption-container">
+                  <p id="caption"></p>
+                </div> -->
+              
+                <!-- Thumbnail images
+                <div class="row">
+                  <div class="column" style="float: left; width: 10%;border: 0.5px solid rgba(52, 4, 4, 0.524);">
+                    <img class="demo cursor" src="prcImage.jpg" style="max-width:100%" onclick="currentSlide(1)">
+                  </div>
+                  <div class="column" style="float: left; width: 10%;border: 0.5px solid rgba(52, 4, 4, 0.524);"> 
+                    <img class="demo cursor" src="IMG_0875Compressed.jpg" style="max-width:100%" onclick="currentSlide(2)">
+                  </div>
+                  <div class="column" style="float: left; width: 10%;border: 1px solid rgba(52, 4, 4, 0.524);">
+                    <img class="demo cursor" src="cow2.jpg" style="max-width:100%" onclick="currentSlide(3)">
+                  </div>
+                  <div class="column" style="float: left; width: 10%;border: 1px solid rgba(52, 4, 4, 0.524);">
+                    <img class="demo cursor" src="bama2.jpg" style="max-width:100%" onclick="currentSlide(4)">
+                  </div>
+                  <div class="column" style="float: left; width: 10%;border: 0.5px solid rgba(52, 4, 4, 0.524);">
+                    <img class="demo cursor" src="IMG_0638BW.jpg" style="max-width:100%" onclick="currentSlide(5)">
+                  </div> 
+                  <div class="column" style="float: left; width: 10%;border: 0.5px solid rgba(52, 4, 4, 0.524);">
+                    <img class="demo cursor" src="working4.jpg" style="max-width:100%" onclick="currentSlide(6)">
+                  </div>
+                  <div class="column" style="float: left; width: 10%;border: 0.5px solid rgba(52, 4, 4, 0.524);">
+                    <img class="demo cursor" src="IMG_0882Compressed.jpg" style="max-width:100%" onclick="currentSlide(7)">
+                  </div>
+                  <div class="column" style="float: left; width: 10%;border: 0.5px solid rgba(52, 4, 4, 0.524);">
+                    <img class="demo cursor" src="collageBW.jpg" style="max-width:100%" onclick="currentSlide(8)">
+                  </div>
+                  <div class="column" style="float: left; width: 10%;border: 0.5px solid rgba(52, 4, 4, 0.524);">
+                    <img class="demo cursor" src="overlookCompressed.jpg" style="max-width:100%" onclick="currentSlide(9)">
+                  </div>
+                  <div class="column" style="float: left; width: 10%;border: 0.5px solid rgba(52, 4, 4, 0.524);">
+                    <img class="demo cursor" src="IMG_1003BW.jpg" style="max-width:100%" onclick="currentSlide(10)">
+                  </div>
+                  <div class="column" style="float: left; width: 10%;border: 0.5px solid rgba(52, 4, 4, 0.524);">
+                    <img class="demo cursor" src="houses.jpeg" style="max-width:100%" onclick="currentSlide(11)">
+                  </div>
+                  <div class="column" style="float: left; width: 10%;border: 1px solid rgba(52, 4, 4, 0.524);">
+                    <img class="demo cursor" src="cow3.jpg" style="max-width:100%" onclick="currentSlide(12)">
+                  </div>
+                  <div class="column" style="float: left; width: 10%;border: 0.5px solid rgba(52, 4, 4, 0.524);">
+                    <img class="demo cursor" src="danger.jpg" style="max-width:100%" onclick="currentSlide(13)">
+                  </div>
+                  <div class="column" style="float: left; width: 10%;border: 0.5px solid rgba(52, 4, 4, 0.524);">
+                    <img class="demo cursor" src="lot.jpg" style="max-width:100%" onclick="currentSlide(14)">
+                  </div> -->
+
+            </div>
+            
+          
+        <!-- div for column -->
+                    </div>
+    <!-- div for row class -->
+                    </div>
+                    <!-- <div class="row">
+                    <div class="col-sm" style="padding: 20px; padding-bottom: 2.5px; margin:10px">
+                       <h1 class="headline"><a href="videoGames.html" style="font-weight: bold; border-radius: 8px; background-color:#bfd0ad;">Orwellian Industries: The Simulator</a><h1>
+                            <p><mark style="background-color: rgb(253, 247, 237); color:rgba(52, 4, 4, 0.738); border-radius: 8px;">Unity 2D Game; <em>Slack off at work with Orwellian Industries: The Simulator!</em></mark></p>
+                            <section style="padding: 15px; padding-top: 0%;"><a href="videoGames.html"><img width="480" height="280" style="border:1px solid rgb(52, 4, 4); max-width:100%; width: 100%; height:auto; border-radius: 4px;" src="gifOrwellianSmaller.gif">
+                        </img></a></section>
+                        <p style="text-align: right;"><span style="display: inline; text-align: right;
+                          padding: 4px;
+                          border-radius: 16px;
+                          background-color: rgba(215, 90, 90, 0.828); color: rgb(236, 222, 196); 
+                          ">Unity 2D</span> 
+                          <span style="display: inline;
+                          padding: 4px;
+                          border-radius: 16px;
+                          background-color: rgba(215, 90, 90, 0.828); color: rgb(236, 222, 196); 
+                          ">C#</span> 
+                          <span style="display: inline;
+                          padding: 4px;
+                          border-radius: 16px;
+                          background-color: rgba(215, 90, 90, 0.828); color: rgb(236, 222, 196); 
+                          ">ui design</span> 
+                          <span style="display: inline;
+                          padding: 4px;
+                          border-radius: 16px;
+                          background-color: rgba(215, 90, 90, 0.828); color: rgb(236, 222, 196); 
+                          ">original asset creation in Adobe Photoshop</span> 
+                          </p>
+                           </div>
+                           <div class="col-sm" style="background-color:rgba(208, 199, 164, 0.451); padding: 20px; padding-bottom: 2.5px; border-radius: 8px; margin:10px">
+                            <h1 class="headline"><a href="Mapshots.html" style="font-weight: bold;">Mapshots</a></h1>
+                            <p><mark style="background-color: rgb(253, 247, 237); color:rgba(52, 4, 4, 0.738); border-radius: 8px;">Mobile prototype made in Figma focused on creating spatial memory through visual media and text-based posts for past, present, and future Wellesley College students.</mark></p>
+                            <section style="padding: 15px; padding-top: 0%;"><a href="Mapshots.html"><img width="480" height="320" style="max-width:100%; width: 100%; height:auto; border: 1px solid rgb(52, 4, 4); border-radius: 4px;" src="highfidelityLanding.gif">
+                            </img></a></section>
+                            <p style="text-align: right;"><span style="display: inline;
+                              padding: 4px;
+                              border-radius: 16px;
+                              background-color: rgba(215, 90, 90, 0.828); color: rgb(236, 222, 196); ">Figma</span>
+                              <span style="display: inline;
+                              padding: 4px;
+                              border-radius: 16px;
+                              background-color: rgba(215, 90, 90, 0.828); color: rgb(236, 222, 196); ">mobile ui/ux design</span>
+                              <span style="display: inline;
+                              padding: 4px;
+                              border-radius: 16px;
+                              background-color: rgba(215, 90, 90, 0.828); color: rgb(236, 222, 196);">usability testing</span>
+                              </p>
+                    </div> -->
+                    </div>
+                </div>
 </main>
 <div class="outer">
-  <div class="footer" style="padding:35px;">
-    <a style="font-size: small; text-decoration: none; font-family:'myFont2', sans-serif; color:rgb(52, 4, 4);" href="mailto: sebastianisophie@gmail.com">Email</a> ・ <a style="color:rgb(52, 4, 4); font-size: small; text-decoration: none; font-family:'myFont2', sans-serif;" href="https://www.instagram.com/sophiesebastiani" target="_blank" rel="noopener noreferrer">Instagram</a> ・ <a style="color:rgb(52, 4, 4); font-size: small; text-decoration: none; font-family:'myFont2', sans-serif;" href="https://www.linkedin.com/in/sophiesebastiani333" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  <div class="footer" style="padding: 35px">
+    <li><a  style="font-size: small; text-decoration: none; font-family:'myFont2', sans-serif;" href="mailto: sebastianisophie@gmail.com">Email</a></li>
+    <li><a style="font-size: small; text-decoration: none; font-family:'myFont2', sans-serif;" href="https://www.instagram.com/sophiesebastiani" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+    <li><a  style="font-size: small; text-decoration: none; font-family:'myFont2', sans-serif;" href="https://www.linkedin.com/in/sophiesebastiani" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>              
+    <li><a  style="font-size: small; text-decoration: none; font-family:'myFont2', sans-serif;" href="https://vimeo.com/user194713210" target="_blank" rel="noopener noreferrer">Vimeo</a></li>              
 <br>
-  </div></div>
+</div></div>
 </body>
 </html>

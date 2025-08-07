@@ -4,113 +4,437 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="screen.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="carousel-fit.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name=author content="Sophie Sebastiani">
     <title>Research Papers + Articles</title>
     <link rel="icon" type="image/x-icon" href="Screen Shot 2022-11-26 at 1.11.25 PM.png">
+    <meta name="google-site-verification" content="rGDql-EMHljArS1bdbIrPyOktMmy2oPaq6GDRcThppA" />
 </head>
+
 <body>
-  <style>
-    body {
-      /* background-image: url('backgroundindex.png');
+    <style>
+        body {
+          /* background-image: url('backgroundindex.png');
           background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size:cover;   */
+        background-size:cover; */
         background-color: rgb(249, 248, 246);
-    }
-
-    .padding {
-    padding: 70px;
-    padding-top:60px; 
-    padding-bottom: 20px;
-  }
-
-@media only screen and (max-width: 775px) {
-    .padding {
-    padding: 10px;
-    padding-top:60px; 
-    padding-bottom: 20px;
-  }
+        }
+        * {
+  box-sizing: border-box;
 }
-</style>
-<ul style="text-align: left; padding-left: 29px; margin-top: 10px">
-  <li style="background-color:#f3dbe2db;"><a  href="index.html">🏡</a></li>
-  <!-- <li style="background-color: #eed9b5d1;"><a  href="Video.html">Video</a></li>
-  <li style="background-color: rgba(170, 178, 161, 0.434)"><a   href="Photo.html">Photo</a></li> -->
-  <li style="background-color: #eed9b5d1"><a  href="work.html">Works</a></li>
-  <li style="background-color: #c9dce7db;"><a class="active" href="research.html">Research</a></li>
 
-</ul>
+
+/* Hide the images by default */
+.mySlides1, .mySlides2, .mySlides3 {display: none; }
+
+.mySlides1, .mySlides2, .mySlides3
+    img {
+  text-align:center; 
+  vertical-align: middle;
+margin: 0px auto;
+  cursor: pointer;
+  max-height: 700px;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+.slideshow-container {
+    vertical-align: middle;
+  max-width: 1000px;
+  position: relative;
+  margin: 0px auto;
+  cursor: pointer;
+  /* z-index: 0; */
+}
+
+li a:hover{
+  text-decoration: none;
+  /* color:#bac8b2; */
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  visibility: hidden;
+  transition: 0.6s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 10%;
+  width: auto;
+  padding: 300px 50px;
+  margin-top: -80px;
+  color:#bac8b2;
+  /* color: rgb(176, 110, 99); */
+  /* background-color: #b4cfece1; */
+  font-family:'myFont2', sans-serif;
+  font-size: 35px;
+  user-select: none;
+  -webkit-user-select: none;
+  text-decoration: none;
+}
+
+.slideshow-container:hover .prev  {
+  visibility: visible;
+}
+
+.slideshow-container:hover .next  {
+  visibility: visible;
+}
+
+.padding {
+    padding: 40px;
+    padding-top:1px; 
+    padding-bottom: 20px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .padding {
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    margin-top: 0%;
+  }
+
+.slideshow-container .prev, .next {
+  visibility: visible;
+}
+  .prev,
+.next {
+  visibility: visible;
+  padding: 0px;
+  padding-top: 120px;
+  margin-top: 0%;
+  font-size: 25px;
+
+}
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  /* border-radius: 8px 0px 0px 8px; */
+  border-radius: 8px;
+}
+
+.prev {
+  left: 0;
+  /* border-radius: 0px 8px 8px 0px; */
+  border-radius: 8px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  /* background-color: rgba(90, 79, 79, 0.8); */
+  color: rgb(176, 110, 99);
+  /* background-color: #b4cfecce; */
+  /* color:#abbfa0; */
+  text-decoration: none;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  background-color: rgba(225, 199, 199, 0.365);
+  color:rgba(52, 4, 4, 0.604);
+  font-family:'myFont', sans-serif;
+  font-size: small;
+  text-align: left;
+  /* font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; */
+}
+
+/* Container for image text */
+/* .caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+} */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side
+.column {
+  float: left;
+  width: 10%;
+  border: 1px solid rgba(52, 4, 4, 0.524);
+} */
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.8;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+.headline a {
+    color: rgb(52, 4, 4);
+    text-align: left;
+    padding:5px;
+    text-decoration: none;
+    font-weight: normal;
+    display: block;
+    font-family:'myFont', sans-serif;
+}
+
+.headline a:hover {
+    /* color: rgb(186, 72, 64); */
+    /* color: rgb(193, 71, 62);  */
+    /* color: rgb(202, 86, 54); */
+    /* border: 1.5px solid rgb(202, 86, 54); */
+    /* background-color:#eeefa57e; */
+    padding:5px; 
+    color:#524646;
+    border-radius: 5px;
+    text-decoration: none;
+}
+    </style>
+
+        <!-- <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += "responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+          </script> -->
+        <!-- </div>  -->  
 <main>
-    <div class="padding" style="padding-top: 70px;">
-        <section style="padding:15px; padding-top:0%; text-align: center;">
-          <h1 class="headline" style="padding: 10px; padding-left:0%; border-radius: 8px; font-size:30pt; margin-bottom: 0%; font-weight: bold;"><a href="https://docs.google.com/document/d/1dDDxeoD2m6yHNYUHBzsTQbMM2z9mBWenTQ0U4UdX2QY/edit?usp=sharing" target="_blank" rel="noopener noreferrer"; style="font-size:22pt; display: inline;">Hydroponics: Replicating India’s Green Revolution in Rainfed Farmlands
-          </a> 
-            <small style="font-size:15pt; color: rgb(181, 84, 77); font-weight: normal; letter-spacing: 1px; padding: 5pt; padding-left: 0%;">Fall 2022</small>
-          </h1>
-          <p style="background-color:#fff9e7c9; border-radius: 8px; padding: 5px;padding-bottom:0%; padding-top: 0%;">
-            Co-authored proposed empirical study using hydroponic farming systems to diversify sources of food production in rural India and identify cheaper methods of year-round crop growth.
-  </p>
-  <hr style="width:100%; color:rgb(181, 84, 77); border-width: 1.75px;">
-
-  <h1 class="headline" style="padding: 10px; padding-top:0%; padding-left:0%; border-radius: 8px; font-size:30pt; margin-bottom: 0%; font-weight: bold;"><a href="https://docs.google.com/document/d/1dMSI4Gok1meXQb_fmCRRg6Lc8Vtim--c/edit?usp=sharing&ouid=103206116209846339059&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer"; style="font-size:22pt; display: inline;">NFTs and the Exploitation of Speculative Art Markets</a> 
-    <small style="font-size:15pt; color: rgb(181, 84, 77); font-weight: normal; letter-spacing: 1px; padding: 5pt; padding-left: 0%;">Spring 2022</small>
-  </h1>
-  <p style="background-color:#fff9e7c9; border-radius: 8px; padding: 5px;padding-bottom:0%; padding-top: 0%;">
-     Research paper critiquing the function of NFTs within the art market and the inflated speculative value of the global art trade.
-  </p>
-  <hr style="width:100%; color:rgb(181, 84, 77); border-width: 1.75px;">
-
-  <h1 class="headline" style="padding: 10px; padding-top:0%; padding-left:0%; border-radius: 8px; font-size:30pt; margin-bottom: 0%; font-weight: bold;"><a href="https://docs.google.com/document/d/1lsqj7cCh-oJv-9b6LZD7p9bXVV3CPKW4BlYvrJmHwkg/edit?usp=sharing" target="_blank" rel="noopener noreferrer"; style="font-size:22pt; display: inline;">How Historic Preservation Can Slow Agricultural Land Accumulation in Alabama
-  </a> 
-    <small style="font-size:15pt; color: rgb(181, 84, 77); font-weight: normal; letter-spacing: 1px; padding: 5pt; padding-left: 0%;">Spring 2022</small>
-  </h1>
-  <p style="background-color:#fff9e7c9; border-radius: 8px; padding: 5px;padding-bottom:0%; padding-top: 0%;">
-A policy-oriented research paper, utilizing the design of historic preservation land inventory programs to conserve and repatriate agricultural land for southern communities.
-  </p>
-  <hr style="width:100%; color:rgb(181, 84, 77); border-width: 1.75px;">
-
-  <h1 class="headline" style="padding: 10px; padding-top:0%; padding-left:0%; border-radius: 8px; font-size:30pt; margin-bottom: 0%; font-weight: bold;"><a href="https://docs.google.com/document/d/16gCHX-bZQL50KnXchYfPo_Ucp8vDhaXMGQV7on_yXLQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer"; style="font-size:22pt; display: inline;">Changes in Employee Arbitration: A Study of Google’s Mandatory Arbitration Clause</a> 
-    <small style="font-size:15pt; color: rgb(181, 84, 77); font-weight: normal; letter-spacing: 1px; padding: 5pt; padding-left: 0%;">Spring 2022</small>
-  </h1>
-  <p style="background-color:#fff9e7c9; border-radius: 8px; padding: 5px;padding-bottom:0%; padding-top: 0%;">
-     Co-authored research paper on mandatory arbitration within the tech sector, analyzing changes in Google's stock value before and after an influential New York Times report and subsequent policy change.
-  </p>
-  <hr style="width:100%; color:rgb(181, 84, 77); border-width: 1.75px;">
-
+    <body>
+      <!-- <img src='recession3.png' style="margin-top: 1.5%;  height: auto; display: block; margin-left: auto; margin-right: auto; width:900px; border: 1pt solid rgb(52, 4, 4)">
+        <p style="text-align: right; margin-top: 0.5%;"> <mark style="background-color: rgba(110, 167, 99, 0.789); color:rgb(250, 248, 239)">🦠 🧠 a desktop collage made from digital scraps and my sketchbook 🛌 💭</mark></p>
+          </img> -->
+          <div class="padding" style="padding-bottom:5px">
+            <div class="row" style="display:flex;">
+              <div class="col-sm-4" style="margin-top: 40px; margin-right:0%;">
+        
+  <section style="position:fixed; margin-top:2.5%; margin-right:0%">
+         <p style="margin-top: 3.5%; margin-bottom: 0%; font-family:'myFont', 'Alte Haas Grotesk Regular', sans-serif; letter-spacing: 0.25px;">
+            <mark style="font-weight: bold; font-family: 'myFont', sans-serif; font-size: 20pt; background-color: #f8f8db88; border-radius:5px;">
+              <a class="active" style="text-decoration: none; color:#bac8b2;" href="index.html">Sophie Sebastiani</a>
+              </mark> 
+    
+       <div style="margin-left: .5%; margin-top: 0%;">
+        <!-- <li style="background-color:#f3dbe2db;"><a class="active"  href="index.html">🏡</a></li><br> -->
+        <!-- <li style="background-color: #eed9b5d1;"><a  href="Video.html">Video</a></li>
+        <li style="background-color: rgba(170, 178, 161, 0.434)"><a   href="Photo.html">Photo</a></li> -->
+        <li><a  href="work.html">Work</a></li><br>
+        <li><a href="research.html" class="active">Research</a></li><br>
+        <li><a  href="info.html">Info</a></li>
+      
+          <!-- <li style="background-color: #d2c0ac;"><a  href="Mapshots.html">Mapshots</a></li>
+          <li style="background-color: #a0bad5;"><a href="Impressions.html">Impressions</a></li> -->
+              </div>
+              </p> 
+  </section>
+              
+               <!-- <div style="border:1.5px solid rgb(202, 67, 30); border-radius: 15px; width: 100px; padding: 5pt; background-color: #6eaac30b;">
+              
+                <p style="text-align:left; margin-left: 5%; font-size: small; font-family:'myFont', sans-serif;">🐛 <a href="mailto: sebastianisophie@gmail.com">Email</a></p>
+                <p style="text-align:left; margin-left: 5%; font-size: small; font-family:'myFont', sans-serif;">🐞 <a href=https://www.instagram.com/sophiesebastiani>Instagram</a> </p>
+                <p style="text-align:left; margin-left: 5%; font-size: small; font-family:'myFont', sans-serif;">🪰 <a href=https://www.linkedin.com/in/sophiesebastiani333>LinkedIn</a> </p>
+                <p style="text-align:left; margin-left: 3.25%; font-family:'myFont', sans-serif; background-color:rgba(230, 192, 174, 0.443); border-radius: 25px; padding: 5px; padding-right: 7px;display:inline; font-size: small;">🪲 <a href=SebastianiSophieCV.pdf>CV</a>
+                </p>   </div> -->
+              </div>
+              <div class="col-sm-8" style="margin-top: 35px; padding-left:0%; margin-left: 0%;">
+                  <section style="padding-top:0%; text-align: left; margin-right:10%; margin-left:0%">
+                    <h1 class="headline" style="padding: 10px; padding-left:0%; border-radius: 8px; font-size:25pt; margin-bottom: 0%; font-weight: bold"><a href="https://docs.google.com/document/d/1dDDxeoD2m6yHNYUHBzsTQbMM2z9mBWenTQ0U4UdX2QY/edit?usp=sharing" target="_blank" rel="noopener noreferrer"; style="font-size:20pt; display: inline;">Replicating India’s Green Revolution in Rainfed Farmlands using Community-Scaled Hydroponic Agriculture Systems
+                    </a> 
+                      <small style="font-size:15pt; color: #d66909; font-weight: normal; letter-spacing: 1px; padding: 5pt; padding-left: 0%;">Fall 2022</small>
+                    </h1>
+                    <p style="background-color:#f8f8db88; border-radius: 8px; padding: 5px;padding-bottom:0%; padding-top: 0%;">
+                      Co-authored proposed empirical study using hydroponic farming systems to diversify sources of food production in rural India and identify cheaper methods of year-round crop growth.
+            </p>
+            <!-- <hr style="width:100%; color:rgb(181, 84, 77); border-width: 1.75px;"> -->
+            <hr style="
+            border: 0;
+            clear:both;
+            display:block;
+            width: 96%;               
+            background-color:#d66909;
+            height: 1px;"
+            >
  
-  <h1 class="headline" style="padding: 10px; padding-left:0%; padding-top:0%; border-radius: 8px; font-size:30pt; margin-bottom: 0%; font-weight: bold;"><a href="https://docs.google.com/document/d/1cXHKAG1vdJUOrmqsiJoIO7Qlg1JHOGCM/edit?usp=sharing&ouid=103206116209846339059&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer"; style="font-size:22pt; display: inline;">Web3: Creating Community through the Blockchain</a> 
-    <small style="font-size:15pt; color: rgb(181, 84, 77); font-weight: normal; letter-spacing: 1px; padding: 5pt; padding-left: 0%;">Fall 2021</small>
-  </h1>
+          
+            <h1 class="headline" style="line-height: 0.9; padding: 10px; padding-top:0%; padding-left:0%; border-radius: 8px; font-size:30pt; margin-bottom: 0%; font-weight: bold;"><a href="https://docs.google.com/document/d/1dMSI4Gok1meXQb_fmCRRg6Lc8Vtim--c/edit?usp=sharing&ouid=103206116209846339059&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer"; style="font-size:20pt; display: inline;">NFTs and the Exploitation of Speculative Art Markets</a> 
+              <small style="font-size:14pt; color: #d66909; font-weight: normal; letter-spacing: 1px; padding: 5pt; padding-left: 0%;">Spring 2022</small>
+            </h1>
+            <p style="background-color:#f8f8db88; border-radius: 8px; padding: 5px;padding-bottom:0%; padding-top: 0%;">
+               Research paper critiquing the function of NFTs within the art market and the inflated speculative value of the global art trade.
+            </p>
+            <!-- <hr style="width:100%; color:rgb(181, 84, 77); border-width: 1.75px;"> -->
+            <hr style="
+            border: 0;
+            clear:both;
+            display:block;
+            width: 96%;               
+            background-color:#d66909;
+            height: 1px;"
+            >
+          
+            <h1 class="headline" style="padding: 10px; padding-top:0%; line-height: 0.9; padding-left:0%; border-radius: 8px; font-size:30pt; margin-bottom: 0%; font-weight: bold;"><a href="https://docs.google.com/document/d/1lsqj7cCh-oJv-9b6LZD7p9bXVV3CPKW4BlYvrJmHwkg/edit?usp=sharing" target="_blank" rel="noopener noreferrer"; style="font-size:20pt; display: inline; padding-bottom: 0%;">How Historic Preservation Can Slow Agricultural Land Accumulation in Alabama
+            </a> 
+              <small style="font-size:14pt; color: #d66909; font-weight: normal; letter-spacing: 1px; padding: 5pt; padding-left: 0%;">Spring 2022</small>
+            </h1>
+            <p style="background-color:#f8f8db88; border-radius: 8px; padding: 5px;padding-bottom:0%; padding-top: 0%;">
+          A policy-oriented research paper, utilizing the design of historic preservation land inventory programs to conserve and repatriate agricultural land for southern communities.
+            </p>
+            <!-- <hr style="width:100%; color:rgb(181, 84, 77); border-width: 1.75px;"> -->
+            <hr style="
+            border: 0;
+            clear:both;
+            display:block;
+            width: 96%;               
+            background-color:#d66909;
+            height: 1px;"
+            >
+          
+            <h1 class="headline" style="line-height: 0.9;padding: 10px; padding-top:0%; padding-left:0%; border-radius: 8px; font-size:30pt; margin-bottom: 0%; font-weight: bold;"><a href="https://docs.google.com/document/d/16gCHX-bZQL50KnXchYfPo_Ucp8vDhaXMGQV7on_yXLQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer"; style="font-size:20pt; display: inline;">Changes in Employee Arbitration: A Study of Google’s Mandatory Arbitration Clause</a> 
+              <small style="font-size:14pt; color: #d66909; font-weight: normal; letter-spacing: 1px; padding: 5pt; padding-left: 0%;">Spring 2022</small>
+            </h1>
+            <p style="background-color:#f8f8db88; border-radius: 8px; padding: 5px;padding-bottom:0%; padding-top: 0%;">
+               Co-authored research paper on mandatory arbitration within the tech sector, analyzing changes in Google's stock value before and after an influential New York Times report and subsequent policy change.
+            </p>
+            <!-- <hr style="width:100%; color:rgb(181, 84, 77); border-width: 1.75px;"> -->
+            <hr style="
+            border: 0;
+            clear:both;
+            display:block;
+            width: 96%;               
+            background-color:#d66909;
+            height: 1px;"
+            >
+           
+            <h1 class="headline" style="line-height: 0.9;padding: 10px; padding-left:0%; padding-top:0%; border-radius: 8px; font-size:30pt; margin-bottom: 0%; font-weight: bold;"><a href="https://docs.google.com/document/d/1cXHKAG1vdJUOrmqsiJoIO7Qlg1JHOGCM/edit?usp=sharing&ouid=103206116209846339059&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer"; style="font-size:20pt; display: inline;">Web3: Creating Community through the Blockchain</a> 
+              <small style="font-size:14pt; color: #d66909; font-weight: normal; letter-spacing: 1px; padding: 5pt; padding-left: 0%;">Fall 2021</small>
+            </h1>
+          
+            <p style="background-color:#f8f8db88; border-radius: 8px; padding: 5px;padding-bottom:0%; padding-top: 0%;">A philosophical perspective on the digital infrastructure of Web3 and how a blockchain internet foundation can establish decentralized networks that protect user data.  
+          </p>
+          <!-- <hr style="width:100%; color:rgb(181, 84, 77); border-width: 1.75px;"> -->
+          <hr style="
+          border: 0;
+          clear:both;
+          display:block;
+          width: 96%;               
+          background-color:#d66909;
+          height: 1px;"
+          >
 
-  <p style="background-color:#fff9e7c9; border-radius: 8px; padding: 5px;padding-bottom:0%; padding-top: 0%;">A philosophical perspective on the digital infrastructure of Web3 and how a blockchain internet foundation can establish decentralized networks that protect user data.  
-</p>
-<hr style="width:100%; color:rgb(181, 84, 77); border-width: 1.75px;">
+          <h1 class="headline" style="line-height: 0.9;padding: 10px; padding-left:0%; padding-top:0%; border-radius: 8px; font-size:30pt; margin-bottom: 0%; font-weight: bold;"><a href="https://docs.google.com/document/d/1uK5Z1y5CHym4V3GOuLn0MXATOWVkRetQ/edit?usp=sharing&ouid=103206116209846339059&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer"; style="font-size:20pt; display: inline;">Inadequate Infrastructure in the South: a Legacy of Racism and Public Corruption</a> 
+            <small style="font-size:14pt; color: #d66909; font-weight: normal; letter-spacing: 1px; padding: 5pt; padding-left: 0%;">Fall 2021</small>
+          </h1>
+          
+          <p style="background-color:#f8f8db88; border-radius: 8px; padding: 5px;padding-bottom:0%; padding-top: 0%;">
+            A history of public and private infrastructure in the American South and how the relationship between federal regulation and private interest have facilitated long-term neglect of public development projects in the southern United States.
+          </p>
+          <!-- <hr style="width:100%; color:rgb(181, 84, 77); border-width: 1.75px;"> -->
+          <hr style="
+          border: 0;
+          clear:both;
+          display:block;
+          width: 96%;               
+          background-color:#d66909;
+          height: 1px;"
+          >          
+          <h1 class="headline" style="line-height: 0.9;padding: 10px; padding-left:0%; padding-top:0%; border-radius: 8px; font-size:30pt; margin-bottom: 0%; font-weight: bold;"><a href="OutsidetheWhiteCube.html"; style="font-size:20pt; display: inline;">Outside the White Cube</a> 
+            <small style="font-size:14pt; color:#d66909; font-weight: normal; letter-spacing: 1px; padding: 5pt; padding-left: 0%;">Spring 2021</small>
+          </h1>
+          
+          <p style="background-color:#f8f8db88; border-radius: 8px; padding: 5px;padding-bottom:0%; padding-top: 0%;">
+            An op-ed piece on modern gallery settings within virtual space for the <a href="https://issuu.com/pentimento.w/docs/pentimento_issue_1_may_2021__part_1_3f08b4457b6ff6" target="_blank" rel="noopener noreferrer">first issue</a> of Pentimento Magazine, Wellesley College's student-run art history and studio publication.
+          </p>
+          
+                      </section>
+              
 
-<h1 class="headline" style="padding: 10px; padding-left:0%; padding-top:0%; border-radius: 8px; font-size:30pt; margin-bottom: 0%; font-weight: bold;"><a href="https://docs.google.com/document/d/1uK5Z1y5CHym4V3GOuLn0MXATOWVkRetQ/edit?usp=sharing&ouid=103206116209846339059&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer"; style="font-size:22pt; display: inline;">Inadequate Infrastructure in the South: a Legacy of Racism and Public Corruption</a> 
-  <small style="font-size:15pt; color: rgb(181, 84, 77); font-weight: normal; letter-spacing: 1px; padding: 5pt; padding-left: 0%;">Fall 2021</small>
-</h1>
-
-<p style="background-color:#fff9e7c9; border-radius: 8px; padding: 5px;padding-bottom:0%; padding-top: 0%;">
-  A history of public and private infrastructure in the American South and how the relationship between federal regulation and private interest have facilitated long-term neglect of public development projects in the southern United States.
-</p>
-<hr style="width:100%; color:rgb(181, 84, 77); border-width: 1.75px;">
-
-<h1 class="headline" style="padding: 10px; padding-left:0%; padding-top:0%; border-radius: 8px; font-size:30pt; margin-bottom: 0%; font-weight: bold;"><a href="OutsidetheWhiteCube.html"; style="font-size:22pt; display: inline;">Outside the White Cube</a> 
-  <small style="font-size:15pt; color: rgb(181, 84, 77); font-weight: normal; letter-spacing: 1px; padding: 5pt; padding-left: 0%;">Spring 2021</small>
-</h1>
-
-<p style="background-color:#fff9e7c9; border-radius: 8px; padding: 5px;padding-bottom:0%; padding-top: 0%;">
-  An op-ed piece on modern gallery settings within virtual space for the <a href="https://issuu.com/pentimento.w/docs/pentimento_issue_1_may_2021__part_1_3f08b4457b6ff6" target="_blank" rel="noopener noreferrer">first issue</a> of Pentimento Magazine, Wellesley College's student-run art history and studio publication.
-</p>
-
-            </section>
-    </div>
+        <!-- div for column -->
+                    </div>
+    <!-- div for row class -->
+                    </div>
+                    <!-- <div class="row">
+                    <div class="col-sm" style="padding: 20px; padding-bottom: 2.5px; margin:10px">
+                       <h1 class="headline"><a href="videoGames.html" style="font-weight: bold; border-radius: 8px; background-color:#bfd0ad;">Orwellian Industries: The Simulator</a><h1>
+                            <p><mark style="background-color: rgb(253, 247, 237); color:rgba(52, 4, 4, 0.738); border-radius: 8px;">Unity 2D Game; <em>Slack off at work with Orwellian Industries: The Simulator!</em></mark></p>
+                            <section style="padding: 15px; padding-top: 0%;"><a href="videoGames.html"><img width="480" height="280" style="border:1px solid rgb(52, 4, 4); max-width:100%; width: 100%; height:auto; border-radius: 4px;" src="gifOrwellianSmaller.gif">
+                        </img></a></section>
+                        <p style="text-align: right;"><span style="display: inline; text-align: right;
+                          padding: 4px;
+                          border-radius: 16px;
+                          background-color: rgba(215, 90, 90, 0.828); color: rgb(236, 222, 196); 
+                          ">Unity 2D</span> 
+                          <span style="display: inline;
+                          padding: 4px;
+                          border-radius: 16px;
+                          background-color: rgba(215, 90, 90, 0.828); color: rgb(236, 222, 196); 
+                          ">C#</span> 
+                          <span style="display: inline;
+                          padding: 4px;
+                          border-radius: 16px;
+                          background-color: rgba(215, 90, 90, 0.828); color: rgb(236, 222, 196); 
+                          ">ui design</span> 
+                          <span style="display: inline;
+                          padding: 4px;
+                          border-radius: 16px;
+                          background-color: rgba(215, 90, 90, 0.828); color: rgb(236, 222, 196); 
+                          ">original asset creation in Adobe Photoshop</span> 
+                          </p>
+                           </div>
+                           <div class="col-sm" style="background-color:rgba(208, 199, 164, 0.451); padding: 20px; padding-bottom: 2.5px; border-radius: 8px; margin:10px">
+                            <h1 class="headline"><a href="Mapshots.html" style="font-weight: bold;">Mapshots</a></h1>
+                            <p><mark style="background-color: rgb(253, 247, 237); color:rgba(52, 4, 4, 0.738); border-radius: 8px;">Mobile prototype made in Figma focused on creating spatial memory through visual media and text-based posts for past, present, and future Wellesley College students.</mark></p>
+                            <section style="padding: 15px; padding-top: 0%;"><a href="Mapshots.html"><img width="480" height="320" style="max-width:100%; width: 100%; height:auto; border: 1px solid rgb(52, 4, 4); border-radius: 4px;" src="highfidelityLanding.gif">
+                            </img></a></section>
+                            <p style="text-align: right;"><span style="display: inline;
+                              padding: 4px;
+                              border-radius: 16px;
+                              background-color: rgba(215, 90, 90, 0.828); color: rgb(236, 222, 196); ">Figma</span>
+                              <span style="display: inline;
+                              padding: 4px;
+                              border-radius: 16px;
+                              background-color: rgba(215, 90, 90, 0.828); color: rgb(236, 222, 196); ">mobile ui/ux design</span>
+                              <span style="display: inline;
+                              padding: 4px;
+                              border-radius: 16px;
+                              background-color: rgba(215, 90, 90, 0.828); color: rgb(236, 222, 196);">usability testing</span>
+                              </p>
+                    </div> -->
+                    </div>
+                </div>
+                <br>
 </main>
 <div class="outer">
-  <div class="footer" style="padding:35px;">    
-    <a style="font-size: small; text-decoration: none; font-family:'myFont2', sans-serif; color:rgb(52, 4, 4);" href="mailto: sebastianisophie@gmail.com">Email</a> ・ <a style="color:rgb(52, 4, 4); font-size: small; text-decoration: none; font-family:'myFont2', sans-serif;" href="https://www.instagram.com/sophiesebastiani" target="_blank" rel="noopener noreferrer">Instagram</a> ・ <a style="color:rgb(52, 4, 4); font-size: small; text-decoration: none; font-family:'myFont2', sans-serif;" href="https://www.linkedin.com/in/sophiesebastiani333" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-  <br></div></div>
+  <div class="footer" style="padding: 35px;">
+    <li><a  style="font-size: small; text-decoration: none; font-family:'myFont2', sans-serif;" href="mailto: sebastianisophie@gmail.com">Email</a></li>
+    <li><a style="font-size: small; text-decoration: none; font-family:'myFont2', sans-serif;" href="https://www.instagram.com/sophiesebastiani" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+    <li><a  style="font-size: small; text-decoration: none; font-family:'myFont2', sans-serif;" href="https://www.linkedin.com/in/sophiesebastiani" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>              
+    <li><a  style="font-size: small; text-decoration: none; font-family:'myFont2', sans-serif;" href="https://vimeo.com/user194713210" target="_blank" rel="noopener noreferrer">Vimeo</a></li>              
+<br>
+</div></div>
 </body>
 </html>
