@@ -168,7 +168,9 @@ ul {
  
   li a:hover {
     /* color:rgb(183, 77, 11); */
-    color:#665684;
+    /* color:#665684; */
+    color:#8272a1;
+    
   }
   li a.split {
     float: right;
@@ -205,7 +207,7 @@ ul {
 
 .active {
     /* background-color:rgba(93, 142, 182, 0.22); */
-    color:#665684;
+    color:#8272a1;
     /* color: rgb(202, 86, 54); */
     /* color:rgb(81, 68, 68); */
     text-decoration: none;

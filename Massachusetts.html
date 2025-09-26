@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" href="screen.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="carousel-fit.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name=author content="Sophie Sebastiani">
+    <title>Sophie Sebastiani</title>
+    <link rel="icon" type="image/x-icon" href="Screen Shot 2022-11-26 at 1.11.25 PM.png">
+    <meta name="google-site-verification" content="rGDql-EMHljArS1bdbIrPyOktMmy2oPaq6GDRcThppA" />
+</head>
+
+<body>
+    <style>
+        body {
+          /* background-image: url('backgroundindex.png');
+          background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size:cover; */
+        background-color: rgb(255, 255, 255);
+        }
+        * {
+  box-sizing: border-box;
+}
+
+
+/* Hide the images by default */
+.mySlides1, .mySlides2, .mySlides3 {display: none; }
+
+.mySlides1, .mySlides2, .mySlides3
+    img {
+  text-align:center; 
+  vertical-align: middle;
+margin: 0px auto;
+  cursor: pointer;
+  max-height: 700px;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+.slideshow-container {
+    vertical-align: middle;
+  max-width: 1000px;
+  position: relative;
+  margin: 0px auto;
+  cursor: pointer;
+  /* z-index: 0; */
+}
+
+li a:hover{
+  text-decoration: none;
+  /* color:#bac8b2; */
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  visibility: hidden;
+  transition: 0.6s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 10%;
+  width: auto;
+  padding: 300px 50px;
+  margin-top: -80px;
+  color:#bac8b2;
+  /* color: rgb(176, 110, 99); */
+  /* background-color: #b4cfece1; */
+  font-family:'Arial black', sans-serif;
+  font-size: 30px;
+  user-select: none;
+  -webkit-user-select: none;
+  text-decoration: none;
+}
+
+.slideshow-container:hover .prev  {
+  visibility: visible;
+  /* transition: 0.5s; */
+}
+
+.slideshow-container:hover .next  {
+  visibility: visible;
+}
+
+.padding {
+    padding: 40px;
+    padding-top:1px; 
+    padding-bottom: 20px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .padding {
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    margin-top: 0%;
+  }
+
+.slideshow-container .prev, .next {
+  visibility: visible;
+}
+  .prev,
+.next {
+  visibility: visible;
+  padding: 0px;
+  padding-top: 120px;
+  margin-top: 0%;
+  font-size: 25px;
+
+}
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: -40px;
+  /* border-radius: 8px 0px 0px 8px; */
+  border-radius: 8px;
+}
+
+.prev {
+  left: -100px;
+  /* border-radius: 0px 8px 8px 0px; */
+  border-radius: 8px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  /* background-color: rgba(90, 79, 79, 0.8); */
+  color: #d66909;
+  /* background-color: #b4cfecce; */
+  /* color:#abbfa0; */
+  text-decoration: none;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  background-color: rgba(225, 199, 199, 0);
+  color:rgba(52, 4, 4, 0.604);
+  font-family:'myFont', sans-serif;
+  font-size: small;
+  text-align: right;
+  padding-top:5px;
+  /* font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; */
+}
+
+/* Container for image text */
+/* .caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+} */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side
+.column {
+  float: left;
+  width: 10%;
+  border: 1px solid rgba(52, 4, 4, 0.524);
+} */
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.8;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+.headline {
+    color: rgb(52, 4, 4);
+    text-align: left;
+    padding:5px;
+    text-decoration: none;
+    font-weight: normal;
+    display: block;
+    font-family:'myFont', sans-serif;
+}
+
+.img {
+  padding-bottom: 5%;
+
+}
+    </style>
+
+        <!-- <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += "responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+          </script> -->
+        <!-- </div>  -->  
+<main>
+    <body>
+      <!-- <img src='recession3.png' style="margin-top: 1.5%;  height: auto; display: block; margin-left: auto; margin-right: auto; width:900px; border: 1pt solid rgb(52, 4, 4)">
+        <p style="text-align: right; margin-top: 0.5%;"> <mark style="background-color: rgba(110, 167, 99, 0.789); color:rgb(250, 248, 239)">🦠 🧠 a desktop collage made from digital scraps and my sketchbook 🛌 💭</mark></p>
+          </img> -->
+          <div class="padding" style="padding-bottom:5px; margin-top: 0%;">
+            <div class="row">
+              <div class="col-sm-4" style="margin-top: 40px;">
+        
+  <section style="position:fixed; margin-top:1.5%">
+         <p style="margin-top: 3.5%; margin-bottom: 0%; font-family:'myFont', 'Alte Haas Grotesk Regular', sans-serif; letter-spacing: 0.25px;">
+              <a class="active" style="font-size:20pt; text-decoration: none; color:#7be040;" href="index.html">Sophie Sebastiani</a>
+              </mark> 
+    
+       <div style="margin-left: .5%; margin-top: 0%;">
+        <!-- <li style="background-color:#f3dbe2db;"><a class="active"  href="index.html">🏡</a></li><br> -->
+        <!-- <li style="background-color: #eed9b5d1;"><a  href="Video.html">Video</a></li>
+        <li style="background-color: rgba(170, 178, 161, 0.434)"><a   href="Photo.html">Photo</a></li> -->
+        <!-- <li><a href="photovideo.html" style="font-size:15pt;">←</a></li><br> -->
+        <li><a  href="work.html">Projects</a></li><br>
+        <li><a href="research.html">Writing</a></li><br>
+        <li><a  href="info.html">Info</a></li>
+
+      
+          <!-- <li style="background-color: #d2c0ac;"><a  href="Mapshots.html">Mapshots</a></li>
+          <li style="background-color: #a0bad5;"><a href="Impressions.html">Impressions</a></li> -->
+              </div>
+              </p> 
+  </section>
+              
+               <!-- <div style="border:1.5px solid rgb(202, 67, 30); border-radius: 15px; width: 100px; padding: 5pt; background-color: #6eaac30b;">
+              
+                <p style="text-align:left; margin-left: 5%; font-size: small; font-family:'myFont', sans-serif;">🐛 <a href="mailto: sebastianisophie@gmail.com">Email</a></p>
+                <p style="text-align:left; margin-left: 5%; font-size: small; font-family:'myFont', sans-serif;">🐞 <a href=https://www.instagram.com/sophiesebastiani>Instagram</a> </p>
+                <p style="text-align:left; margin-left: 5%; font-size: small; font-family:'myFont', sans-serif;">🪰 <a href=https://www.linkedin.com/in/sophiesebastiani333>LinkedIn</a> </p>
+                <p style="text-align:left; margin-left: 3.25%; font-family:'myFont', sans-serif; background-color:rgba(230, 192, 174, 0.443); border-radius: 25px; padding: 5px; padding-right: 7px;display:inline; font-size: small;">🪲 <a href=SebastianiSophieCV.pdf>CV</a>
+                </p>   </div> -->
+              </div>
+              <div class="col-sm-8" style="margin-top: 50px; margin:auto; border-radius: 4px; padding-right:55px; text-align: center;">
+
+            <h1 class="headline" style="text-align:right;padding-left: 10px; border-radius: 8px; font-size:14pt; margin-bottom: 2.75px; margin-top:5%;">Wellesley + Boston, MA <small style="font-size:12pt; color: #d66909; background-color: #f6ece360; padding: 1.5pt;border-radius: 4pt;">2020 - 2023</small></h1>
+                 <br>
+
+                 <img class="img" style="max-width: 100%; max-height: 700px;" id="wild" src="IMG_8395.jpeg">
+
+
+                 <img class="img" style="max-width: 100%" src="lighting2Q70.jpg">
+
+                 <img class="img" style="max-width: 100%" id="deercrime" src="Sebastiani_Commonwealth Avenue.jpg"></img>
+
+
+                 <img class="img" style="max-width: 100%; max-height: 700px"  id="stroll" src="backbay.jpeg">
+
+                 <img class="img" style="max-width: 100%" id="headless" src="IMG_1975.jpg">
+
+
+               <img class="img" style="max-width: 100%" id="headless" src="headlessQ40P70v2.jpg">
+               <img class="img" style="max-width: 100%; max-height: 700px;" src="angelReverseQ40P.jpg">
+
+               <img class="img" style="max-width: 100%" id="lighting" src="lightingQ70.jpg">
+                  
+               <img class="img" style="max-width: 100%" id="briver" src="over the Charles River on a full moon.jpg">
+
+               <img class="img" style="max-width: 100%; max-height: 700px;" src="two.jpg">
+
+               <img class="img" style="max-width: 100%" src="economy1.jpg">
+
+               <img class="img" style="max-width: 100%;  max-height: 700px;"src="locks.jpg">
+
+
+
+               <img class="img" style="max-width: 100%; max-height: 400px" id="backbaybuild" src="IMG_1224.jpeg">
+
+
+
+  
+
+     
+             
+
+
+          
+                <!-- </div> -->
+                <!-- </div> -->
+            <br>
+                <!-- <p style="border-radius: 8px; padding: 5px; margin-left: 10px; margin-right: 45px;">
+                  This series is an introspective look into the environmental and social disruptions caused by the blossoming commercial and housing developments changing my hometown landscape from a primarily agricultural economy and its wealth of biodiversity, into a growing service industry dictated by private regional planning. The titular image is a collage of photographs captured along a county road in southern Alabama, where the construction of an Aldi grocery location occurs directly across the street from an established Walmart Supercenter, a few yards away from the body of a deer hit while crossing that same road. Using photomontage as a way to force an acute visual proximity between images creates a shocking dissonance between life and death, the natural and the constructed, with the heart of this project focusing on the residents of Baldwin and Mobile counties along Alabama's Gulf Coast adjusting to a shifting economy and ecosystem captured through candid and portrait photography.
+                  <span style="font-weight:bold;">My work was displayed in the Panopticon Gallery in Boston from April 3rd to May 5th 2023, hosted by the Photographic Resource Center for their <a href=https://www.prcboston.org/2023-student-show/# target="_blank" rel="noopener noreferrer">2023 Student Show.</a>
+                    </span> 
+                  </p> -->
+            </div>
+            
+            
+            
+            <div class="padding" style="padding-top: 0%; padding-bottom:0px;">
+            
+                    <script>
+                        
+                        let slideIndex = [1,1,1];
+                        let slideId = ["mySlides1", "mySlides2", "mySlides3"]
+                        showSlides(1, 0);
+                        showSlides(1, 1);
+                        showSlides(1, 2);
+                        
+                        function plusSlides(n, no) {
+                          showSlides(slideIndex[no] += n, no);
+                        }
+                        
+                        function showSlides(n, no) {
+                          let i;
+                          let x = document.getElementsByClassName(slideId[no]);
+                          if (n > x.length) {slideIndex[no] = 1}    
+                          if (n < 1) {slideIndex[no] = x.length}
+                          for (i = 0; i < x.length; i++) {
+                             x[i].style.display = "none";  
+                          }
+                          x[slideIndex[no]-1].style.display = "block";  
+                        }
+                            </script>
+            </div>
+        <!-- div for column -->
+                    </div>
+    <!-- div for row class -->
+                    </div>
+                    <!-- <div class="row">
+                    <div class="col-sm" style="padding: 20px; padding-bottom: 2.5px; margin:10px">
+                       <h1 class="headline"><a href="videoGames.html" style="font-weight: bold; border-radius: 8px; background-color:#bfd0ad;">Orwellian Industries: The Simulator</a><h1>
+                            <p><mark style="background-color: rgb(253, 247, 237); color:rgba(52, 4, 4, 0.738); border-radius: 8px;">Unity 2D Game; <em>Slack off at work with Orwellian Industries: The Simulator!</em></mark></p>
+                            <section style="padding: 15px; padding-top: 0%;"><a href="videoGames.html"><img width="480" height="280" style="border:1px solid rgb(52, 4, 4); max-width:100%; width: 100%; height:auto; border-radius: 4px;" src="gifOrwellianSmaller.gif">
+                        </img></a></section>
+                        <p style="text-align: right;"><span style="display: inline; text-align: right;
+                          padding: 4px;
+                          border-radius: 16px;
+                          background-color: rgba(215, 90, 90, 0.828); color: rgb(236, 222, 196); 
+                          ">Unity 2D</span> 
+                          <span style="display: inline;
+                          padding: 4px;
+                          border-radius: 16px;
+                          background-color: rgba(215, 90, 90, 0.828); color: rgb(236, 222, 196); 
+                          ">C#</span> 
+                          <span style="display: inline;
+                          padding: 4px;
+                          border-radius: 16px;
+                          background-color: rgba(215, 90, 90, 0.828); color: rgb(236, 222, 196); 
+                          ">ui design</span> 
+                          <span style="display: inline;
+                          padding: 4px;
+                          border-radius: 16px;
+                          background-color: rgba(215, 90, 90, 0.828); color: rgb(236, 222, 196); 
+                          ">original asset creation in Adobe Photoshop</span> 
+                          </p>
+                           </div>
+                           <div class="col-sm" style="background-color:rgba(208, 199, 164, 0.451); padding: 20px; padding-bottom: 2.5px; border-radius: 8px; margin:10px">
+                            <h1 class="headline"><a href="Mapshots.html" style="font-weight: bold;">Mapshots</a></h1>
+                            <p><mark style="background-color: rgb(253, 247, 237); color:rgba(52, 4, 4, 0.738); border-radius: 8px;">Mobile prototype made in Figma focused on creating spatial memory through visual media and text-based posts for past, present, and future Wellesley College students.</mark></p>
+                            <section style="padding: 15px; padding-top: 0%;"><a href="Mapshots.html"><img width="480" height="320" style="max-width:100%; width: 100%; height:auto; border: 1px solid rgb(52, 4, 4); border-radius: 4px;" src="highfidelityLanding.gif">
+                            </img></a></section>
+                            <p style="text-align: right;"><span style="display: inline;
+                              padding: 4px;
+                              border-radius: 16px;
+                              background-color: rgba(215, 90, 90, 0.828); color: rgb(236, 222, 196); ">Figma</span>
+                              <span style="display: inline;
+                              padding: 4px;
+                              border-radius: 16px;
+                              background-color: rgba(215, 90, 90, 0.828); color: rgb(236, 222, 196); ">mobile ui/ux design</span>
+                              <span style="display: inline;
+                              padding: 4px;
+                              border-radius: 16px;
+                              background-color: rgba(215, 90, 90, 0.828); color: rgb(236, 222, 196);">usability testing</span>
+                              </p>
+                    </div> -->
+                    </div>
+                </div>
+                <br>
+</main>
+
+</body>
+</html>

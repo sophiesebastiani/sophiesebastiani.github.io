@@ -14,7 +14,7 @@
 <link href="carousel-fit.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name=author content="Sophie Sebastiani">
-    <title>Lens-based Projects</title>
+    <title>Projects</title>
     <link rel="icon" type="image/x-icon" href="Screen Shot 2022-11-26 at 1.11.25 PM.png">
 </head>
 <body>
@@ -24,7 +24,7 @@
           background-repeat: no-repeat;
         background-attachment: fixed;
         background-size:cover;   */
-        background-color: rgb(249, 248, 246);
+        background-color: rgb(255, 255, 255);
     }
 
     .padding {
@@ -48,6 +48,7 @@
 }
 
 .grid-container {
+ 
   display: grid;
   padding: 10px;
   margin-left:15%;
@@ -56,7 +57,7 @@
   text-align:center;
 }
 
-.grid-item {
+.grid-item{
   /* background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(52, 4, 4); */
   border-radius: 30px;
@@ -83,7 +84,7 @@
   text-align: right;
   border-radius: 15px;
   padding: 15px;
-  font-size: 10pt;
+  font-size: 11pt;
   font-family:'myFont', sans-serif;
 letter-spacing: 1px;
   /* Position the tooltip */
@@ -99,6 +100,24 @@ letter-spacing: 1px;
   visibility: visible;
 }
 
+@media only screen and (max-width: 600px) {
+  .grid-container {
+  position: relative;
+  display: grid;
+  padding: 10px;
+  margin-right:25%;
+  margin-left: 1%;
+  padding-top: 35%;
+  padding-bottom: 15%;
+  text-align:center;
+}
+
+.menu {
+  position: relative;
+  margin-top: 0%;
+}
+}
+
 </style>
 
 <main>
@@ -107,18 +126,18 @@ letter-spacing: 1px;
   <!-- <h1 class="headline" style="background-color:rgba(137, 240, 27, 0.925); font-weight: normal;padding: 10px; border-radius: 8px;">NFTs or The Exploitation of Speculative Markets <small style="letter-spacing: 1px;font-size:medium; color: rgba(181, 84, 77, 0.909);font-weight: normal">Spring 2022</small></h1> -->
 <br><br>
 
-  <section style="position:fixed; margin-top:2.5%">
+  <section class="menu" style="position:fixed; margin-top:1.5%">
       <p style="margin-top: 3.5%; margin-bottom: 0%; font-family:'myFont', 'Alte Haas Grotesk Regular', sans-serif; letter-spacing: 0.25px;">
-         <mark style="font-weight: bold; font-family: 'myFont', sans-serif; font-size: 20pt;background-color: #f8f8db88; border-radius:5px;">
-           <a class="active" style="font-size:20pt; text-decoration: none; color:#bac8b2" href="index.html">Sophie Sebastiani</a>
+         <!-- <mark style="font-weight: bold; font-family: 'myFont', sans-serif; font-size: 20pt; border-radius:5px;"> -->
+           <a class="active" style="font-size:20pt; text-decoration: none; color:#7be040" href="index.html">Sophie Sebastiani</a>
            </mark> 
  
     <div style="margin-left: .5%; margin-top: 0%;">
      <!-- <li style="background-color:#f3dbe2db;"><a class="active"  href="index.html">🏡</a></li><br> -->
      <!-- <li style="background-color: #eed9b5d1;"><a  href="Video.html">Video</a></li>
      <li style="background-color: rgba(170, 178, 161, 0.434)"><a   href="Photo.html">Photo</a></li> -->
-     <li><a  href="work.html" style="text-decoration: none;">Work</a></li><br>
-     <li><a href="research.html" style="text-decoration: none;">Research</a></li><br>
+     <li><a  href="work.html" class="active" style="text-decoration: none;">Projects</a></li><br>
+     <li><a href="research.html" style="text-decoration: none;">Writing</a></li><br>
      <li><a  href="info.html" style="text-decoration: none;">Info</a></li>
 
 
@@ -130,41 +149,41 @@ letter-spacing: 1px;
 </section>
     <!-- <h1 class="headline" style="font-size:25px; background-color: transparent; font-family: 'Arial narrow', sans-serif;"><mark style="border-radius: 8px;color:rgb(255, 249, 238); background-color:rgb(213, 55, 55)">Featured:</mark></h1> -->
     <div class="grid-container">
-    <div class="col-sm" style="padding-bottom: 15px;">
+    <div class="col-sm" style="padding-bottom: 15px">
   <div class="grid-item">
-<a href="500FeetAway.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: auto; cursor: pointer; border-radius: 1.75px;" src="Sebastiani_foreclosure (Mobile, Alabama).jpg">
-  <span class="tooltiptext" style="padding: 11px; top: 90.5%;"> Five Hundred Feet Away <mark style="background-color: #dee260de; border-radius: 1.5px;">Photo</mark></span>
+<a href="BaldwinCo.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: auto; cursor: pointer; border-radius: 1.75px;" src="IMG_0882Compressed1.jpeg">
+  <span class="tooltiptext" style="padding: 11px; top: 90.5%;"> Lower Alabama <mark style="background-color: #dee260de; border-radius: 1.5px; font-size:10pt;">Photo</mark></span>
 </a></div>
 <!-- //div for col-sm// --> </div>
 
 <div class="col-sm" style="padding-bottom: 15px;">
-<div class="grid-item"><a href="HeadingAcrossaGreatDivide.html"><img width="500" height="100" id="hagd" style="max-width:100%; height: auto; cursor: pointer; border-radius: 1.75px;" src="construction.webp">
-    <span class="tooltiptext" style="padding: 11px; top: 90.5%; left:55%; width: 300px"> Heading Across a Great Divide <mark style="background-color: #dee260de; border-radius: 1.5px;">Photo</mark></span>
+  <div class="grid-item"><a href="ADayLikeAnyOther.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: fit-content; cursor: pointer; border-radius: 1.75px;" src="ADLAOvg.jpg">
+  <span class="tooltiptext" style="padding: 10px; top: 89%; left: 45%; width: 360px">A Day Like Any Other <mark style="background-color: #bde3f8a1; border-radius: 1.5px; font-size:10pt;">Unity 3D Demo</mark></span>
+</a>
+  </div> </div>
+
+<div class="col-sm" style="padding-bottom: 15px;">
+<div class="grid-item"><a href="Massachusetts.html"><img width="500" height="100" id="hagd" style="max-width:100%; height: auto; cursor: pointer; border-radius: 1.75px;" src="lighting2Q70.jpg">
+    <span class="tooltiptext" style="padding: 11px; top: 90.5%; left:55%; width: 300px">Wellesley+Boston <mark style="background-color: #dee260de; border-radius: 1.5px;font-size:10pt;">Photo</mark></span>
   </a></div>
 <!-- //div for col-sm// --></div>  
 
   <div class="col-sm" style="padding-bottom: 15px;">
     <div class="grid-item">
   <a href="MythofSelfRegulatoryMachine.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: auto; cursor: pointer; border-radius: 1.75px;" src="Myth.jpg">
-    <span class="tooltiptext" style="padding: 11px; top: 90%; left:45%; width: 350px">Regulation in 3D Printing and AI <mark style="background-color: #e9b6c6cb; border-radius: 1.5px;">Video</mark></span>
+    <span class="tooltiptext" style="padding: 11px; top: 89%; left:45%; width: 350px">Regulation in 3D Printing and AI <mark style="background-color: #ff723adf; border-radius: 1.5px; font-size:10pt;">Video</mark></span>
   </a></div>
   <!-- //div for col-sm// --> </div>
 
-  <div class="col-sm" style="padding-bottom: 15px;">
+  <!-- <div class="col-sm" style="padding-bottom: 15px;">
   <div class="grid-item"><a href="WheresYourSoul.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: auto; cursor: pointer; border-radius: 1.75px;" src="soul.webp">
       <span class="tooltiptext" style="padding: 11px; top: 90.5%; left: 39%; width: 380px">The Failure of Urban Renewal <mark style="background-color: #e9b6c6cb; border-radius: 1.5px;">Video</mark></span>
-    </a></div>
-  <!-- //div for col-sm// --></div>  
-
-  <div class="col-sm" style="padding-bottom: 15px;">
-    <div class="grid-item"><a href="ADayLikeAnyOther.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: fit-content; cursor: pointer; border-radius: 1.75px;" src="ADLAOvg.jpg">
-    <span class="tooltiptext" style="padding: 11px; top: 90%; left: 45%; width: 360px">A Day Like Any Other <mark style="background-color: #e0daffe5; border-radius: 1.5px;">Interactive</mark></span>
-  </a>
-    </div> </div>
+    </a></div></div> 
+  <!-- //div for col-sm// -->
 
     <div class="col-sm" style="padding-bottom: 15px;">
       <div class="grid-item"><a href="OrwellianIndustries.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: fit-content; cursor: pointer; border-radius: 1.75px;" src="OIvg.jpg">
-      <span class="tooltiptext" style="padding: 11px; top: 90%; left: 45%; width: 360px">Orwellian Industries: The Simulator <mark style="background-color: #e0daffe5; border-radius: 1.5px;">Interactive</mark></span>
+      <span class="tooltiptext" style="padding: 11px; top: 89%; left: 45%; width: 360px">Orwellian Industries: The Sim <mark style="background-color:  #bde3f8a1; border-radius: 1.5px;font-size:10pt">Unity 2D Demo</mark></span>
     </a>
       </div> </div>
     <!-- <div class="col-sm" style="padding-bottom: 15px;">
@@ -180,13 +199,6 @@ letter-spacing: 1px;
 <!-- //padding div// -->
 </div>
 </main>
-<div class="outer">
-  <div class="footer" style="padding: 35px">
-    <li><a  style="font-size: small; text-decoration: none; font-family:'myFont2', sans-serif;" href="mailto: sebastianisophie@gmail.com">Email</a></li>
-    <li><a style="font-size: small; text-decoration: none; font-family:'myFont2', sans-serif;" href="https://www.instagram.com/sophiesebastiani" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-    <li><a  style="font-size: small; text-decoration: none; font-family:'myFont2', sans-serif;" href="https://www.linkedin.com/in/sophiesebastiani" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>              
-    <li><a  style="font-size: small; text-decoration: none; font-family:'myFont2', sans-serif;" href="https://vimeo.com/user194713210" target="_blank" rel="noopener noreferrer">Vimeo</a></li>              
-<br>
-</div></div>
+
 </body>
 </html>
