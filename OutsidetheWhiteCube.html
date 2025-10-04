@@ -31,6 +31,14 @@
     cursor: pointer;
   }
 
+  .modalImage:hover {
+    cursor: zoom-in;
+  }
+
+  .zoomed-element {
+  cursor: zoom-out;
+}
+
   @media only screen and (max-width: 600px) {
     .padding {
     padding: 20px;
@@ -39,6 +47,18 @@
     font-size: 15px;
     margin-top: 0%;
   }
+
+  .mobileSpaceDiv2 {
+   /* margin-top: 125px; */
+   padding-top: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: #ffffff;
+  }
+
+.col-sm-8 {
+  margin-top:170px;
+}
   }
 </style>
 
@@ -47,7 +67,7 @@
         <div class="row" style="display:flex;">
           <div class="col-sm-4" style="margin-top: 40px; margin-right:0%;">
     
-      <section style="position:fixed; margin-top:1.5%">
+      <section style="position:fixed; margin-top:1.5%; z-index: 0;">
         <p style="margin-top: 3.5%; margin-bottom: 0%; font-family:'myFont', 'Alte Haas Grotesk Regular', sans-serif; letter-spacing: 0.25px;">
              <a class="active" style="font-size:20pt; text-decoration: none; color:#7be040;" href="index.html">Sophie Sebastiani</a>
              </mark> 
@@ -68,8 +88,9 @@
 </section>
 </div>
 
-<div class="col-sm-8" style="margin-top: 35px; padding-left:0%; margin-left: 0%;">
-  <section style="padding-top:0%; text-align: left; margin-right:10%; margin-left:0%">
+<div class="col-sm-8" style="padding-left:0%; margin-left: 0%; z-index: 1;">
+  <section class="mobileSpaceDiv2" style="padding-top:0%; text-align: left; margin-right:0%; margin-left:0%">
+  <section style="padding-top:0%; text-align: left; margin-right:0%; margin-left:0%">
     <!-- <h1 class="headline" style="padding: 10px; padding-left:0%; padding-top:0%; border-radius: 8px; font-size:23pt; margin-bottom: 0%;">Outside the White Cube
   <small style="font-size:15pt; color: rgb(181, 84, 77); font-weight: normal; letter-spacing: 1px; padding: 5pt; padding-left: 0%;">Spring 2021</small>
 </h1>
@@ -79,7 +100,7 @@
 </p> -->
 
 <img class="img" src="pentimento_may2021.png" id="wild" style="box-shadow:0px 4px 6px #24242421; border-radius: 4px; max-width: 100%; width: 100%; max-height: 900px; margin-bottom:25px; ">
-<div id="myModal" class="modal">
+<div id="myModal" class="modal zoomed-element modalImage">
   <span class="close">&times;</span>
   <img class="modal-content" id="img01">
   <!-- <div id="caption"></div> -->
@@ -108,7 +129,7 @@
   </script>
             
 <img class="img" src="pentimentosources.png" id="p2" style="box-shadow:0px 4px 6px #24242421; border-radius: 4px; max-width: 100%; width: 100%; max-height: 900px; margin-bottom:25px;">
-<div id="myModal" class="modal">
+<div id="myModal" class="modal zoomed-element">
   <span class="close">&times;</span>
   <img class="modal-content" id="img01">
   <!-- <div id="caption"></div> -->
@@ -137,6 +158,7 @@
   </script>
 </section>
     </div>
+  </section>
 
 </main>
 

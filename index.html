@@ -32,18 +32,10 @@
 }
 
 
-/* Hide the images by default */
-.mySlides1, .mySlides2, .mySlides3 {display: none; }
-
-.mySlides1, .mySlides2, .mySlides3
-    img {
-  text-align:center; 
-  vertical-align: middle;
-margin: 0px auto;
-  cursor: pointer;
-  max-height: 700px;
-}
-
+.title {
+    font-size: 20pt;
+    padding-left:12px;
+  }
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
   cursor: pointer;
@@ -97,7 +89,7 @@ li a:hover{
     padding-bottom: 20px;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 775px) {
     .padding {
     padding: 20px;
     padding-top: 0px;
@@ -105,6 +97,16 @@ li a:hover{
     font-size: 15px;
     margin-top: 0%;
   }
+
+  /* .menu {
+  z-index:0;
+  font-size: 12pt;
+  }
+  
+  .title {
+    font-size: 15pt;
+    padding-left:12px;
+  } */
 
 .slideshow-container .prev, .next {
   visibility: visible;
@@ -210,7 +212,7 @@ li a:hover{
         
                 <section style="position:fixed; margin-top:1.5%">
                   <p style="margin-top: 3.5%; margin-bottom: 0%; font-family:'myFont', 'Alte Haas Grotesk Regular', sans-serif; letter-spacing: 0.25px;">
-                       <a class="active" style="font-size:20pt; text-decoration: none; color:#7be040;" href="index.html">Sophie Sebastiani</a>
+                       <a style="padding-left:1.5px; font-size:20pt;text-decoration: none; color:#7be040;" href="index.html">Sophie Sebastiani</a>
                        </mark> 
              
                 <div style="margin-left: .5%; margin-top: 0%;">
@@ -218,9 +220,9 @@ li a:hover{
                  <!-- <li style="background-color: #eed9b5d1;"><a  href="Video.html">Video</a></li>
                  <li style="background-color: rgba(170, 178, 161, 0.434)"><a   href="Photo.html">Photo</a></li> -->
                  <!-- <li><a href="photovideo.html" style="font-size:15pt;">←</a></li><br> -->
-                 <li><a  href="work.html">Projects</a></li><br>
-                 <li><a href="research.html">Writing</a></li><br>
-                 <li><a  href="info.html">Info</a></li>
+                 <li><a class="menu" href="work.html">Projects</a></li><br>
+                 <li><a class="menu" href="research.html">Writing</a></li><br>
+                 <li><a class="menu" href="info.html">Info</a></li>
          
                
                    <!-- <li style="background-color: #d2c0ac;"><a  href="Mapshots.html">Mapshots</a></li>
