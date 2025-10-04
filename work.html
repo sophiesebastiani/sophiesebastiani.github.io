@@ -27,31 +27,24 @@
         background-color: rgb(255, 255, 255);
     }
 
+
     .padding {
     padding: 40px;
     padding-top:1px; 
     padding-bottom: 20px;
   }
 
-@media only screen and (max-width: 775px) {
-    .padding {
-    padding: 20px;
-    padding-top:60px; 
-    padding-bottom: 20px;
+  .title {
+    font-size: 20pt;
+    padding-left:12px;
   }
-  .col-sm {
-    min-width:100px;
-  }
-  .grid-item .tooltiptext {
-  visibility: visible;
-}
-}
+
 
 .grid-container {
  
   display: grid;
   padding: 10px;
-  margin-left:15%;
+  padding-left:25%;
   padding-top: 15px;
   padding-bottom: 0%;
   text-align:center;
@@ -90,9 +83,8 @@ letter-spacing: 1px;
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
-  top: 60%;
-  left: 60%;
-  margin-left: -55px;
+  top: 89%;
+  left: 48%;
 }
 
 
@@ -100,23 +92,75 @@ letter-spacing: 1px;
   visibility: visible;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 775px) {
+    .padding {
+    padding-left: 0px;
+    padding-top:0px; 
+    padding-bottom: 10px;
+  }
+  .col-sm {
+    min-width:100px;
+  }
+
+  .MobileSpaceDiv2 {
+    padding-left: 50px;
+    padding-top: 15px;
+    background-color: #ffffff;
+    z-index: 2;
+  }
+
   .grid-container {
-  position: relative;
+    margin-top: 50px;
+    top:0px;
+  }
+
+
+.grid-item .tooltiptext {
+  text-align: left;
+  visibility: visible;
+  font-size: small;
+}
+
+
+}
+
+@media only screen and (max-width: 775px) {
+  .grid-container {
+  margin-top:35%;
   display: grid;
   padding: 10px;
-  margin-right:25%;
-  margin-left: 1%;
-  padding-top: 35%;
+  margin-right:5%;
+  margin-left: 0%;
+  /* padding-top: 20%; */
   padding-bottom: 15%;
-  text-align:center;
+  text-align:left;
 }
 
 .menu {
-  position: relative;
+  position: fixed;
   margin-top: 0%;
+  z-index: 0;
+  padding-left: 20px;
+  font-size: 12pt;
 }
+  
+  .title {
+    font-size: 15pt;
+    padding-left:12px;
+  }
+
+  .menuItems {
+    font-size: 12pt;
+  }
+
+
+.tooltiptext {
+  left:0%;
+  top:87%;
 }
+
+}
+
 
 </style>
 
@@ -129,16 +173,16 @@ letter-spacing: 1px;
   <section class="menu" style="position:fixed; margin-top:1.5%">
       <p style="margin-top: 3.5%; margin-bottom: 0%; font-family:'myFont', 'Alte Haas Grotesk Regular', sans-serif; letter-spacing: 0.25px;">
          <!-- <mark style="font-weight: bold; font-family: 'myFont', sans-serif; font-size: 20pt; border-radius:5px;"> -->
-           <a class="active" style="font-size:20pt; text-decoration: none; color:#7be040" href="index.html">Sophie Sebastiani</a>
+           <a class="title" style="text-decoration: none; color:#7be040" href="index.html">Sophie Sebastiani</a>
            </mark> 
  
-    <div style="margin-left: .5%; margin-top: 0%;">
+    <div  style="margin-left: .5%; margin-top: 0%;">
      <!-- <li style="background-color:#f3dbe2db;"><a class="active"  href="index.html">🏡</a></li><br> -->
      <!-- <li style="background-color: #eed9b5d1;"><a  href="Video.html">Video</a></li>
      <li style="background-color: rgba(170, 178, 161, 0.434)"><a   href="Photo.html">Photo</a></li> -->
-     <li><a  href="work.html" class="active" style="text-decoration: none;">Projects</a></li><br>
-     <li><a href="research.html" style="text-decoration: none;">Writing</a></li><br>
-     <li><a  href="info.html" style="text-decoration: none;">Info</a></li>
+     <li><a class="active menuItems" href="work.html"  style="text-decoration: none;">Projects</a></li><br>
+     <li><a class="menuItems" href="research.html" style="text-decoration: none;">Writing</a></li><br>
+     <li><a class="menuItems" href="info.html" style="text-decoration: none;">Info</a></li>
 
 
    
@@ -148,30 +192,32 @@ letter-spacing: 1px;
            </p> 
 </section>
     <!-- <h1 class="headline" style="font-size:25px; background-color: transparent; font-family: 'Arial narrow', sans-serif;"><mark style="border-radius: 8px;color:rgb(255, 249, 238); background-color:rgb(213, 55, 55)">Featured:</mark></h1> -->
+  
     <div class="grid-container">
+      <section class="MobileSpaceDiv2">
     <div class="col-sm" style="padding-bottom: 15px">
   <div class="grid-item">
 <a href="BaldwinCo.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: auto; cursor: pointer; border-radius: 1.75px;" src="IMG_0882Compressed1.jpeg">
-  <span class="tooltiptext" style="padding: 11px; top: 90.5%;"> Lower Alabama <mark style="background-color: #dee260de; border-radius: 1.5px; font-size:10pt;">Photo</mark></span>
+  <span class="tooltiptext" style="padding: 11px;"> Lower Alabama <mark style="background-color: #dee260de; border-radius: 1.5px; font-size:9pt; ">Photo</mark></span>
 </a></div>
 <!-- //div for col-sm// --> </div>
 
 <div class="col-sm" style="padding-bottom: 15px;">
   <div class="grid-item"><a href="ADayLikeAnyOther.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: fit-content; cursor: pointer; border-radius: 1.75px;" src="ADLAOvg.jpg">
-  <span class="tooltiptext" style="padding: 10px; top: 89%; left: 45%; width: 360px">A Day Like Any Other <mark style="background-color: #bde3f8a1; border-radius: 1.5px; font-size:10pt;">Unity 3D Demo</mark></span>
+  <span class="tooltiptext" style="padding: 10px; width: 360px">A Day Like Any Other <mark style="background-color: #bde3f8a1; border-radius: 1.5px; font-size:9pt;">Unity 3D Demo</mark></span>
 </a>
   </div> </div>
 
 <div class="col-sm" style="padding-bottom: 15px;">
 <div class="grid-item"><a href="Massachusetts.html"><img width="500" height="100" id="hagd" style="max-width:100%; height: auto; cursor: pointer; border-radius: 1.75px;" src="lighting2Q70.jpg">
-    <span class="tooltiptext" style="padding: 11px; top: 90.5%; left:55%; width: 300px">Wellesley+Boston <mark style="background-color: #dee260de; border-radius: 1.5px;font-size:10pt;">Photo</mark></span>
+    <span class="tooltiptext" style="padding: 11px; width: 300px">Wellesley+Boston <mark style="background-color: #dee260de; border-radius: 1.5px;font-size:9pt;">Photo</mark></span>
   </a></div>
 <!-- //div for col-sm// --></div>  
 
   <div class="col-sm" style="padding-bottom: 15px;">
     <div class="grid-item">
   <a href="MythofSelfRegulatoryMachine.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: auto; cursor: pointer; border-radius: 1.75px;" src="Myth.jpg">
-    <span class="tooltiptext" style="padding: 11px; top: 89%; left:45%; width: 350px">Regulation in 3D Printing and AI <mark style="background-color: #ff723adf; border-radius: 1.5px; font-size:10pt;">Video</mark></span>
+    <span class="tooltiptext" style="padding: 11px; width: 350px">Regulation in 3D Printing and AI <mark style="background-color: #f85326a7; border-radius: 1.5px; font-size:9pt;">Video</mark></span>
   </a></div>
   <!-- //div for col-sm// --> </div>
 
@@ -179,13 +225,15 @@ letter-spacing: 1px;
   <div class="grid-item"><a href="WheresYourSoul.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: auto; cursor: pointer; border-radius: 1.75px;" src="soul.webp">
       <span class="tooltiptext" style="padding: 11px; top: 90.5%; left: 39%; width: 380px">The Failure of Urban Renewal <mark style="background-color: #e9b6c6cb; border-radius: 1.5px;">Video</mark></span>
     </a></div></div> 
-  <!-- //div for col-sm// -->
+  //div for col-sm// -->
 
     <div class="col-sm" style="padding-bottom: 15px;">
       <div class="grid-item"><a href="OrwellianIndustries.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: fit-content; cursor: pointer; border-radius: 1.75px;" src="OIvg.jpg">
-      <span class="tooltiptext" style="padding: 11px; top: 89%; left: 45%; width: 360px">Orwellian Industries: The Sim <mark style="background-color:  #bde3f8a1; border-radius: 1.5px;font-size:10pt">Unity 2D Demo</mark></span>
+      <span class="tooltiptext" style="padding: 11px; width: 360px">Orwellian Industries: The Sim <mark style="background-color:  #bde3f8a1; border-radius: 1.5px;font-size:9pt; ">Unity 2D Demo</mark></span>
     </a>
       </div> </div>
+
+    </section>
     <!-- <div class="col-sm" style="padding-bottom: 15px;">
       <div class="grid-item">
     <a href="Flashes.html"><img width="500" height="100" id="prcImage" style="max-width:100%; height: auto; cursor: pointer; border-radius: 1.75px" src="flashes.webp">

@@ -32,6 +32,11 @@
   box-sizing: border-box;
 }
 
+.title {
+    font-size: 20pt;
+    padding-left:12px;
+  }
+
 
 /* Hide the images by default */
 .mySlides1, .mySlides2, .mySlides3 {display: none; }
@@ -100,7 +105,7 @@ li a:hover{
     padding-bottom: 20px;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 775px) {
     .padding {
     padding: 20px;
     padding-top: 0px;
@@ -121,7 +126,28 @@ li a:hover{
   font-size: 25px;
 
 }
+
+.menu {
+  z-index:0;
+  font-size: 12pt;
+  }
+  
+  .title {
+    font-size: 15pt;
+    padding-left:12px;
+  }
+
+.mobileSpaceDiv2 {
+   /* margin-top: 125px; */
+    padding-left: 0px;
+    background-color: #ffffff;
+  }
+
+.col-sm-8 {
+  top:140px;
 }
+}
+
 
 /* Position the "next button" to the right */
 .next {
@@ -230,7 +256,7 @@ li a:hover{
         
   <section style="position:fixed; margin-top:1.5%">
          <p style="margin-top: 3.5%; margin-bottom: 0%; font-family:'myFont', 'Alte Haas Grotesk Regular', sans-serif; letter-spacing: 0.25px;">
-              <a class="active" style="font-size:20pt; text-decoration: none; color:#7be040;" href="index.html">Sophie Sebastiani</a>
+              <a class="title" style="text-decoration: none; color:#7be040;" href="index.html">Sophie Sebastiani</a>
               </mark> 
     
        <div style="margin-left: .5%; margin-top: 0%;">
@@ -238,9 +264,9 @@ li a:hover{
         <!-- <li style="background-color: #eed9b5d1;"><a  href="Video.html">Video</a></li>
         <li style="background-color: rgba(170, 178, 161, 0.434)"><a   href="Photo.html">Photo</a></li> -->
         <!-- <li><a href="photovideo.html" style="font-size:15pt;">←</a></li><br> -->
-        <li><a  href="work.html">Projects</a></li><br>
-        <li><a href="research.html">Writing</a></li><br>
-        <li><a  href="info.html">Info</a></li>
+        <li><a  class="menu" href="work.html">Projects</a></li><br>
+        <li><a class="menu" href="research.html">Writing</a></li><br>
+        <li><a class="menu" href="info.html">Info</a></li>
 
       
           <!-- <li style="background-color: #d2c0ac;"><a  href="Mapshots.html">Mapshots</a></li>
@@ -257,9 +283,10 @@ li a:hover{
                 <p style="text-align:left; margin-left: 3.25%; font-family:'myFont', sans-serif; background-color:rgba(230, 192, 174, 0.443); border-radius: 25px; padding: 5px; padding-right: 7px;display:inline; font-size: small;">🪲 <a href=SebastianiSophieCV.pdf>CV</a>
                 </p>   </div> -->
               </div>
-              <div class="col-sm-8" style="margin-top: 50px; margin:auto; border-radius: 4px; padding-right:55px; text-align: center;">
+              <div class="col-sm-8" style="margin-top: 25px; margin:auto; border-radius: 4px; padding-right:25px; text-align: center;">
+                <section class="mobileSpaceDiv2" style="padding-top:0%; text-align: left; margin-right:0%; margin-left:0%; text-align: center;">
 
-            <h1 class="headline" style="text-align:right;padding-left: 10px; border-radius: 8px; font-size:14pt; margin-bottom: 2.75px; margin-top:5%;">Wellesley + Boston, MA <small style="font-size:12pt; color: #d66909; background-color: #f6ece360; padding: 1.5pt;border-radius: 4pt;">2020 - 2023</small></h1>
+            <h1 class="headline" style="text-align:right;padding-left: 10px; border-radius: 8px; font-size:13pt; margin-bottom: 2.75px; margin-top:5%;">Wellesley + Boston, MA <small style="font-size:12pt; color: #d66909; padding: 1.5pt;border-radius: 4pt;">2020 - 2023</small></h1>
                  <br>
 
                  <img class="img" style="max-width: 100%; max-height: 700px;" id="wild" src="IMG_8395.jpeg">
@@ -302,7 +329,7 @@ li a:hover{
      
              
 
-
+                </section>
           
                 <!-- </div> -->
                 <!-- </div> -->
@@ -318,29 +345,7 @@ li a:hover{
             
             <div class="padding" style="padding-top: 0%; padding-bottom:0px;">
             
-                    <script>
-                        
-                        let slideIndex = [1,1,1];
-                        let slideId = ["mySlides1", "mySlides2", "mySlides3"]
-                        showSlides(1, 0);
-                        showSlides(1, 1);
-                        showSlides(1, 2);
-                        
-                        function plusSlides(n, no) {
-                          showSlides(slideIndex[no] += n, no);
-                        }
-                        
-                        function showSlides(n, no) {
-                          let i;
-                          let x = document.getElementsByClassName(slideId[no]);
-                          if (n > x.length) {slideIndex[no] = 1}    
-                          if (n < 1) {slideIndex[no] = x.length}
-                          for (i = 0; i < x.length; i++) {
-                             x[i].style.display = "none";  
-                          }
-                          x[slideIndex[no]-1].style.display = "block";  
-                        }
-                            </script>
+                 
             </div>
         <!-- div for column -->
                     </div>

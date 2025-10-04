@@ -26,13 +26,16 @@
           background-repeat: no-repeat;
         background-attachment: fixed;
         background-size:cover; */
-        background-color: rgb(249, 248, 246);
+        background-color: rgb(255, 255, 255);
         }
         * {
   box-sizing: border-box;
 }
 
-
+.title {
+    font-size: 20pt;
+    padding-left:12px;
+  }
 /* Hide the images by default */
 .mySlides1, .mySlides2, .mySlides3 {display: none; }
 
@@ -99,13 +102,23 @@ li a:hover{
     padding-bottom: 20px;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 775px) {
     .padding {
     padding: 20px;
     padding-top: 0px;
     padding-bottom: 20px;
     font-size: 15px;
     margin-top: 0%;
+  }
+
+  .menu {
+  z-index:0;
+  font-size: 12pt;
+  }
+  
+  .title {
+    font-size: 15pt;
+    padding-left:12px;
   }
 
 .slideshow-container .prev, .next {
@@ -120,6 +133,24 @@ li a:hover{
   font-size: 25px;
 
 }
+
+.mobileSpaceDiv2 {
+   /* margin-top: 125px; */
+   padding-top:15px;
+    padding-left: 50px;
+    padding-bottom: 118px;
+    background-color: #ffffff;
+  }
+
+.col-sm-6 {
+  top:100px;
+
+}
+
+.footer {
+  padding-bottom:0%;
+}
+
 }
 
 /* Position the "next button" to the right */
@@ -212,7 +243,7 @@ li a:hover{
                 
                 <section style="position:fixed; margin-top:1.5%">
                   <p style="margin-top: 3.5%; margin-bottom: 0%; font-family:'myFont', 'Alte Haas Grotesk Regular', sans-serif; letter-spacing: 0.25px;">
-                       <a class="active" style="font-size:20pt; text-decoration: none; color:#7be040;" href="index.html">Sophie Sebastiani</a>
+                       <a class="active title" style="text-decoration: none; color:#7be040;" href="index.html">Sophie Sebastiani</a>
                        </mark> 
              
                 <div style="margin-left: .5%; margin-top: 0%;">
@@ -220,9 +251,9 @@ li a:hover{
                  <!-- <li style="background-color: #eed9b5d1;"><a  href="Video.html">Video</a></li>
                  <li style="background-color: rgba(170, 178, 161, 0.434)"><a   href="Photo.html">Photo</a></li> -->
                  <!-- <li><a href="photovideo.html" style="font-size:15pt;">←</a></li><br> -->
-                 <li><a  href="work.html">Projects</a></li><br>
-                 <li><a href="research.html" >Writing</a></li><br>
-                 <li><a  href="info.html" class="active">Info</a></li>
+                 <li><a class="menu" href="work.html">Projects</a></li><br>
+                 <li><a class="menu" href="research.html" >Writing</a></li><br>
+                 <li><a class="active menu" href="info.html">Info</a></li>
             <!-- <li style="background-color: #d2c0ac;"><a  href="Mapshots.html">Mapshots</a></li>
             <li style="background-color: #a0bad5;"><a href="Impressions.html">Impressions</a></li> -->
                 </div>
@@ -238,14 +269,17 @@ li a:hover{
                 </p>   </div> -->
               </div>
               <div class="col-sm-6" style="margin-top: 80px; margin-left:0%; margin-right:100px;">
+                <section class="mobileSpaceDiv2" style=" text-align: left; margin-right:10%; margin-left:0%">
                 <img style="max-width: 100%" id="light" src="IMG_9669.jpeg">
                 <small style="text-align: right;">curated group alumni show for Wellesley College's Jewett Art Center, 2021</small>
 
                 <p style="margin-top: 3.5%; margin-bottom: 0%; font-family:'myFont', 'Alte Haas Grotesk Regular', sans-serif; letter-spacing: 0.25px;">
-                  Sophie Sebastiani (b. Alabama, 2000) works with photo, video, interactive and other digital media to explore technological and economic development in the US and its effects on public action, interpersonal relationships and the environment.
-                  She received a B.A. in Economics and Media Arts and Sciences from Wellesley College (Wellesley, MA) in 2023.
+                  Sophie Sebastiani (b. Alabama, 2000) works with photo, video, interactive and other digital media to explore technological and economic development in America and its effects on public action, interpersonal relationships and the environment.
+                She received a B.A. in Economics and Media Arts and Sciences from Wellesley College (Wellesley, MA) in 2023.
+
                   <br><br>
-She has exhibited work and curated exhibits for Jewett Art Center Galleries (Wellesley, MA) and Panopticon Gallery (Boston, MA) and is currently exploring the intersection of labor, private construction, public infrastructure and her individual experience growing up as the daughter of a Peruvian immigrant in the American Deep South through documentary photography, and collaged visual & multimedia narratives. 
+                She has curated, installed and mounted exhibits for Jewett Art Center Galleries, assisted working artists with painting and photography projects, and is currently exploring the intersection of labor, tech, personal connection through image and video.
+<!-- and her individual experience growing up as the daughter of a Peruvian immigrant in the American South through documentary photography, and collaged visual & multimedia narratives.  -->
                    
                <!-- She graduated with honors from Wellesley College in May 2023, earning a B.A. in both Economics and Media Arts and Sciences (a multidisciplinary major that unites the fields of computer science and studio art).  -->
                 <br>
@@ -265,6 +299,8 @@ She has exhibited work and curated exhibits for Jewett Art Center Galleries (Wel
                   <li><a  style="font-size: small; text-decoration: none; font-family:'myFont2', sans-serif;background-color: #f8f8dd88; border-radius: 5px; padding: .5px;" href="https://www.linkedin.com/in/sophiesebastiani" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>              
                   <li><a  style="font-size: small; text-decoration: none; font-family:'myFont2', sans-serif;background-color: #f8f8dd88; border-radius: 5px; padding: .5px;" href="https://vimeo.com/user194713210" target="_blank" rel="noopener noreferrer">Vimeo</a></li>              
                         </div>
+
+                      </section>        
               <!-- <hr style="
               border: 0;
               clear:both;

@@ -64,6 +64,11 @@ li a:hover{
   /* color:#bac8b2; */
 }
 
+.title {
+    font-size: 20pt;
+    padding-left: 12px;
+  }
+
 /* Next & previous buttons */
 .prev,
 .next {
@@ -99,13 +104,32 @@ li a:hover{
     padding-bottom: 20px;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 775px) {
     .padding {
     padding: 20px;
     padding-top: 0px;
     padding-bottom: 20px;
     font-size: 15px;
     margin-top: 0%;
+  }
+
+  .mobileSpaceDiv2 {
+   /* margin-top: 125px; */
+    padding-left: 50px;
+    background-color: #ffffff;
+  }
+
+.col-sm-8 {
+  top:90px;
+}
+  .menu {
+  z-index:0;
+  font-size: 12pt;
+  }
+  
+  .title {
+    font-size: 15pt;
+    padding-left:12px;
   }
 
 .slideshow-container .prev, .next {
@@ -190,6 +214,7 @@ li a:hover{
 }
 
 
+
 .headline a {
     color: rgb(52, 4, 4);
     text-align: left;
@@ -198,6 +223,7 @@ li a:hover{
     font-weight: normal;
     display: block;
     font-family:'myFont', sans-serif;
+    font-size: 20pt;
 }
 
 .headline a:hover {
@@ -233,9 +259,9 @@ li a:hover{
             <div class="row" style="display:flex;">
               <div class="col-sm-4" style="margin-top: 40px; margin-right:0%;">
         
-                <section style="position:fixed; margin-top:1.5%">
+                <section class="menu" style="position:fixed; margin-top:1.5%">
                   <p style="margin-top: 3.5%; margin-bottom: 0%; font-family:'myFont', 'Alte Haas Grotesk Regular', sans-serif; letter-spacing: 0.25px;">
-                       <a class="active" style="font-size:20pt; text-decoration: none; color:#7be040;" href="index.html">Sophie Sebastiani</a>
+                       <a class="title" style="text-decoration: none; color:#7be040;" href="index.html">Sophie Sebastiani</a>
                        </mark> 
              
                 <div style="margin-left: .5%; margin-top: 0%;">
@@ -243,9 +269,9 @@ li a:hover{
                  <!-- <li style="background-color: #eed9b5d1;"><a  href="Video.html">Video</a></li>
                  <li style="background-color: rgba(170, 178, 161, 0.434)"><a   href="Photo.html">Photo</a></li> -->
                  <!-- <li><a href="photovideo.html" style="font-size:15pt;">←</a></li><br> -->
-                 <li><a  href="work.html">Projects</a></li><br>
-                 <li><a href="research.html" class="active">Writing</a></li><br>
-                 <li><a  href="info.html">Info</a></li>
+                 <li><a class="menu" href="work.html">Projects</a></li><br>
+                 <li><a class="menu active" href="research.html">Writing</a></li><br>
+                 <li><a class="menu" href="info.html">Info</a></li>
       
           <!-- <li style="background-color: #d2c0ac;"><a  href="Mapshots.html">Mapshots</a></li>
           <li style="background-color: #a0bad5;"><a href="Impressions.html">Impressions</a></li> -->
@@ -262,11 +288,13 @@ li a:hover{
                 </p>   </div> -->
               </div>
               <div class="col-sm-8" style="margin-top: 35px; padding-left:0%; margin-left: 0%;">
-                  <section style="padding-top:0%; text-align: left; margin-right:10%; margin-left:0%">
+                  <section class="mobileSpaceDiv2" style="padding-top:0%; text-align: left; margin-right:10%; margin-left:0%">
                     <h1 class="headline" style="padding: 10px; padding-left:0%; border-radius: 8px; font-size:15pt; margin-bottom: 0%; font-weight: bold"><a href="https://docs.google.com/document/d/1dDDxeoD2m6yHNYUHBzsTQbMM2z9mBWenTQ0U4UdX2QY/edit?usp=sharing" target="_blank" rel="noopener noreferrer"; style="font-size:20pt; display: inline;">Replicating India’s Green Revolution in Rainfed Farmlands using Community-Scaled Hydroponic Agriculture Systems
                     </a> 
                       <small style="font-size:12pt; color: #d66909; font-weight: normal; letter-spacing: 1px; padding: 5pt; padding-left: 0%;">Fall 2022</small>
                     </h1>
+                    <!-- <img src="rain.jpeg" style="box-shadow:0px 4px 6px #24242421; max-width: 100%; max-height: 500px; margin-bottom:25px;"> -->
+
                     <!-- <p style="background-color:#f8f8db88; border-radius: 8px; padding: 5px;padding-bottom:0%; padding-top: 0%;">
                       Co-authored proposed empirical study using hydroponic farming systems to diversify sources of food production in rural India and identify cheaper methods of year-round crop growth.
             </p> -->
@@ -333,7 +361,8 @@ li a:hover{
             <h1 class="headline" style="line-height: 0.9;padding: 10px; padding-left:0%; padding-top:0%; border-radius: 8px; font-size:30pt; margin-bottom: 0%; font-weight: bold;"><a href="https://docs.google.com/document/d/1cXHKAG1vdJUOrmqsiJoIO7Qlg1JHOGCM/edit?usp=sharing&ouid=103206116209846339059&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer"; style="font-size:20pt; display: inline;">Web3: Creating Community through the Blockchain</a> 
               <small style="font-size:12pt; color: #d66909; font-weight: normal; letter-spacing: 1px; padding: 5pt; padding-left: 0%;">Fall 2021</small>
             </h1>
-          
+            <a href="https://docs.google.com/document/d/1cXHKAG1vdJUOrmqsiJoIO7Qlg1JHOGCM/edit?usp=sharing&ouid=103206116209846339059&rtpof=true&sd=true"><img src="linkRecolored.jpg" style="box-shadow:0px 4px 6px #24242421; max-width: 100%; max-height: 500px; margin-bottom:25px;">
+            </a>
             <!-- <p style="background-color:#f8f8db88; border-radius: 8px; padding: 5px;padding-bottom:0%; padding-top: 0%;">A philosophical perspective on the digital infrastructure of Web3 and how a blockchain internet foundation can establish decentralized networks that protect user data.  
           </p> -->
           <!-- <hr style="width:100%; color:rgb(181, 84, 77); border-width: 1.75px;"> -->
@@ -368,7 +397,8 @@ li a:hover{
            
           </h1>
           
-         
+          <!-- <img src="whiteCube.jpeg" style="box-shadow:0px 4px 6px #24242421; max-width: 100%; margin-bottom:25px;"> -->
+
           
                       </section>
               
