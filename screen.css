@@ -153,7 +153,8 @@ ul {
     /* font-weight:bold; */
     text-align: right;
     text-decoration: none;
-    color:rgb(52, 4, 4);
+    /* color:rgb(52, 4, 4); */
+    color:#583333;
     /* padding: 10px; */
   }
 
@@ -169,7 +170,7 @@ ul {
   li a:hover {
     /* color:rgb(183, 77, 11); */
     /* color:#665684; */
-    color:#8272a1;
+    color:#ff0ef3;
     
   }
   li a.split {
@@ -207,7 +208,7 @@ ul {
 
 .active {
     /* background-color:rgba(93, 142, 182, 0.22); */
-    color:#8272a1;
+    color:#ff0ef3;
     /* color: rgb(202, 86, 54); */
     /* color:rgb(81, 68, 68); */
     text-decoration: none;
